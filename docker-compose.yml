@@ -4,14 +4,13 @@ services:
       container_name: arches
       image: archesproject/arches:latest
       build:
-        context: .
+        context: ./arches
         dockerfile: ./Dockerfile
       command: run_arches
       volumes:
-        - ./:/web_root
+        - ./lincoln:/web_root/lincoln
         - arches-log:/arches/arches/logs
         - arches-static:/static_root
-        - ./arches/docker/settings_local.py:/web_root/arches/arches/settings_local.py
       environment:
         - ARCHES_PROJECT=lincoln
         - INSTALL_DEFAULT_GRAPHS=True
@@ -28,8 +27,8 @@ services:
         - ESHOST=elasticsearch
         - ESPORT=9200
         - ELASTICSEARCH_PREFIX=lincoln
-        - DJANGO_MODE=PROD
-        - DJANGO_DEBUG=False
+        - DJANGO_MODE=DEV
+        - DJANGO_DEBUG=True
         # - DJANGO_REMOTE_DEBUG=False
         - DOMAIN_NAMES=localhost
         - TZ=PST
@@ -69,7 +68,7 @@ services:
           - postgres-data:/var/lib/postgresql/data
           - postgres-log:/var/log/postgresql
       ports:
-        - '54321:5432'
+        - '54322:5432'
       environment:
         - POSTGRES_PASSWORD=postgres
         - TZ=PST
@@ -97,30 +96,31 @@ services:
       environment:
         - TZ=PST
 
-    letsencrypt:
-      container_name: letsencrypt
-      image: cvast/cvast-letsencrypt:1.1
-      volumes:
-        - letsencrypt-acme-challenge:/var/www
-        - letsencrypt:/etc/letsencrypt
-        - letsencrypt-log:/var/log/letsencrypt
-      command: get_certificate
-      environment:
-        - MODE=regular
-        - LETSENCRYPT_EMAIL=info@example.com
-        - DOMAIN_NAMES=localhost
-        - PRODUCTION_MODE=False
-        - PERSISTENT_MODE=True
-        - TZ=PST
+#    letsencrypt:
+#      container_name: letsencrypt
+#      image: cvast/cvast-letsencrypt:1.1
+#      volumes:
+#        - letsencrypt-acme-challenge:/var/www
+#        - letsencrypt:/etc/letsencrypt
+#        - letsencrypt-log:/var/log/letsencrypt
+#      command: get_certificate
+#      environment:
+#        - MODE=regular
+#        - LETSENCRYPT_EMAIL=info@example.com
+#        - DOMAIN_NAMES=localhost
+#        - PRODUCTION_MODE=False
+#        - PERSISTENT_MODE=True
+#        - TZ=PST
 
 volumes:
     arches-log:
+    arches-env:
     arches-static:
     couchdb-data:
     couchdb-log:
     postgres-data:
     postgres-log:
     elasticsearch-data:
-    letsencrypt:
-    letsencrypt-log:
-    letsencrypt-acme-challenge:
+#    letsencrypt:
+#    letsencrypt-log:
+#    letsencrypt-acme-challenge:
