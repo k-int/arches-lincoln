@@ -9,9 +9,11 @@ services:
       command: run_arches
       volumes:
         - ./lincoln:/web_root/lincoln
-        - ./arches:/web_root/arches
-#        - ./arches/docker/settings_local.py:/web_root/arches/arches/settings_local.py
+#        - ./arches:/web_root/arches
+        - ./arches/docker/settings_local.py:/web_root/arches/arches/settings_local.py
 #        - arches-log:/arches/arches/logs
+        - lincoln-packages:/web_root/lincoln/lincoln/media/packages
+        - lincoln-node_modules:/web_root/lincoln/lincoln/node_modules
         - arches-static:/static_root
       environment:
         - ARCHES_PROJECT=lincoln
@@ -118,6 +120,8 @@ volumes:
     arches-log:
     arches-env:
     arches-static:
+    lincoln-packages:
+    lincoln-node_modules:
 #    couchdb-data:
 #    couchdb-log:
     postgres-data:

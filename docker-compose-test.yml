@@ -1,0 +1,128 @@
+version: '2'
+services:
+    arches:
+      container_name: arches
+      image: archesproject/arches:latest
+      build:
+        context: ./arches
+        dockerfile: ./Dockerfile
+      command: run_arches
+      volumes:
+        - ./lincoln:/web_root/lincoln
+#        - ./arches:/web_root/arches
+        - ./arches/docker/settings_local.py:/web_root/arches/arches/settings_local.py
+#        - arches-log:/arches/arches/logs
+        - lincoln-test-arches-static:/static_root
+      environment:
+        - ARCHES_PROJECT=lincoln
+        - INSTALL_DEFAULT_GRAPHS=True
+        - INSTALL_DEFAULT_CONCEPTS=True
+        - PGUSERNAME=postgres
+        - PGPASSWORD=postgres
+        - PGDBNAME=arches
+        - PGHOST=db
+        - PGPORT=5432
+#        - COUCHDB_HOST=couchdb
+#        - COUCHDB_PORT=5984
+#        - COUCHDB_USER=admin
+#        - COUCHDB_PASS=password
+        - ESHOST=elasticsearch
+        - ESPORT=9200
+        - ELASTICSEARCH_PREFIX=lincoln
+        - DJANGO_MODE=DEV
+        - DJANGO_DEBUG=True
+        # - DJANGO_REMOTE_DEBUG=False
+        - DOMAIN_NAMES=localhost
+        - TZ=PST
+      ports:
+        - '8000:8000'
+      depends_on:
+        - db
+        - elasticsearch
+#        - couchdb
+
+    nginx:
+      container_name: nginx
+      image: cvast/cvast-nginx:1.2.0
+      restart: unless-stopped
+      ports:
+        - '80:80'
+        - '443:443'
+      volumes:
+        - lincoln-test-arches-static:/www/static
+        - lincoln-test-letsencrypt-acme-challenge:/var/www
+        - lincoln-test-letsencrypt:/etc/letsencrypt
+      environment:
+        - NGINX_PROXY_MODE=local
+        - NGINX_PROTOCOL=http
+        - LOCAL_PROXY_HOST=arches
+        - LOCAL_PROXY_PORT=8000
+        - DOMAIN_NAMES=localhost
+        - PUBLIC_MODE=False
+        - TZ=PST
+      depends_on:
+        - arches
+
+    db:
+      container_name: db
+      image: mdillon/postgis:9.6-alpine
+      volumes:
+          - lincoln-test-postgres-data:/var/lib/postgresql/data
+          - lincoln-test-postgres-log:/var/log/postgresql
+      ports:
+        - '54322:5432'
+      environment:
+        - POSTGRES_PASSWORD=postgres
+        - TZ=PST
+
+#    couchdb:
+#      container_name: couchdb
+#      image: couchdb:2.1.1
+#      ports:
+#        - "5984:5984"
+#      environment:
+#        COUCHDB_USER: admin
+#        COUCHDB_PASSWORD: password
+#      volumes:
+#        - lincoln-test-couchdb-data:/usr/local/var/lib/couchdb
+#        - lincoln-test-couchdb-log:/usr/local/var/log/couchdb
+
+    elasticsearch:
+      container_name: elasticsearch
+      image: elasticsearch:5.2
+      volumes:
+        - lincoln-test-elasticsearch-data:/usr/share/elasticsearch/data
+      ports:
+        - "9200:9200"
+        - "9300:9300"
+      environment:
+        - TZ=PST
+
+    letsencrypt:
+      container_name: letsencrypt
+      image: cvast/cvast-letsencrypt:1.1
+      volumes:
+        - lincoln-test-letsencrypt-acme-challenge:/var/www
+        - lincoln-test-letsencrypt:/etc/letsencrypt
+        - lincoln-test-letsencrypt-log:/var/log/letsencrypt
+      command: get_certificate
+      environment:
+        - MODE=regular
+        - LETSENCRYPT_EMAIL=info@example.com
+        - DOMAIN_NAMES=localhost
+        - PRODUCTION_MODE=False
+        - PERSISTENT_MODE=True
+        - TZ=PST
+
+volumes:
+    lincoln-test-arches-log:
+    lincoln-test-arches-env:
+    lincoln-test-arches-static:
+#    lincoln-test-couchdb-data:
+#    lincoln-test-couchdb-log:
+    lincoln-test-postgres-data:
+    lincoln-test-postgres-log:
+    lincoln-test-elasticsearch-data:
+    lincoln-test-letsencrypt:
+    lincoln-test-letsencrypt-log:
+    lincoln-test-letsencrypt-acme-challenge:
