@@ -1,9 +1,4 @@
 /* Bootstrap Vars */
-/**** HEADER ****/
-/**** Title Bar ****/
-/**** Footer ****/
-/*** HOME INTRO ***/
-/** HOME INTRO ABOUT **/
 .title-bar {
   background: #abafb5 none;
   color: #fff;
@@ -21,86 +16,6 @@
   color: #fff; }
 
 /* Include sub components for index page */
-body {
-  margin-top: 150px; }
-
-header {
-  display: block;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030;
-  background: #2c3647 none;
-  border: 5px solid #ce9b0a;
-  border-width: 0 0 5px 0;
-  padding: 0;
-  color: #fff;
-  min-height: 150px; }
-  header nav {
-    position: relative;
-    min-height: 150px;
-    font-size: 21px; }
-    header nav:before, header nav:after {
-      content: " ";
-      display: table; }
-    header nav:after {
-      clear: both; }
-  header .navbar-brand {
-    width: 100px;
-    height: 75px;
-    position: relative; }
-    header .navbar-brand img {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      bottom: 0;
-      margin: auto; }
-  header .navbar-nav {
-    float: right;
-    right: 0;
-    margin: 0;
-    bottom: 0;
-    position: absolute;
-    bottom: 0;
-    max-width: 65%; }
-    header .navbar-nav > li {
-      float: left; }
-      header .navbar-nav > li a {
-        color: #fff;
-        background: #2c3647 none; }
-        header .navbar-nav > li a:link, header .navbar-nav > li a:visited {
-          color: #fff;
-          background: #2c3647 none; }
-        header .navbar-nav > li a:active, header .navbar-nav > li a:hover {
-          background: #fff none;
-          color: #2c3647; }
-        header .navbar-nav > li a > i {
-          margin: 0;
-          padding: 0;
-          font-size: 20px;
-          line-height: inherit; }
-      header .navbar-nav > li.active a:link, header .navbar-nav > li.active a:visited {
-        background: #fff none;
-        color: #2c3647; }
-
-@media (min-width: 768px) {
-  header .navbar-brand {
-    width: 200px;
-    height: 150px; } }
-
-@media (min-width: 1200px) {
-  header {
-    text-align: center; }
-    header .navbar-brand {
-      float: none;
-      display: block;
-      position: absolute;
-      margin-left: -100px !important;
-      padding: 0;
-      left: 50%; }
-    header .navbar-nav {
-      max-width: 45%; } }
-
 footer {
   font-size: 9px;
   background: #5d5d5d none;

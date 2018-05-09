@@ -36,13 +36,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <meta name="author" content="">
 
     <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
-
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin' />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" />
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{% static 'css/arches.css' %}" />
     <link rel="stylesheet" href="{% static 'fontello/css/arches-arcade.css' %}" />
-    <link href="{% static 'css/index.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
 
 </head>
 
@@ -52,40 +49,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 -->
 
 <body id="top" data-spy="scroll" >
-  <!-- header -->
-  <header>
-    <nav role="nav" >
-      <div class="navbar-brand" ><img src="media/img/landing/arcade_logo.png" /></div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#intro" ><i class="aa-icon-home" aria-hidden="true"></i> About</a></li>
-        <li>
-          <a href="{% url 'search_home' %}">{% trans "Search" %}</a>
-        </li>
-        {% if user|can_create_resource_instance %}
-          <li>
-            <a href="{% url 'resource' %}">{% trans "Manage Data" %}</a>
-          </li>
-        {% endif %}
-        {% if user|has_group:"Graph Editor" %}
-        <li>
-          <a href="{% url 'graph' '' %}">{% trans "Design" %}</a>
-        </li>
-        {% endif %}
-        <!-- ko if: showAuthMenu -->
-          <li><a href="/user">User Profile</a></li>
-          <li><a href="/auth/?next=/index.htm">Logout</a></li>
-        <!-- /ko -->
-        
-        <!-- ko ifnor: showAuthMenu -->
-          <li><a href="r">Request Access</a></li>
-          <li><a href="/auth/?next=/index.htm">Login</a></li>
-        <!-- /ko -->
-      </ul>
-      <!-- /.navbar-nav -->
-    </nav>
-    <!-- /.navbar -->
-  </header>
-  <!-- /header -->
+  
+  {% include 'partials/site-header.htm' %}
 
   <!-- Intro Section -->
   <section class="intro" >

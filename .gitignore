@@ -1,6 +1,8 @@
 /.metadata/
 /ENV
 /screenshots
+/lincoln/_pkg*
+/node_modules
 .directory
 .project
-/lincoln/_pkg*
+/lincoln/lincoln/*.pyc

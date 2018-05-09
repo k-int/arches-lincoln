@@ -7,10 +7,10 @@ const express = require('express')
 const connectLivereload = require('connect-livereload')
 const path = require('path')
 
-const project_root = 'html'
-const css_out = `${project_root}/media/css/`
-const sass_globs = [`${project_root}/media/scss/**/*.scss`]
-const reload_globs = [`${css_out}**/*.css`, `${project_root}/index.html`]
+const project_root = '.'
+const css_out = `${project_root}/lincoln/lincoln/media/css/`
+const sass_globs = ['scss/**/*.scss']
+const reload_globs = [`${css_out}**/*.css`, `${project_root}/static_html/index.html`]
 
 const EXPRESS_PORT = 4000
 const LIVERELOAD_PORT = 35729

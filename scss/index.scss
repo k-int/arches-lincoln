@@ -1,12 +1,11 @@
 /* Bootstrap Vars */
-@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 @import "variables";
 @import "utils";
 
 /* Include sub components for index page */
-@import "components/header";
 @import "components/footer";
 @import "components/home_intro";
 @import "components/home_blurb";

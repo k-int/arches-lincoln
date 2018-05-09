@@ -8,6 +8,7 @@ import os
 DEBUG = True
 
 # If running in docker, ensure that these settings match those in your docker compose file.
+ALLOWED_HOSTS = ['localhost', '10.0.2.2']
 DATABASES = {
     "default": {
         "ATOMIC_REQUESTS": False,
