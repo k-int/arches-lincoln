@@ -2,17 +2,9 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 @import "variables";
-    
-#main-container {
-  overflow-y: auto;
-}
 
 body {
   margin-top: $header-img-height;
-  
-//   &.scroll-y-auto {
-//     overflow-y: hidden;
-//   }
   
   > header {
     display:block;
