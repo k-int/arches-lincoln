@@ -94,12 +94,12 @@ section.blurb {
     positition: relative; }
     .col-layout .callouts > div > h4[class^="aa-icon-"]:before, .col-layout .callouts > div > h4[class*=" aa-icon-"]:before {
       position: absolute;
-      font-size: 3em;
+      font-size: 54px;
       left: -1.5em;
       margin-top: -0.1em; }
       @media (min-width: 768px) {
         .col-layout .callouts > div > h4[class^="aa-icon-"]:before, .col-layout .callouts > div > h4[class*=" aa-icon-"]:before {
-          font-size: 6em; } }
+          font-size: 108px; } }
 
 /** Index only typography **/
 body {

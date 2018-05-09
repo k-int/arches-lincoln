@@ -25,13 +25,13 @@
         &[class*=" aa-icon-"]:before {
           
           position: absolute;
-          font-size: 3em;
+          font-size: $font-size-h4 * 3;
           left: -1.5em;
           margin-top:-0.1em;
         
           @media (min-width: $screen-sm-min) {
             
-            font-size: 6em;
+            font-size: $font-size-h4 * 6;
           } 
         }
       }
