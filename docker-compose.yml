@@ -61,8 +61,8 @@ services:
       ports:
         - "5984:5984"
       environment:
-        - COUCHDB_USER: admin
-        - COUCHDB_PASSWORD: password
+        - COUCHDB_USER=admin
+        - COUCHDB_PASSWORD=password
         - TZ=UTC
       volumes:
         - couchdb-data:/usr/local/var/lib/couchdb
