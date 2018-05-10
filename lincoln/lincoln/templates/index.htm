@@ -124,7 +124,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <!-- ./search-styles -->
   
   <!--Title bar -->
-  <div class="title-bar">
+  <div id="about-arcade" class="title-bar">
     <div class="container" >
       <h2 class="aa-icon-help-circled">{% trans "Help / Project info"  %}</h2>
     </div>
@@ -137,9 +137,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         <div class="col-md-6">
           <h3>{% trans "About Arcade" %}</h3>
           <h4>{% trans "Who was involved?" %}</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla scelerisque fringilla. Mauris magna massa, interdum non massa 
-            ut, pellentesque laoreet urna. Vivamus vel facilisis dolor, ac tincidunt metus. Sed lobortis dui ex. Aliquam ultrices diam sed erat rhoncus,
-            vel lacinia magna vulputate. Vivamus consequat cursus velit, id lobortis ipsum tempor id. Nam quis molestie mi.</p>
+          <p>Arcade is the result of a partnership between the City of Lincoln Council and the Getty Conservation Institute,
+            with the assistance of Historic England. It is powered by Arches, an open source heritage data management platform developed by 
+            the Getty Conservation Institute and the World Monuments Fund.</p>
         </div>
         <div class="col-md-5 col-md-offset-1 callouts">
           <div>
@@ -164,7 +164,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         Lincoln<br />
         LN1 1DD<br />
         Phone: 01522 881188<br />
-        Web: www.lincoln.gov.uk</p>
+        Web: <a href="http://www.lincoln.gov.uk">www.lincoln.gov.uk</a></p>
     </div>
   </section>
   <!-- ./contact -->
@@ -178,7 +178,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
           <li><img src="{% static 'img/landing/getty_white.png' %}" /></li>
           <li><img src="{% static 'img/landing/arches_white.png' %}" /></li>
         </ul>
-        <p>&copy; 2018 Lincoln City Council. ARCADE is powered by Arches (v3.1), an open-source,
+        <p>&copy; 2018 Lincoln City Council. ARCADE is powered by Arches ({{ app_settings.VERSION }}), an open-source,
           web-based, geospatial information system for cultural heritage inventory and management.</p>
         <p>Arches, Arches Project, and the Arches logo are trademarks of the J. Paul Getty Trust and World Monuments Fund. </p>
       </div>
@@ -192,18 +192,12 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <script src="{% static 'packages/knockout/build/output/knockout-latest.js' %}"></script>
 
 
-  <script>
-    var ViewModel = function(first, last) {
-      this.showAuthMenu = ko.observable(false);
-    };
-    ko.applyBindings(new ViewModel());
-    
-    
+  <script>    
     // Scrolling offset..
     (function($) {
       $(document).ready(function() {
         var offset = $('header').outerHeight() || 0;
-        $('body').scrollspy({offset: offset});
+        $('body').scrollspy({offset: (offset)});
         if (offset != 0) {
           $('a').each(function(){
             var me = $(this);
@@ -214,7 +208,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 var hash = this.hash;
                 <!-- window.location.hash = this.hash -->
                 $('html, body').animate({
-                  scrollTop: ($(hash).offset().top -offset)
+                  scrollTop: ($(hash).offset().top - (offset - 1))
                 }, 800);
               });
             }

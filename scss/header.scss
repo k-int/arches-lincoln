@@ -55,12 +55,13 @@ body {
             background: $header-text-color none;
             color: $header-background;
           }
-          
-          & > i {
-            margin:0;
-            padding:0;
-            font-size: (floor(($font-size-base * 1.5)) - 1px);
-            line-height: inherit;
+          $lineHeight: floor(($font-size-base * 1.4));
+          font-size: $lineHeight;
+          line-height: $lineHeight;
+          & > * {
+            margin:0 0 0 0;
+            font-size: $lineHeight - 1px;
+            line-height: $lineHeight - 1px;
           }
         }
         
@@ -108,12 +109,4 @@ body {
       max-width: 45%;
     }
   }
-}
-.ep-toolbar {
-//   height: 55px;
-  padding-top:5px;
-}
-
-#mainnav-container {
-  top:0;
 }
