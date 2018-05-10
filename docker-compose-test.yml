@@ -57,7 +57,7 @@ services:
         - lincoln-letsencrypt:/etc/letsencrypt
       environment:
         - NGINX_PROXY_MODE=local
-        - NGINX_PROTOCOL=http
+        - NGINX_PROTOCOL=strict-https
         - LOCAL_PROXY_HOST=arches
         - LOCAL_PROXY_PORT=8000
         - DOMAIN_NAMES=arcade-test.lincoln.gov.uk
