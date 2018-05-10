@@ -75,7 +75,7 @@ ALLOWED_HOSTS = get_env_variable('DOMAIN_NAMES').split()
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'lincoln.wsgi.application'
-STATIC_ROOT = '/var/www/media'
+STATIC_ROOT = '/static_root'
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
