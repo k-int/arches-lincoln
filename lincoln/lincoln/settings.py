@@ -92,7 +92,10 @@ TILE_CACHE_CONFIG = {
 PREFERRED_COORDINATE_SYSTEMS = (
     {"name": "Geographic", "srid": "4326", "proj4": "+proj=longlat +datum=WGS84 +no_defs", "default": True}, #Required
 )
-DATE_IMPORT_EXPORT_FORMAT = '%Y-%m-%d'
+# DATE_IMPORT_EXPORT_FORMAT = '%Y-%m-%d'
+
+DATE_IMPORT_EXPORT_FORMAT = '%d/%m/%Y'
+ANALYSIS_COORDINATE_SYSTEM_SRID = 27700
 
 try:
     from settings_local import *

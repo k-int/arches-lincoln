@@ -23,23 +23,19 @@
 
     {% block body %}
     <!-- ko foreach: { data: report.activeForms, as: 'form' } -->
-      <!-- ko if: form.cards.length > 0 -->
-        <div class="rp-report-section relative">
-          <div class="rp-report-section-title">
-              <h4 class="rp-section-title" data-bind="text: form.label"></h4>
-          </div>
-  
-          <!-- ko foreach: { data: form.cards, as: 'card' } -->
-             <!-- ko let: { tiles: card.get('tiles')() } -->
-                <!-- ko if: tiles.length > 0 -->
-                  <div class="rp-card-section">
-                    <!-- ko template: 'card-report' --> <!-- /ko -->
-                  </div>
-                <!-- /ko -->
-             <!-- /ko -->
-          <!-- /ko -->
+    <div class="rp-report-section relative">
+        <div class="rp-report-section-title">
+            <h4 class="rp-section-title" data-bind="text: form.label"></h4>
         </div>
-      <!-- /ko -->
+
+        <!-- ko foreach: { data: form.cards, as: 'card' } -->
+        <div class="rp-card-section">
+            <!-- ko let: { tiles: card.get('tiles')() } -->
+                <!-- ko template: 'card-report' --> <!-- /ko -->
+             <!-- /ko -->
+        </div>
+        <!-- /ko -->
+    </div>
     <!-- /ko -->
 
     <template id="card-report">
@@ -86,14 +82,18 @@
         <!-- /ko -->
 
         <!-- ko if: tiles.length === 0 -->
-        <div class="row rp-report-tile rp-no-data">
-        <!-- ko ifnot: card.get('cardid') -->
-            {% trans "Sorry, you don't have access to this information" %}
-        <!-- /ko -->
-        <!-- ko if: card.get('cardid') -->
-            {% trans "No data added yet for" %} "<span data-bind="text: card.get('name')"></span>"
-        <!-- /ko -->
-        </div>
+          <!-- ko if: card.get('cardid') -->
+            <h4 class="rp-tile-title"><span class="rp-tile-title-float" data-bind="text: card.get('name')"></span></h4>
+            <div class="rp-report-container-tile rp-no-data">
+              <span class="text-muted">None</span>
+            </div>
+          <!-- /ko -->
+          
+          <!-- ko ifnot: card.get('cardid') -->
+            <div class="rp-report-tile">
+              {% trans "Sorry, you don't have access to this information" %}
+            </div>
+          <!-- /ko -->
         <!-- /ko -->
     </template>
 
@@ -122,9 +122,9 @@
         </div>
         <!-- /ko -->
         <!--ko if: rr.related.length === 0 -->
-        <div class="rp-report-container-tile">
-            <div class="row rp-report-tile rp-no-data">{% trans 'No relationships added' %}</div>
-        </div>
+          <div class="rp-report-container-tile rp-no-data">
+            <span class="text-muted">{% trans 'None' %}</span>
+          </div>
         <!--/ko-->
     </div>
     <!-- /ko -->
