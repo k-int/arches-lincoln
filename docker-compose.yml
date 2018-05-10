@@ -2,7 +2,7 @@ version: '2'
 services:
     arches:
       container_name: arches
-      image: archesproject/arches:latest
+      image: archesproject/arches:master
       build:
         context: ./arches
         dockerfile: ./Dockerfile
@@ -34,36 +34,14 @@ services:
         - DJANGO_MODE=DEV
         - DJANGO_DEBUG=True
         # - DJANGO_REMOTE_DEBUG=False
-        - DOMAIN_NAMES=localhost,10.0.2.2
-        - TZ=PST
+        - DOMAIN_NAMES=localhost
+        - TZ=UTC
       ports:
         - '8000:8000'
       depends_on:
         - db
         - elasticsearch
-#        - couchdb
-
-#    nginx:
-#      container_name: nginx
-#      image: cvast/cvast-nginx:1.2.0
-#      restart: unless-stopped
-#      ports:
-#        - '8088:80'
-#        - '443:443'
-#      volumes:
-#        - arches-static:/www/static
-#        - letsencrypt-acme-challenge:/var/www
-#        - letsencrypt:/etc/letsencrypt
-#      environment:
-#        - NGINX_PROXY_MODE=local
-#        - NGINX_PROTOCOL=http
-#        - LOCAL_PROXY_HOST=arches
-#        - LOCAL_PROXY_PORT=8000
-#        - DOMAIN_NAMES=localhost
-#        - PUBLIC_MODE=False
-#        - TZ=PST
-#      depends_on:
-#        - arches
+        - couchdb
 
     db:
       container_name: db
@@ -75,7 +53,7 @@ services:
         - '54322:5432'
       environment:
         - POSTGRES_PASSWORD=postgres
-        - TZ=PST
+        - TZ=UTC
 
     couchdb:
       container_name: couchdb
@@ -83,8 +61,9 @@ services:
       ports:
         - "5984:5984"
       environment:
-        COUCHDB_USER: admin
-        COUCHDB_PASSWORD: password
+        - COUCHDB_USER: admin
+        - COUCHDB_PASSWORD: password
+        - TZ=UTC
       volumes:
         - couchdb-data:/usr/local/var/lib/couchdb
         - couchdb-log:/usr/local/var/log/couchdb
@@ -98,27 +77,11 @@ services:
         - "9200:9200"
         - "9300:9300"
       environment:
-        - TZ=PST
+        - TZ=UTC
 
-#    letsencrypt:
-#      container_name: letsencrypt
-#      image: cvast/cvast-letsencrypt:1.1
-#      volumes:
-#        - letsencrypt-acme-challenge:/var/www
-#        - letsencrypt:/etc/letsencrypt
-#        - letsencrypt-log:/var/log/letsencrypt
-#      command: get_certificate
-#      environment:
-#        - MODE=regular
-#        - LETSENCRYPT_EMAIL=info@example.com
-#        - DOMAIN_NAMES=localhost
-#        - PRODUCTION_MODE=False
-#        - PERSISTENT_MODE=True
-#        - TZ=PST
 
 volumes:
     arches-log:
-    arches-env:
     arches-static:
     lincoln-packages:
     lincoln-node_modules:
@@ -127,6 +90,3 @@ volumes:
     postgres-data:
     postgres-log:
     elasticsearch-data:
-#    letsencrypt:
-#    letsencrypt-log:
-#    letsencrypt-acme-challenge:
