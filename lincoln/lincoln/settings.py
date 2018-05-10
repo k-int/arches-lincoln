@@ -37,10 +37,11 @@ DATABASES = {
         "AUTOCOMMIT": True,
         "CONN_MAX_AGE": 0,
         "ENGINE": "django.contrib.gis.db.backends.postgis",
-        "HOST": "localhost",
-        "NAME": "lincoln",
+        "HOST": "db",
+        "NAME": "arches",
         "OPTIONS": {},
-        "PASSWORD": "postgis",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
         "PORT": "5432",
         "POSTGIS_TEMPLATE": "template_postgis_20",
         "TEST": {
@@ -49,8 +50,7 @@ DATABASES = {
             "MIRROR": None,
             "NAME": None
         },
-        "TIME_ZONE": None,
-        "USER": "postgres"
+        "TIME_ZONE": None
     }
 }
 
@@ -88,6 +88,11 @@ TILE_CACHE_CONFIG = {
     # "access": "<access key>",
     # "secret": "<secret key>"
 }
+
+PREFERRED_COORDINATE_SYSTEMS = (
+    {"name": "Geographic", "srid": "4326", "proj4": "+proj=longlat +datum=WGS84 +no_defs", "default": True}, #Required
+)
+DATE_IMPORT_EXPORT_FORMAT = '%Y-%m-%d'
 
 try:
     from settings_local import *
