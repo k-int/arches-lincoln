@@ -88,7 +88,7 @@ services:
         - COUCHDB_PASSWORD=password
         - TZ=UTC
       volumes:
-        - lincoln-lincoln-couchdb-data:/usr/local/var/lib/couchdb
+        - lincoln-couchdb-data:/usr/local/var/lib/couchdb
         - lincoln-couchdb-log:/usr/local/var/log/couchdb
 
     elasticsearch:
