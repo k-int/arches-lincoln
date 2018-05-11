@@ -105,6 +105,9 @@ TILE_CACHE_CONFIG = {
     # "secret": "<secret key>"
 }
 
+APP_NAME = 'Arcade'
+APP_TITLE = 'Arcade'
+
 PREFERRED_COORDINATE_SYSTEMS = (
     {"name": "Geographic", "srid": "4326", "proj4": "+proj=longlat +datum=WGS84 +no_defs", "default": True}, #Required
 )
