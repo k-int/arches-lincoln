@@ -74,13 +74,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
       <div class="row callouts" >
         <div class="col-md-4" >
-          <a class="btn btn-outline btn-default" href="#search-styles" role="button"><i class="aa-icon-map" ></i>{% trans "Map Search &gt;"  %}</a>
+          <a class="btn btn-outline btn-default" href="{% url 'search_home' %}" role="button"><i class="aa-icon-map" ></i>{% trans "Map Search &gt;" %}</a>
         </div>
         <div class="col-md-4" >
-          <a class="btn btn-outline btn-default" href="#search-styles" role="button"><i class="aa-icon-stopwatch" ></i>{% trans "Time Search &gt;"  %}</a>
+          <a class="btn btn-outline btn-default" href="{% url 'search_home' %}?selected_filter=timeFilter" role="button"><i class="aa-icon-stopwatch" ></i>{% trans "Time Search &gt;" %}</a>
         </div>
         <div class="col-md-4" >
-          <a class="btn btn-outline btn-default" href="#search-styles" role="button"><i class="aa-icon-relationship" ></i>{% trans "Relationships &gt;"  %}</a>
+          <a class="btn btn-outline btn-default" href="{% url 'search_home' %}?selected_filter=advancedFilter" role="button"><i class="aa-icon-relationship" ></i>{% trans "Advanced Search &gt;" %}</a>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
           </div>
           <div id="time-search" >
             <h4 class="aa-icon-stopwatch" >{% trans "Time Search" %}</h4>
-            <p>{% trans 'Use our innovative "Time Wheel" to narrow down your search by the century or the decade. Or pick a start date and an end dateto define a period of your choice' %}</p>
+            <p>{% trans 'Use our innovative "Time Wheel" to narrow down your search by the century or the decade. Or pick a start date and an end date to define a period of your choice' %}</p>
           </div>
           <div id="relationships" >
             <h4 class="aa-icon-relationship" >{% trans "Relationships" %}</h4>
@@ -158,7 +158,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <section class="background-secondary">
     <div class="container">
       <h3>{% trans "Get in Touch" %}</h3>
-      <p>Lincoln County Council<br />
+      <p>City of Lincoln Council<br />
         City Hall<br />
         Beaumont Fee<br />
         Lincoln<br />
@@ -178,7 +178,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
           <li><img src="{% static 'img/landing/getty_white.png' %}" /></li>
           <li><img src="{% static 'img/landing/arches_white.png' %}" /></li>
         </ul>
-        <p>&copy; 2018 Lincoln City Council. ARCADE is powered by Arches ({{ app_settings.VERSION }}), an open-source,
+        <p>&copy; 2018 City of Lincoln Council. ARCADE is powered by Arches ({{ app_settings.VERSION }}), an open-source,
           web-based, geospatial information system for cultural heritage inventory and management.</p>
         <p>Arches, Arches Project, and the Arches logo are trademarks of the J. Paul Getty Trust and World Monuments Fund. </p>
       </div>
