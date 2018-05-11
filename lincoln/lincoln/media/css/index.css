@@ -43,21 +43,21 @@ section.intro .image {
     background: rgba(44, 54, 71, 0.5) none;
     color: #fff;
     padding: 15px 0 5px 0;
-    font-size: 23px; }
+    font-size: 21px; }
     section.intro .image .caption > .container {
       position: relative; }
       section.intro .image .caption > .container > div:before {
         color: rgba(44, 54, 71, 0.5);
         position: absolute;
         left: 0;
-        top: -269.5px;
-        font-size: 269.5px;
+        top: -271.5px;
+        font-size: 271.5px;
         margin: 0; }
 
 section.blurb {
   background: #2c3647 none;
   color: #fff;
-  font-size: 13.8px;
+  font-size: 12.6px;
   padding: 20px 0 60px 0; }
   section.blurb .btn {
     background-color: #565e6c;

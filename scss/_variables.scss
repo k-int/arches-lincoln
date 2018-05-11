@@ -34,7 +34,7 @@ $intro-max-height: 500px;
 
 $intro-caption-padding-top: ($line-height-computed * 0.75);
 $intro-caption-padding-bottom: ($line-height-computed * 0.25);
-$intro-caption-font-size: floor(($font-size-base * 1.7));
+$intro-caption-font-size: floor(($font-size-base * 1.5));
 $intro-icon-color: $overlay-background;
 $intro-icon-overlay-size: $intro-max-height - $header-img-height - ($intro-caption-padding-top * 2.5) - $intro-caption-font-size - (4 * $intro-border-width);
 $intro-icon-overlay-top: -$intro-icon-overlay-size;
