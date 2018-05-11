@@ -1,0 +1,66 @@
+/* Bootstrap Vars */
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+// @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+@import "variables";
+// @import "utils";
+
+html {
+  overflow: hidden;
+}
+
+$panelHeight: (50px + $header-img-height + $header-border-width);
+
+body {
+  overflow-x: auto;
+  overflow-y: auto;
+  height:100%;
+  margin-top: $header-img-height + $header-border-width;
+}
+
+#mainnav-menu-wrap {
+  padding:5px 0 0 0;
+}
+
+.content-panel {
+  height: calc(100vh -  #{$panelHeight});
+}
+
+.search-control-container {
+  padding-bottom: 10px;
+}
+
+.card-form-preview-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.map-search-container {
+  height: calc(100vh - #{$panelHeight + 60px});
+  
+    .map-search-container div .map-widget-panel {
+    
+    height: calc(100vh - #{$panelHeight + 60px});
+  }
+}
+
+
+.saved-search-container,
+.saved-search-grid,
+.facets-search-container,
+.search-facets{
+  height: calc(100vh - #{$panelHeight + 65px}) !important;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.saved-search-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.widget-wrapper .mapboxgl-map {
+    margin-bottom: -20px;
+}
+
+

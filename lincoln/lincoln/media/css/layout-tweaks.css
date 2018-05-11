@@ -1,0 +1,42 @@
+/* Bootstrap Vars */
+html {
+  overflow: hidden; }
+
+body {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 100%;
+  margin-top: 155px; }
+
+#mainnav-menu-wrap {
+  padding: 5px 0 0 0; }
+
+.content-panel {
+  height: calc(100vh -  205px); }
+
+.search-control-container {
+  padding-bottom: 10px; }
+
+.card-form-preview-container {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.map-search-container {
+  height: calc(100vh - 265px); }
+  .map-search-container .map-search-container div .map-widget-panel {
+    height: calc(100vh - 265px); }
+
+.saved-search-container,
+.saved-search-grid,
+.facets-search-container,
+.search-facets {
+  height: calc(100vh - 270px) !important;
+  overflow-y: auto;
+  min-height: 0; }
+
+.saved-search-container {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.widget-wrapper .mapboxgl-map {
+  margin-bottom: -20px; }
