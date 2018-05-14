@@ -9,13 +9,13 @@ html {
   overflow: hidden;
 }
 
-$panelHeight: (50px + $header-img-height + $header-border-width);
+$panelHeight: (50px + $header-img-height-secondary + $header-border-width);
 
 body {
   overflow-x: auto;
   overflow-y: auto;
   height:100%;
-  margin-top: $header-img-height + $header-border-width;
+  margin-top: $header-img-height-secondary + $header-border-width;
 }
 
 #mainnav-menu-wrap {

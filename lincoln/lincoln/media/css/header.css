@@ -1,5 +1,5 @@
 body {
-  margin-top: 100px; }
+  margin-top: 150px; }
   body > header {
     display: block;
     position: fixed;
@@ -11,10 +11,10 @@ body {
     border-width: 0 0 5px 0;
     padding: 0;
     color: #fff;
-    min-height: 100px; }
+    min-height: 112px; }
     body > header nav {
       position: relative;
-      min-height: 100px;
+      min-height: 112px;
       font-size: 14px; }
       body > header nav:before, body > header nav:after {
         content: " ";
@@ -22,8 +22,9 @@ body {
       body > header nav:after {
         clear: both; }
     body > header .navbar-brand {
-      width: 133px;
-      height: 100px;
+      margin-left: 37px;
+      width: 150px;
+      height: 112px;
       position: relative; }
       body > header .navbar-brand img {
         position: absolute;
@@ -34,7 +35,7 @@ body {
     body > header .navbar-nav {
       float: right;
       right: 0;
-      margin: 0;
+      margin: 0 0 0 0;
       bottom: 0;
       position: absolute;
       bottom: 0;
@@ -59,3 +60,29 @@ body {
         body > header .navbar-nav > li.active a:link, body > header .navbar-nav > li.active a:visited {
           background: #fff none;
           color: #2c3647; }
+  body.home-page > header nav {
+    position: relative; }
+  body.home-page > header .navbar-brand {
+    margin-left: 0;
+    width: 150px;
+    height: 112px; }
+  @media (min-width: 768px) {
+    body.home-page > header {
+      min-height: 150px; }
+      body.home-page > header nav {
+        min-height: 150px; }
+      body.home-page > header .navbar-brand {
+        width: 200px;
+        height: 150px; } }
+  @media (min-width: 1200px) {
+    body.home-page > header {
+      text-align: center; }
+      body.home-page > header .navbar-brand {
+        float: none;
+        display: block;
+        position: absolute;
+        margin-left: -100px !important;
+        padding: 0;
+        left: 50%; }
+      body.home-page > header .navbar-nav {
+        max-width: 45%; } }

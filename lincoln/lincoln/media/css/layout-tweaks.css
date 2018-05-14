@@ -6,13 +6,13 @@ body {
   overflow-x: auto;
   overflow-y: auto;
   height: 100%;
-  margin-top: 105px; }
+  margin-top: 117px; }
 
 #mainnav-menu-wrap {
   padding: 5px 0 0 0; }
 
 .content-panel {
-  height: calc(100vh -  155px); }
+  height: calc(100vh -  167px); }
 
 .search-control-container {
   padding-bottom: 10px; }
@@ -22,15 +22,15 @@ body {
   overflow-x: hidden; }
 
 .map-search-container {
-  height: calc(100vh - 215px); }
+  height: calc(100vh - 227px); }
   .map-search-container .map-search-container div .map-widget-panel {
-    height: calc(100vh - 215px); }
+    height: calc(100vh - 227px); }
 
 .saved-search-container,
 .saved-search-grid,
 .facets-search-container,
 .search-facets {
-  height: calc(100vh - 220px) !important;
+  height: calc(100vh - 232px) !important;
   overflow-y: auto;
   min-height: 0; }
 

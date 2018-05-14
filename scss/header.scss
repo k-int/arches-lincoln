@@ -17,17 +17,18 @@ body {
     border-width: 0 0 $header-border-width 0;
     padding: 0;
     color: $header-text-color;
-    min-height: $header-img-height;
+    min-height: $header-img-height-secondary;
   
     nav {
       position: relative;
-      min-height: $header-img-height;
+      min-height: $header-img-height-secondary;
       font-size: floor($font-size-base);
       @include clearfix;
     }
   
     .navbar-brand {
-      @include size($header-img-width, $header-img-height);
+      margin-left: 37px;
+      @include size($header-img-width-secondary, $header-img-height-secondary);
       position:relative;
       img {
         position:absolute;
@@ -39,6 +40,15 @@ body {
     }
   
     .navbar-nav {
+      
+      float:right;
+      right:0;
+      margin:0 0 0 0;
+      bottom:0;
+      position: absolute;
+      bottom:0;
+      max-width: 65%;
+      
       > li {
         float:left;
         
@@ -73,39 +83,48 @@ body {
         }     
         
       }
-      float:right;
-      right:0;
-      margin:0;
-      bottom:0;
-      position: absolute;
-      bottom:0;
-      max-width: 65%;
+    }
+  }
+
+  // Homepage only twaeks to the header.
+  &.home-page {
+    > header {
+      
+      nav {
+        position: relative;
+      }
+      .navbar-brand {
+        margin-left: 0;
+        @include size($header-img-width-secondary, $header-img-height-secondary);
+      }
+    
+      // Responsive styles.
+      @media (min-width: $screen-sm-min) {
+        
+        min-height: $header-img-height;
+        nav {
+          min-height: $header-img-height;
+        }
+        .navbar-brand {
+          @include size($header-img-width, $header-img-height);
+        }
+      }
+  
+      @media (min-width: $screen-lg-min) {
+        text-align: center;
+    
+        .navbar-brand {
+          float: none;
+          display: block;
+          position: absolute;
+          margin-left: -($header-img-width / 2) !important;
+          padding: 0;
+          left: 50%;
+        }
+        .navbar-nav {
+          max-width: 45%;
+        }
+      } 
     }
   }
 }
-
-// @media (min-width: $screen-sm-min) {
-//   body > header {
-//     .navbar-brand {
-//       @include size($header-img-width, $header-img-height);
-//     }
-//   }
-// }
-
-// @media (min-width: $screen-lg-min) {
-//   body > header {
-//     text-align: center;
-// 
-//     .navbar-brand {
-//       float: none;
-//       display: block;
-//       position: absolute;
-//       margin-left: -($header-img-width / 2) !important;
-//       padding: 0;
-//       left: 50%;
-//     }
-//     .navbar-nav {
-//       max-width: 45%;
-//     }
-//   }
-// }

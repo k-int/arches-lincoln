@@ -14,8 +14,11 @@ $header-background: $brand-primary;
 $header-text-color: $inverse-text-color;
 $header-border-color: $brand-secondary;
 $header-border-width: 5px;
-$header-img-height: 100px;
-$header-img-width: 133px;
+$header-img-height: 150px;
+$header-img-width: 200px;
+$header-img-secondary-ratio:0.75;
+$header-img-height-secondary: floor($header-img-height * $header-img-secondary-ratio);
+$header-img-width-secondary: floor($header-img-width * $header-img-secondary-ratio);
 $header-nav-text-size: floor(($font-size-base * 1.2));
 
 // Title Bar
