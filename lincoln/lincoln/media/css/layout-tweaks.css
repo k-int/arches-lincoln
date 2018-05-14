@@ -1,4 +1,3 @@
-/* Bootstrap Vars */
 html {
   overflow: hidden; }
 
@@ -23,6 +22,9 @@ body {
 
 .map-search-container {
   height: calc(100vh - 190px); }
+  .map-search-container.expanded-edit-map {
+    top: 130px;
+    height: calc(100vh - 130px); }
   .map-search-container .map-search-container div .map-widget-panel {
     height: calc(100vh - 190px); }
 

@@ -1,9 +1,6 @@
-/* Bootstrap Vars */
+// Bootstrap Vars
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-// @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-
 @import "variables";
-// @import "utils";
 
 html {
   overflow: hidden;
@@ -31,15 +28,19 @@ body {
 }
 
 .card-form-preview-container {
-    overflow-y: auto;
-    overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .map-search-container {
   height: calc(100vh - #{$panelHeight + 60px});
   
-  .map-search-container div .map-widget-panel {
+  &.expanded-edit-map {
+    top: $panelHeight;
+    height: calc(100vh - #{$panelHeight});
+  }
   
+  .map-search-container div .map-widget-panel {
     height: calc(100vh - #{$panelHeight + 60px});
   }
 }
@@ -60,5 +61,5 @@ body {
 }
 
 .widget-wrapper .mapboxgl-map {
-    margin-bottom: -20px;
+  margin-bottom: -20px;
 }
