@@ -338,12 +338,30 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 {% block pre_require_js %}
   <script>
     {% autoescape off %}
+    
+    // Add the core JS shims. This should not be necessary, but es specifics in core arches JS
+    // means we need this here for things to work in IE.
+    require.config({
+      paths: {
+        'core-js': 'https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.6/shim.min',
+        'dom-4': 'https://cdnjs.cloudflare.com/ajax/libs/dom4/3.0.0/dom4'
+      }
+    });
+    
+    // Shim
+    require(['core-js', 'dom-4'], function () {
+      // Simply do nothing here. The shims should be applied by the dependency declaration.
+      console.log("Shims applied");
+      return true;
+    });
+    
     define('view-data', [], function () {
       return {
         graphs: {{graphs}},
         createableResources: {{createable_resources}}
       };
     });
+    
     {% endautoescape %}
   </script>
 {% endblock pre_require_js %}

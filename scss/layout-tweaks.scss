@@ -38,8 +38,8 @@ body {
 .map-search-container {
   height: calc(100vh - #{$panelHeight + 60px});
   
-    .map-search-container div .map-widget-panel {
-    
+  .map-search-container div .map-widget-panel {
+  
     height: calc(100vh - #{$panelHeight + 60px});
   }
 }
@@ -62,5 +62,3 @@ body {
 .widget-wrapper .mapboxgl-map {
     margin-bottom: -20px;
 }
-
-
