@@ -7,8 +7,20 @@ body {
   height: 100%;
   margin-top: 80px; }
 
-#mainnav-container {
+#mainnav-container,
+#mainnav {
   background-color: #2c3647; }
+
+#mainnav-container #mainnav #mainnav-menu a:hover {
+  -webkit-box-shadow: inset 4px 0 0 0 #ce9b0a;
+  box-shadow: inset 4px 0 0 0 #ce9b0a; }
+
+#mainnav-container #mainnav #mainnav-menu > .active-sub > a,
+#mainnav-container #mainnav #mainnav-menu > .active-sub a:hover,
+#mainnav-container #mainnav #mainnav-menu > .active-link > a,
+#mainnav-container #mainnav #mainnav-menu > .active-link a:hover {
+  background-color: #ce9b0a;
+  color: #2c3647; }
 
 #mainnav-menu-wrap {
   padding: 5px 0 0 0; }

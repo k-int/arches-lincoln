@@ -15,8 +15,22 @@ body {
   margin-top: $header-img-height-secondary + $header-border-width;
 }
 
-#mainnav-container {
+#mainnav-container,
+#mainnav {
   background-color: $brand-primary;
+}
+#mainnav-container #mainnav #mainnav-menu {
+  a:hover {
+    box-shadow:inset 4px 0 0 0 $brand-secondary;
+  }
+  > .active-sub,
+  > .active-link {
+     > a,
+     a:hover {
+       background-color: $brand-secondary;
+       color: $brand-primary;
+     }
+  }
 }
 
 #mainnav-menu-wrap {
