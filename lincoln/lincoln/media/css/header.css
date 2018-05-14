@@ -11,10 +11,10 @@ body {
     border-width: 0 0 5px 0;
     padding: 0;
     color: #fff;
-    min-height: 112px; }
+    min-height: 75px; }
     body > header nav {
       position: relative;
-      min-height: 112px;
+      min-height: 75px;
       font-size: 14px; }
       body > header nav:before, body > header nav:after {
         content: " ";
@@ -23,8 +23,8 @@ body {
         clear: both; }
     body > header .navbar-brand {
       margin-left: 37px;
-      width: 150px;
-      height: 112px;
+      width: 100px;
+      height: 75px;
       position: relative; }
       body > header .navbar-brand img {
         position: absolute;
@@ -64,8 +64,8 @@ body {
     position: relative; }
   body.home-page > header .navbar-brand {
     margin-left: 0;
-    width: 150px;
-    height: 112px; }
+    width: 100px;
+    height: 75px; }
   @media (min-width: 768px) {
     body.home-page > header {
       min-height: 150px; }
