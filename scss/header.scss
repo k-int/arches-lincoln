@@ -22,12 +22,12 @@ body {
     nav {
       position: relative;
       min-height: $header-img-height;
-      font-size: floor(($font-size-base * 1.5));
+      font-size: floor($font-size-base);
       @include clearfix;
     }
   
     .navbar-brand {
-      @include size(floor($header-img-width * 0.5), floor($header-img-height * 0.5));
+      @include size($header-img-width, $header-img-height);
       position:relative;
       img {
         position:absolute;
@@ -55,13 +55,12 @@ body {
             background: $header-text-color none;
             color: $header-background;
           }
-          $lineHeight: floor(($font-size-base * 1.4));
-          font-size: $lineHeight;
-          line-height: $lineHeight;
+          font-size: $header-nav-text-size;
+          line-height: $header-nav-text-size;
           & > * {
             margin:0 0 0 0;
-            font-size: $lineHeight - 1px;
-            line-height: $lineHeight - 1px;
+            font-size: $header-nav-text-size - 1px;
+            line-height: $header-nav-text-size - 1px;
           }
         }
         
@@ -85,28 +84,28 @@ body {
   }
 }
 
-@media (min-width: $screen-sm-min) {
-  body > header {
-    .navbar-brand {
-      @include size($header-img-width, $header-img-height);
-    }
-  }
-}
+// @media (min-width: $screen-sm-min) {
+//   body > header {
+//     .navbar-brand {
+//       @include size($header-img-width, $header-img-height);
+//     }
+//   }
+// }
 
-@media (min-width: $screen-lg-min) {
-  body > header {
-    text-align: center;
-
-    .navbar-brand {
-      float: none;
-      display: block;
-      position: absolute;
-      margin-left: -($header-img-width / 2) !important;
-      padding: 0;
-      left: 50%;
-    }
-    .navbar-nav {
-      max-width: 45%;
-    }
-  }
-}
+// @media (min-width: $screen-lg-min) {
+//   body > header {
+//     text-align: center;
+// 
+//     .navbar-brand {
+//       float: none;
+//       display: block;
+//       position: absolute;
+//       margin-left: -($header-img-width / 2) !important;
+//       padding: 0;
+//       left: 50%;
+//     }
+//     .navbar-nav {
+//       max-width: 45%;
+//     }
+//   }
+// }
