@@ -94,7 +94,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <section class="container portfolio">
     <div class="row" >
       <div class="col-sm-4 col-xs-12">
-        <a href="{% url 'search_home' %}?temporalFilter=%7B%22fromDate%22%3A%22-0027-01-01%22%2C%22toDate%22%3A%220476-12-31%22%2C%22dateNodeId%22%3A%22%22%2C%22inverted%22%3Afalse%7D&no_filters=false" class="entry">
+        <a href="{% url 'search_home' %}?termFilter=%5B%7B%22context%22%3A%22adf6690a-fbf0-41f9-a177-dfacbd3eb058%22%2C%22context_label%22%3A%22ROMAN%22%2C%22id%22%3A0%2C%22text%22%3A%22ROMAN%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%22adf6690a-fbf0-41f9-a177-dfacbd3eb058%22%2C%22inverted%22%3Afalse%7D%5D&typeFilter=%5B%7B%22graphid%22%3A%22e4b3562b-343a-11e8-b509-dca90488358a%22%2C%22name%22%3A%22Heritage%20Assets%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1" class="entry">
           <img src="{% static 'img/landing/roman-lincoln.jpg' %}" alt="">
           <div class="ol">
             <div class="text" >
@@ -107,7 +107,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </a>
       </div>
       <div class="col-sm-4 col-xs-12">
-        <a href="#"  class="entry">
+        <a href="{% url 'search_home' %}?termFilter=%5B%7B%22context%22%3A%225f654c6b-d96a-455e-a9d2-85c113deedaa%22%2C%22context_label%22%3A%22POST%20MEDIEVAL%22%2C%22id%22%3A0%2C%22text%22%3A%22POST%20MEDIEVAL%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%225f654c6b-d96a-455e-a9d2-85c113deedaa%22%2C%22inverted%22%3Afalse%7D%2C%7B%22context%22%3A%224f9e2073-a596-4583-b4fa-f07a9d2096a0%22%2C%22context_label%22%3A%22INDUSTRIAL%22%2C%22id%22%3A0%2C%22text%22%3A%22INDUSTRIAL%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%224f9e2073-a596-4583-b4fa-f07a9d2096a0%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1"  class="entry">
           <img src="{% static 'img/landing/industrial-lincoln.jpg' %}" alt="">
           <div class="ol">
             <div class="text" >
@@ -120,13 +120,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </a>
       </div>
       <div class="col-sm-4 col-xs-12">
-        <a href="#"  class="entry">
+        <a href="{% url 'search_home' %}?termFilter=%5B%7B%22context%22%3A%22fde52573-63e6-457a-90ea-42d8e61d4a7b%22%2C%22context_label%22%3A%22MEDIEVAL%22%2C%22id%22%3A0%2C%22text%22%3A%22MEDIEVAL%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%22fde52573-63e6-457a-90ea-42d8e61d4a7b%22%2C%22inverted%22%3Afalse%7D%5D&typeFilter=%5B%7B%22graphid%22%3A%22e4b3562b-343a-11e8-b509-dca90488358a%22%2C%22name%22%3A%22Heritage%20Assets%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1"  class="entry">
           <img src="{% static 'img/landing/designated-heritage.jpg' %}" alt="">
           <div class="ol">
             <div class="text" >
-              <h4>Designated Heritage</h4>
+              <h4>Medieval Lincoln</h4>
               <div>
-                <p>The protected buildings, archaeology and places of Lincoln.</p>
+                <p>Lincoln's medieval story, from the Saxon Settlements to the Dissolution of the Monasteries.</p>
               </div>
             </div>
           </div>
