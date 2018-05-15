@@ -16,7 +16,12 @@ except ImportError:
     pass
 
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
+STATICFILES_DIRS = (
+    os.path.join(APP_ROOT, 'media'),
+    
+    # Add the uploadedFiles as statics here.
+    os.path.join(APP_ROOT, 'uploadedfiles'),
+) + STATICFILES_DIRS
 
 DATATYPE_LOCATIONS.append('lincoln.datatypes')
 FUNCTION_LOCATIONS.append('lincoln.functions')
@@ -75,7 +80,11 @@ ALLOWED_HOSTS = get_env_variable('DOMAIN_NAMES').split()
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'lincoln.wsgi.application'
+
 STATIC_ROOT = '/static_root'
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+MEDIA_ROOT =  os.path.join(APP_ROOT)
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
@@ -87,10 +96,6 @@ LOGGING = {   'disable_existing_loggers': False,
                                  'level': 'DEBUG',
                                  'propagate': True}},
     'version': 1}
-
-# Absolute filesystem path to the directory that will hold user-uploaded files.
-
-MEDIA_ROOT =  os.path.join(APP_ROOT)
 
 TILE_CACHE_CONFIG = {
     "name": "Disk",
