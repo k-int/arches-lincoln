@@ -7,6 +7,9 @@ body {
   height: 100%;
   margin-top: 80px; }
 
+header nav ul.nav {
+  width: auto; }
+
 #mainnav-container,
 #mainnav {
   background-color: #2c3647; }
