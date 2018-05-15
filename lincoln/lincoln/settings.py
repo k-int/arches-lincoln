@@ -90,7 +90,7 @@ LOGGING = {   'disable_existing_loggers': False,
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 
-MEDIA_ROOT =  os.path.join(APP_ROOT, 'files')
+MEDIA_ROOT =  os.path.join(APP_ROOT)
 
 TILE_CACHE_CONFIG = {
     "name": "Disk",
