@@ -53,7 +53,7 @@ services:
         - '443:443'
       volumes:
         - lincoln-arches-static:/www/static
-#        - ./lincoln/lincoln/files:/www/static/files
+        - ./lincoln/lincoln/uploadedfiles:/www/static/files/uploadedfiles
         - lincoln-letsencrypt-acme-challenge:/var/www
         - lincoln-letsencrypt:/etc/letsencrypt
       environment:
