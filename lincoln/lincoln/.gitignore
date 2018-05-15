@@ -2,5 +2,9 @@
 /media/packages
 /logs
 /system_settings
+/lincoln/lincoln/Thumbs.db
+/lincoln/lincoln/tileserver/
+/lincoln/lincoln/uploadedfiles/
+
 *.pyc
 settings_local.py
