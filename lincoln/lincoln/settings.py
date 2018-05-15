@@ -16,7 +16,7 @@ except ImportError:
     pass
 
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
+STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),os.path.join(APP_ROOT, 'files'),) + STATICFILES_DIRS
 
 DATATYPE_LOCATIONS.append('lincoln.datatypes')
 FUNCTION_LOCATIONS.append('lincoln.functions')
@@ -90,7 +90,7 @@ LOGGING = {   'disable_existing_loggers': False,
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 
-MEDIA_ROOT =  os.path.join(APP_ROOT, 'uploadedFiles')
+MEDIA_ROOT =  os.path.join(APP_ROOT, 'files')
 
 TILE_CACHE_CONFIG = {
     "name": "Disk",
