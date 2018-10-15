@@ -2,7 +2,7 @@ version: '2'
 services:
     arches:
       container_name: arches
-      image: archesproject/arches:master
+      image: archesproject/arches:4.3.1
       build:
         context: ./arches
         dockerfile: ./Dockerfile

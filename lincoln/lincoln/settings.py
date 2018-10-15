@@ -116,7 +116,13 @@ PREFERRED_COORDINATE_SYSTEMS = (
 DATE_IMPORT_EXPORT_FORMAT = '%d/%m/%Y'
 ANALYSIS_COORDINATE_SYSTEM_SRID = 27700
 
+# try:
+#     from settings_local import *
+# except ImportError:
+#     pass
+
 try:
+    from package_settings import *
     from settings_local import *
 except ImportError:
     pass

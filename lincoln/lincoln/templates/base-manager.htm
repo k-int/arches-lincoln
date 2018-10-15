@@ -202,10 +202,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                       <ul class="collapse in pop-in" aria-expanded="false">
                         <!-- ko foreach: createableResources -->
                         <li class="link-submenu-item">
-                          <a class="link-submenu" href="#" data-bind="click: disable_instance_creation ? null: $parent.navigate.bind(this, '{% url 'add_resource' 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb' %}'.replace('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', UUID.generate ).replace('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', graphid)),
+                          <a class="link-submenu" href="#" data-bind="click: disable_instance_creation ? null: $parent.navigate.bind(this, '{% url 'add_resource' 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' %}'.replace('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' graphid)),
                             css: { 'arches-menu-item-disabled': disable_instance_creation },
                             attr: {
-                              href: disable_instance_creation ? '#' : ('{% url 'add_resource' 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb' %}'.replace('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', UUID.generate ).replace('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', graphid))
+                              href: disable_instance_creation ? '#' : ('{% url 'add_resource' 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' %}'.replace('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', graphid))
                             }">
                             <i class="fa arches-menu-icon" data-bind="css: iconclass"></i> <span data-bind="text:name"></span></a>
                         </li>
@@ -235,7 +235,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                     {% endif %}
 
                     <!--Menu list item-->
-                    {% if request.user|has_group:"Application Administrator" %}
+                    {% if request.user|has_group:"  " %}
                     <li{% if "views/map-layer-manager" in main_script %} class="active-sub"{% endif %}>
                       <a href="{% url 'map_layer_manager' %}" data-bind="click: navigate.bind(this, '{% url 'map_layer_manager' %}') ">
                         <i class="fa fa-server"></i>
@@ -254,15 +254,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                           <a class="link-submenu" href="{% url 'map_layer_manager' %}#overlays" data-bind="click: navigate.bind(this, '{% url 'map_layer_manager' %}#overlays')">{% trans "Overlays" %}</a>
                         </li>
                       </ul>
-                    </li>
-
-                    <li{% if "views/mobile-survey-manager" in main_script %} class="active-sub"{% endif %}>
-                      <a href="{% url 'mobile_survey_manager' %}" data-bind="click: navigate.bind(this, '{% url 'mobile_survey_manager' %}') ">
-                        <i class="fa fa-globe"></i>
-                        <span class="menu-title">
-                          <strong>{% trans "Mobile Survey Manager" %}</strong>
-                        </span>
-                      </a>
                     </li>
                     {% endif %}
 
@@ -358,7 +349,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     define('view-data', [], function () {
       return {
         graphs: {{graphs}},
-        createableResources: {{createable_resources}}
+        createableResources: {{createable_resources}},
+        help: "{{nav.help.template}}",
       };
     });
     
