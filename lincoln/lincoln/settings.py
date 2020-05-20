@@ -5,47 +5,44 @@ Django settings for lincoln project.
 import os
 import arches
 import inspect
-import ast
-import requests
-import sys
-from settings import *
 
 try:
     from arches.settings import *
 except ImportError:
     pass
 
+APP_NAME = 'lincoln'
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
 
 DATATYPE_LOCATIONS.append('lincoln.datatypes')
 FUNCTION_LOCATIONS.append('lincoln.functions')
+SEARCH_COMPONENT_LOCATIONS.append('lincoln.search_components')
 TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'functions', 'templates'))
 TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'widgets', 'templates'))
 TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
+LOCALE_PATHS.append(os.path.join(APP_ROOT, 'locale'))
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$r%6my(^ted29ym+jbol%-avc-hb-bkyys@_+sry&-emi!$_-l'
-USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
-if USER_SECRET_KEY:
-    # Make this unique, and don't share it with anybody.
-    SECRET_KEY = USER_SECRET_KEY
+SECRET_KEY = 'efja(6f^2d+flw9=3!g4sy_&!qn&vdk5fb!2$2g0_i*-tqwt*%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-MODE = get_env_variable('DJANGO_MODE') #options are either "PROD" or "DEV" (installing with Dev mode set, get's you extra dependencies)
-DEBUG = ast.literal_eval(get_env_variable('DJANGO_DEBUG'))
-
-COUCHDB_URL = 'http://{}:{}@{}:{}'.format(get_env_variable('COUCHDB_USER'), get_env_variable('COUCHDB_PASS'),get_env_variable('COUCHDB_HOST'), get_env_variable('COUCHDB_PORT')) # defaults to localhost:5984
-
+DEBUG = True
 
 ROOT_URLCONF = 'lincoln.urls'
 
 # a prefix to append to all elasticsearch indexes, note: must be lower case
 ELASTICSEARCH_PREFIX = 'lincoln'
 
-USER_ELASTICSEARCH_PREFIX = get_optional_env_variable('ELASTICSEARCH_PREFIX')
-if USER_ELASTICSEARCH_PREFIX:
-    ELASTICSEARCH_PREFIX = USER_ELASTICSEARCH_PREFIX
+ELASTICSEARCH_CUSTOM_INDEXES = []
+# [{
+#     'module': 'lincoln.search_indexes.sample_index.SampleIndex',
+#     'name': 'my_new_custom_index' <-- follow ES index naming rules
+# }]
+
+LOAD_DEFAULT_ONTOLOGY = False
+LOAD_PACKAGE_ONTOLOGIES = True
 
 DATABASES = {
     "default": {
@@ -53,13 +50,13 @@ DATABASES = {
         "AUTOCOMMIT": True,
         "CONN_MAX_AGE": 0,
         "ENGINE": "django.contrib.gis.db.backends.postgis",
-        "HOST": "db",
-        "NAME": "arches",
+        "HOST": "localhost",
+        "NAME": "lincoln",
         "OPTIONS": {},
         "USER": "postgres",
-        "PASSWORD": "postgres",
-        "PORT": "5432",
-        "POSTGIS_TEMPLATE": "template_postgis_20",
+        "PASSWORD": "postgis",
+        "PORT": "54322", # Keep this inline with docker compose file.
+        "POSTGIS_TEMPLATE": "template1", # Current docker image uses template1
         "TEST": {
             "CHARSET": None,
             "COLLATION": None,
@@ -70,59 +67,133 @@ DATABASES = {
     }
 }
 
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.gis',
+    'arches',
+    'arches.app.models',
+    'arches.management',
+    'guardian',
+    'captcha',
+    'revproxy',
+    'corsheaders',
+    'oauth2_provider',
+    'django_celery_results',
+    'lincoln',
+)
 
-ALLOWED_HOSTS = get_env_variable('DOMAIN_NAMES').split()
+ALLOWED_HOSTS = []
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'lincoln.wsgi.application'
-STATIC_ROOT = '/static_root'
+STATIC_ROOT = '/var/www/media'
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
-LOGGING = {   'disable_existing_loggers': False,
-    'handlers': {   'file': {   'class': 'logging.FileHandler',
-                                'filename': os.path.join(APP_ROOT, 'arches.log'),
-                                'level': 'DEBUG'}},
-    'loggers': {   'arches': {   'handlers': [   'file'],
-                                 'level': 'DEBUG',
-                                 'propagate': True}},
-    'version': 1}
-
-# Absolute filesystem path to the directory that will hold user-uploaded files.
-MEDIA_URL = '/media/files/'
-MEDIA_ROOT =  os.path.join(APP_ROOT, 'files')
-
-TILE_CACHE_CONFIG = {
-    "name": "Disk",
-    "path": os.path.join(APP_ROOT, 'tileserver', 'cache')
-
-    # to reconfigure to use S3 (recommended for production), use the following
-    # template:
-
-    # "name": "S3",
-    # "bucket": "<bucket name>",
-    # "access": "<access key>",
-    # "secret": "<secret key>"
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'console': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'WARNING',  # DEBUG, INFO, WARNING, ERROR
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(APP_ROOT, 'arches.log'),
+            'formatter': 'console'
+        },
+        'console': {
+            'level': 'WARNING',
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        }
+    },
+    'loggers': {
+        'arches': {
+            'handlers': ['file', 'console'],
+            'level': 'WARNING',
+            'propagate': True
+        }
+    }
 }
 
-APP_NAME = 'Arcade'
-APP_TITLE = 'Arcade'
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+MEDIA_ROOT =  os.path.join(APP_ROOT)
 
-PREFERRED_COORDINATE_SYSTEMS = (
-    {"name": "Geographic", "srid": "4326", "proj4": "+proj=longlat +datum=WGS84 +no_defs", "default": True}, #Required
-)
-# DATE_IMPORT_EXPORT_FORMAT = '%Y-%m-%d'
+# Sets default max upload size to 15MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 15728640
 
-DATE_IMPORT_EXPORT_FORMAT = '%d/%m/%Y'
-ANALYSIS_COORDINATE_SYSTEM_SRID = 27700
+# Unique session cookie ensures that logins are treated separately for each app
+SESSION_COOKIE_NAME = 'lincoln'
 
-# try:
-#     from settings_local import *
-# except ImportError:
-#     pass
+CACHES = {
+    # 'default': {
+    #     'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+    #     'LOCATION': os.path.join(APP_ROOT, 'tmp', 'djangocache'),
+    #     'OPTIONS': {
+    #         'MAX_ENTRIES': 1000
+    #     }
+    # }
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
+
+#Identify the usernames and duration (seconds) for which you want to cache the time wheel
+CACHE_BY_USER = {'anonymous': 3600 * 24}
+
+MOBILE_OAUTH_CLIENT_ID = ''  #'9JCibwrWQ4hwuGn5fu2u1oRZSs9V6gK8Vu8hpRC4'
+MOBILE_DEFAULT_ONLINE_BASEMAP = {'default': 'mapbox://styles/mapbox/streets-v9'}
+
+APP_TITLE = 'Arches | Heritage Data Management'
+COPYRIGHT_TEXT = 'All Rights Reserved.'
+COPYRIGHT_YEAR = '2019'
+
+ENABLE_CAPTCHA = False
+# RECAPTCHA_PUBLIC_KEY = ''
+# RECAPTCHA_PRIVATE_KEY = ''
+# RECAPTCHA_USE_SSL = False
+NOCAPTCHA = True
+# RECAPTCHA_PROXY = 'http://127.0.0.1:8000'
+if DEBUG is True:
+    SILENCED_SYSTEM_CHECKS = ["captcha.recaptcha_test_key_error"]
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  #<-- Only need to uncomment this for testing without an actual email server
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'xxxx@xxx.com'
+# EMAIL_HOST_PASSWORD = 'xxxxxxx'
+# EMAIL_PORT = 587
+
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_RESULT_BACKEND = 'django-db' # Use 'django-cache' if you want to use your cache as your backend
+CELERY_TASK_SERIALIZER = 'json'
+
+
+CELERY_SEARCH_EXPORT_EXPIRES = 24 * 3600  # seconds
+CELERY_SEARCH_EXPORT_CHECK = 3600  # seconds
+
+CELERY_BEAT_SCHEDULE = {
+    "delete-expired-search-export": {"task": "arches.app.tasks.delete_file", "schedule": CELERY_SEARCH_EXPORT_CHECK,},
+    "notification": {"task": "arches.app.tasks.message", "schedule": CELERY_SEARCH_EXPORT_CHECK, "args": ("Celery Beat is Running",),},
+}
 
 try:
-    from package_settings import *
-    from settings_local import *
+    from .package_settings import *
+except ImportError:
+    pass
+
+try:
+    from .settings_local import *
 except ImportError:
     pass
