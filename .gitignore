@@ -1,7 +1,10 @@
-/.metadata/
+/.*
+!/.git*
+!/.py*
+!/.jshintrc
+!/.tern-project
 /ENV
+/env
 /screenshots
 /lincoln/_pkg*
 /node_modules
-.directory
-.project

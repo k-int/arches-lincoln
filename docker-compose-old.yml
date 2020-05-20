@@ -1,0 +1,92 @@
+version: '2'
+services:
+    arches:
+      container_name: arches
+      image: archesproject/arches:4.3.1
+      build:
+        context: ./arches
+        dockerfile: ./Dockerfile
+      command: run_arches
+      volumes:
+        - ./lincoln:/web_root/lincoln
+        - ./arches:/web_root/arches
+        - ./arches/docker/settings_local.py:/web_root/arches/arches/settings_local.py
+#        - arches-log:/arches/arches/logs
+        - lincoln-packages:/web_root/lincoln/lincoln/media/packages
+        - lincoln-node_modules:/web_root/lincoln/lincoln/node_modules
+        - arches-static:/static_root
+      environment:
+        - ARCHES_PROJECT=lincoln
+        - INSTALL_DEFAULT_GRAPHS=True
+        - INSTALL_DEFAULT_CONCEPTS=True
+        - PGUSERNAME=postgres
+        - PGPASSWORD=postgres
+        - PGDBNAME=arches
+        - PGHOST=db
+        - PGPORT=5432
+        - COUCHDB_HOST=couchdb
+        - COUCHDB_PORT=5984
+        - COUCHDB_USER=admin
+        - COUCHDB_PASS=password
+        - ESHOST=elasticsearch
+        - ESPORT=9200
+        - ELASTICSEARCH_PREFIX=lincoln
+        - DJANGO_MODE=DEV
+        - DJANGO_DEBUG=True
+        # - DJANGO_REMOTE_DEBUG=False
+        - DOMAIN_NAMES=localhost
+        - TZ=UTC
+      ports:
+        - '8000:8000'
+      depends_on:
+        - db
+        - elasticsearch
+        - couchdb
+
+    db:
+      container_name: db
+      image: mdillon/postgis:9.6-alpine
+      volumes:
+          - postgres-data:/var/lib/postgresql/data
+          - postgres-log:/var/log/postgresql
+      ports:
+        - '54322:5432'
+      environment:
+        - POSTGRES_PASSWORD=postgres
+        - TZ=UTC
+
+    couchdb:
+      container_name: couchdb
+      image: couchdb:2.1.1
+      ports:
+        - "5984:5984"
+      environment:
+        - COUCHDB_USER=admin
+        - COUCHDB_PASSWORD=password
+        - TZ=UTC
+      volumes:
+        - couchdb-data:/usr/local/var/lib/couchdb
+        - couchdb-log:/usr/local/var/log/couchdb
+
+    elasticsearch:
+      container_name: elasticsearch
+      image: elasticsearch:5.2
+      volumes:
+        - elasticsearch-data:/usr/share/elasticsearch/data
+      ports:
+        - "9200:9200"
+        - "9300:9300"
+      environment:
+        - TZ=UTC
+
+
+volumes:
+    arches-log:
+    arches-static:
+    lincoln-packages:
+    lincoln-node_modules:
+    couchdb-data:
+    couchdb-log:
+    postgres-data:
+    postgres-log:
+    elasticsearch-data:
