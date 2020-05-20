@@ -9,9 +9,10 @@ services:
       ports:
         - '54322:5432'
       environment:
-        - POSTGRES_USER=arches
-        - POSTGRES_PASS=arches
-        - POSTGRES_DBNAME=arches
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASS=postgis
+        - POSTGRES_DBNAME=lincoln
+        - POSTGRES_TEMPLATE_EXTENSIONS=true
         - TZ=UTC
 
     elasticsearch:
