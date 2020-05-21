@@ -16,29 +16,41 @@ body {
 }
 header nav ul.nav {
   width: auto;
+}
+
+header#navbar {
+  top: $header-img-height-secondary + $header-border-width;
   
+  .navbar-header::before {
+    background-color: $brand-primary;  
+  }
 }
 
 #mainnav-container,
 #mainnav {
   background-color: $brand-primary;
 }
-#mainnav-container #mainnav #mainnav-menu {
-  a:hover {
-    box-shadow:inset 4px 0 0 0 $brand-secondary;
-  }
-  > .active-sub,
-  > .active-link {
-     > a,
-     a:hover {
-       background-color: $brand-secondary;
-       color: $brand-primary;
-     }
+
+#mainnav-container {
+  top: 0;
+  padding-top: (2 * 50px);
+  #mainnav #mainnav-menu {
+    a:hover {
+      box-shadow:inset 4px 0 0 0 $brand-secondary;
+    }
+    > .active-sub,
+    > .active-link {
+       > a,
+       a:hover {
+         background-color: $brand-secondary;
+         color: $brand-primary;
+       }
+    }
   }
 }
 
 #mainnav-menu-wrap {
-  padding:5px 0 0 0;
+  padding:0;
 }
 
 .content-panel {
@@ -67,19 +79,13 @@ header nav ul.nav {
   }
 }
 
-
-.saved-search-container,
+.card-form-preview-container .tab-content .tab-pane > div,
 .saved-search-grid,
 .facets-search-container,
 .search-facets{
-  height: calc(100vh - #{$panelHeight + 65px}) !important;
+  height: calc(100vh - #{$panelHeight + 61px}) !important;
   overflow-y: auto;
   min-height: 0;
-}
-
-.saved-search-container {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .widget-wrapper .mapboxgl-map {
