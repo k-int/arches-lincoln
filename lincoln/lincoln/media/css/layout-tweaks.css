@@ -63,3 +63,7 @@ header#navbar {
 
 .widget-wrapper .mapboxgl-map {
   margin-bottom: -20px; }
+
+/* V5 upgrade tweaks */
+.settings-panel-heading {
+  top: auto; }
