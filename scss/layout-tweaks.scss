@@ -94,9 +94,11 @@ header#navbar {
 }
 
 /* V5 upgrade tweaks */
-.settings-panel-heading {
-  top: auto;
-  div:nth-child(2) {
+.settings-panel {
+  .settings-panel-heading {
+    top: auto;
+  }
+  & > div:nth-child(2) {
     margin-top: $offset-of-bar + 13px;
   }
 }

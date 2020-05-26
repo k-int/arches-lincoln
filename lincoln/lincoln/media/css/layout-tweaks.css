@@ -65,7 +65,8 @@ header#navbar {
   margin-bottom: -20px; }
 
 /* V5 upgrade tweaks */
-.settings-panel-heading {
+.settings-panel .settings-panel-heading {
   top: auto; }
-  .settings-panel-heading div:nth-child(2) {
-    margin-top: 63px; }
+
+.settings-panel > div:nth-child(2) {
+  margin-top: 63px; }
