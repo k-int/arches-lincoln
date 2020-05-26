@@ -67,3 +67,5 @@ header#navbar {
 /* V5 upgrade tweaks */
 .settings-panel-heading {
   top: auto; }
+  .settings-panel-heading div:nth-child(2) {
+    margin-top: 63px; }

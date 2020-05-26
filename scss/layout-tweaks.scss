@@ -1,12 +1,13 @@
 // Bootstrap Vars
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "variables";
+$offset-of-bar: 50px;
 
 html {
   overflow: hidden;
 }
 
-$panelHeight: (50px + $header-img-height-secondary + $header-border-width);
+$panelHeight: ($offset-of-bar + $header-img-height-secondary + $header-border-width);
 
 body {
   overflow-x: auto;
@@ -33,7 +34,7 @@ header#navbar {
 
 #mainnav-container {
   top: 0;
-  padding-top: (2 * 50px);
+  padding-top: (2 * $offset-of-bar);
   #mainnav #mainnav-menu {
     a:hover {
       box-shadow:inset 4px 0 0 0 $brand-secondary;
@@ -67,7 +68,7 @@ header#navbar {
 }
 
 .map-search-container {
-  height: calc(100vh - #{$panelHeight + 60px});
+  height: calc(100vh - #{$panelHeight + $offset-of-bar + 10px});
   
   &.expanded-edit-map {
     top: $panelHeight;
@@ -75,7 +76,7 @@ header#navbar {
   }
   
   .map-search-container div .map-widget-panel {
-    height: calc(100vh - #{$panelHeight + 60px});
+    height: calc(100vh - #{$panelHeight + $offset-of-bar + 10px});
   }
 }
 
@@ -83,7 +84,7 @@ header#navbar {
 .saved-search-grid,
 .facets-search-container,
 .search-facets{
-  height: calc(100vh - #{$panelHeight + 61px}) !important;
+  height: calc(100vh - #{$panelHeight + $offset-of-bar + 11px}) !important;
   overflow-y: auto;
   min-height: 0;
 }
@@ -95,4 +96,7 @@ header#navbar {
 /* V5 upgrade tweaks */
 .settings-panel-heading {
   top: auto;
+  div:nth-child(2) {
+    margin-top: $offset-of-bar + 13px;
+  }
 }
