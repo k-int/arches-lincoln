@@ -1,6 +1,5 @@
 /.yarnrc
 /__*
-/__pycache__
 /logs
 /*.log
 /celery.py-tpl
