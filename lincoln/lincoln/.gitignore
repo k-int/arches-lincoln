@@ -1,5 +1,8 @@
 /.yarnrc
-/__init__.py-tpl
+/__*
+/__pycache__
+/logs
+/*.log
 /celery.py-tpl
 /settings.py-tpl
 /settings_local.py-tpl

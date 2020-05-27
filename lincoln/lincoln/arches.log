@@ -1,4 +1,0 @@
-2020-05-20 11:23:59,354 arches.app.utils.task_management WARNING  Unable to connect to a celery broker
-2020-05-20 11:27:06,175 arches.app.utils.task_management WARNING  Unable to connect to a celery broker
-2020-05-20 11:27:28,764 arches.app.utils.task_management WARNING  Unable to connect to a celery broker
-2020-05-20 11:31:16,585 arches.app.utils.task_management WARNING  Unable to connect to a celery broker
