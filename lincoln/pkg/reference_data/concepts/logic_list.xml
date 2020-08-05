@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="http://localhost:8000/c724e3d9-be17-43b3-a0a4-03c0f8fbb0d0">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://localhost:8000/709f02bf-33a6-4c61-9138-3cd94b58fb11">
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/b4bdf3c5-3ca2-4166-ba63-77f4a8f73515"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/91f20e45-d827-4074-a39d-143c0f5cb10e"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/fa280cd0-53e9-41ce-be55-4014fec7d6b2"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/c724fd14-d872-41b1-a847-5b3a7e8d38b4"/>
+        <dcterms:title xml:lang="en-us">{"id": "48978af0-7608-414a-99c2-aafb7224813c", "value": "Local List Significance"}</dcterms:title>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/c724e3d9-be17-43b3-a0a4-03c0f8fbb0d0"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/05d95f3d-86e6-41a3-9590-0fa4ef76d4b4"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en-us">{"id": "61500c7e-c745-47db-bc06-22741658c880", "value": "Architectural Merit"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/c724fd14-d872-41b1-a847-5b3a7e8d38b4">
+    <skos:inScheme rdf:resource="http://localhost:8000/709f02bf-33a6-4c61-9138-3cd94b58fb11"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "9b744078-68c3-458f-8380-e9ac2b88b100", "value": "Historic Merit"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/05d95f3d-86e6-41a3-9590-0fa4ef76d4b4">
+    <skos:inScheme rdf:resource="http://localhost:8000/709f02bf-33a6-4c61-9138-3cd94b58fb11"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "89db2857-2d8f-47b2-8b21-387233fbcbe6", "value": "Community and Social"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/b4bdf3c5-3ca2-4166-ba63-77f4a8f73515">
+    <skos:inScheme rdf:resource="http://localhost:8000/709f02bf-33a6-4c61-9138-3cd94b58fb11"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "89b4ee8e-4aeb-4d5e-be75-53963396a5b1", "value": "Rarity"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/fa280cd0-53e9-41ce-be55-4014fec7d6b2">
+    <skos:inScheme rdf:resource="http://localhost:8000/709f02bf-33a6-4c61-9138-3cd94b58fb11"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "704d5238-3560-4c4a-9f02-c93080db3b69", "value": "Archival Evidence"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/91f20e45-d827-4074-a39d-143c0f5cb10e">
+    <skos:prefLabel xml:lang="en-us">{"id": "ef574a8c-754d-44c3-bfe0-75113220759c", "value": "Age and Integrity"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/709f02bf-33a6-4c61-9138-3cd94b58fb11"/>
+  </skos:Concept>
+</rdf:RDF>

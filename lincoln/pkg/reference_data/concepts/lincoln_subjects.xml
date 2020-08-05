@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/50c93185-edb6-44c0-8869-e82c389a279c">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/efc308ee-e235-4ec6-903f-47c536a935ba">
+        <skos:inScheme rdf:resource="http://localhost:8000/50c93185-edb6-44c0-8869-e82c389a279c"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "6a7107b8-d303-456e-9b18-96e9fb0cb891", "value": "http://www.archesproject.org/efc308ee-e235-4ec6-903f-47c536a935ba"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "04058a71-2a86-4d77-a823-0d737944c24b", "value": "Archaeology"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:title xml:lang="en">{"id": "3f46b47b-a9ce-4b60-861e-a0468916d51a", "value": "Lincoln_Subjects"}</dcterms:title>
+    <dcterms:identifier xml:lang="en-us">{"id": "f85c2b26-233a-4eb0-ae90-359de5a3da9d", "value": "http://www.archesproject.org/50c93185-edb6-44c0-8869-e82c389a279c"}</dcterms:identifier>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/43c6af2f-80a1-4fc7-a1fa-3fb43eb3474b">
+        <dcterms:identifier xml:lang="en-us">{"id": "ff189fd7-d9b4-42b9-ab08-c6a79f64b812", "value": "http://www.archesproject.org/43c6af2f-80a1-4fc7-a1fa-3fb43eb3474b"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "01543f67-ac68-4e45-aa21-6befebf8590f", "value": "History"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/50c93185-edb6-44c0-8869-e82c389a279c"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/89e4d744-e070-4199-b674-309c233e799b">
+        <skos:inScheme rdf:resource="http://localhost:8000/50c93185-edb6-44c0-8869-e82c389a279c"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "0d982a49-c6b6-4dcb-89e6-f235dc1f4226", "value": "http://www.archesproject.org/89e4d744-e070-4199-b674-309c233e799b"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "a1ad43ec-f992-4985-b0d5-44633f04d8b0", "value": "Architecture"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

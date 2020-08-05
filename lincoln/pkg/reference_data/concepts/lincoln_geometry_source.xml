@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/a12b351a-66df-43ee-94a9-0d4e8ae861c7">
+    <dcterms:title xml:lang="en-us">{"id": "dce8684a-8745-4954-ac00-7310eb4fb241", "value": "Lincoln Geometry Source"}</dcterms:title>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/9cc11b85-e90b-4dff-a540-a997ae0df867">
+        <skos:inScheme rdf:resource="http://localhost:8000/a12b351a-66df-43ee-94a9-0d4e8ae861c7"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "3203b2e5-a454-40b1-aca1-54bc55dd1498", "value": "Imported from GIS"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "6e8eb830-34ce-46bc-88b6-b861c0ad3bfa", "value": "http://www.archesproject.org/9cc11b85-e90b-4dff-a540-a997ae0df867"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/3d377ed0-f5ce-4769-96ee-fc077dccbe55">
+        <skos:inScheme rdf:resource="http://localhost:8000/a12b351a-66df-43ee-94a9-0d4e8ae861c7"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "f4c75052-1d51-477d-a23e-d58ec0041ced", "value": "http://www.archesproject.org/3d377ed0-f5ce-4769-96ee-fc077dccbe55"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "c4385c59-554b-4739-9d05-9e2b3ecd4215", "value": "Created from Coordinates"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/6f53090b-dd27-4b4b-9851-e0d5dec82cd4">
+        <skos:prefLabel xml:lang="en-us">{"id": "2a544980-d555-4c98-9ccf-77831cd2308f", "value": "Unknown"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/a12b351a-66df-43ee-94a9-0d4e8ae861c7"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "d259ff56-fb47-40ac-8258-b9cd2934b9b4", "value": "http://www.archesproject.org/6f53090b-dd27-4b4b-9851-e0d5dec82cd4"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/e8a82b3f-85e0-424a-a21b-5e7e40f5fa4e">
+        <skos:inScheme rdf:resource="http://localhost:8000/a12b351a-66df-43ee-94a9-0d4e8ae861c7"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "7a23df16-eca8-447f-b2b6-a4042db36d4f", "value": "http://www.archesproject.org/e8a82b3f-85e0-424a-a21b-5e7e40f5fa4e"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "d6535dad-a639-40ff-856f-867b2cfbcffa", "value": "Digitized from map/photo"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:identifier xml:lang="en-us">{"id": "2d40403e-a286-4bb5-9ce0-def4138940a1", "value": "http://www.archesproject.org/a12b351a-66df-43ee-94a9-0d4e8ae861c7"}</dcterms:identifier>
+  </skos:ConceptScheme>
+</rdf:RDF>

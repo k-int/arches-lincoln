@@ -1,0 +1,235 @@
+{
+    "resource_model_id": "a8bc1daa-7bb2-11e9-ae3b-066e122e3f0a", 
+    "resource_model_name": "Lincoln Archaeological Resource Assessment", 
+    "nodes": [
+        {
+            "arches_nodeid": "a8bc1e0e-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Area Description Language", 
+            "file_field_name": "Area Description Language", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1de7-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Area Description text", 
+            "file_field_name": "Area Description text", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dec-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Area Description Type", 
+            "file_field_name": "Area Description Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1df5-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Area Name", 
+            "file_field_name": "Area Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e08-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Area Type", 
+            "file_field_name": "Area Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dea-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Area Type", 
+            "file_field_name": "Area Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dfe-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Compiler Name", 
+            "file_field_name": "Compiler Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dfb-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Date of Compilation", 
+            "file_field_name": "Date of Compilation", 
+            "data_type": "date", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e06-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Date Type", 
+            "file_field_name": "Date Type", 
+            "data_type": "domain-value", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1def-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "External Cross Reference Notes", 
+            "file_field_name": "External Cross Reference Notes", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e0a-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "External Cross Reference Number", 
+            "file_field_name": "External Cross Reference Number", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1de8-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "External Cross Reference Source", 
+            "file_field_name": "External Cross Reference Source", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1ded-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Geometry", 
+            "file_field_name": "Geometry", 
+            "data_type": "geojson-feature-collection", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dee-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Geometry Source", 
+            "file_field_name": "Geometry Source", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dde-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Heritage Asset Name", 
+            "file_field_name": "Heritage Asset Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dfd-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Locality", 
+            "file_field_name": "Locality", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1de3-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Location Description Language", 
+            "file_field_name": "Location Description Language", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dff-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Location Description text", 
+            "file_field_name": "Location Description text", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1de1-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Location Description Type", 
+            "file_field_name": "Location Description Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e0d-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Map Reference Name", 
+            "file_field_name": "Map Reference Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e03-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Map Reference Type", 
+            "file_field_name": "Map Reference Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1de2-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Name Type", 
+            "file_field_name": "Name Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1df9-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Number in Road or Street", 
+            "file_field_name": "Number in Road or Street", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e01-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Organization Name", 
+            "file_field_name": "Organization Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1dfc-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Postal Code", 
+            "file_field_name": "Postal Code", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e0b-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Resource ID", 
+            "file_field_name": "Resource ID", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1df3-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Road or Street Name", 
+            "file_field_name": "Road or Street Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1e0c-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Role", 
+            "file_field_name": "Role", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1df2-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Spatial Accuracy Qualifier", 
+            "file_field_name": "Spatial Accuracy Qualifier", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1df1-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Spatial Metadata Description", 
+            "file_field_name": "Spatial Metadata Description", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "a8bc1de9-7bb2-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Town or City", 
+            "file_field_name": "Town or City", 
+            "data_type": "string", 
+            "export": true
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/49c08282-0afe-447f-801d-25fae4e90f4a">
+        <skos:prefLabel xml:lang="en-us">{"id": "280e129c-6825-44a6-a448-37bc3be50a37", "value": "Rainwater Goods"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/801b2369-63e8-48c9-bdc1-50268958fc12">
+        <skos:inScheme rdf:resource="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "e5c4437a-5621-422b-969b-b77baea07678", "value": "Floors"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/150bd484-1393-4ba0-988e-14e8b3d60ca5">
+        <skos:inScheme rdf:resource="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "79eaaf77-2928-4fe6-a9c9-57b455ca49f4", "value": "Roof"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/6d7b69d9-cd71-4ce6-bbd9-7cf90b8cabb3">
+        <skos:prefLabel xml:lang="en-us">{"id": "9b394f72-80e2-4ee2-96dc-153711e7b2f4", "value": "Windows and Doors"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/bd6bc809-b9b2-4be9-9560-a91415a16526">
+        <skos:prefLabel xml:lang="en-us">{"id": "1f5c249b-7b5a-42d4-bf2b-9ca8ed398770", "value": "Walls"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/b800109c-5784-4793-af27-0161d5a7a31c">
+        <skos:inScheme rdf:resource="http://localhost:8000/2b018c17-576c-4a86-a58f-d4a118fb7b85"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "b31be10b-a0bf-404a-a025-54e20f30148b", "value": "Internal Joinery"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:title xml:lang="en-us">{"id": "0b2a0e03-aef7-4738-a8c8-e545c1f99feb", "value": "Architectural Elements"}</dcterms:title>
+  </skos:ConceptScheme>
+</rdf:RDF>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/e9caf5c9-2063-4961-ae81-088abfa3da60">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/4a056f80-8218-4c0e-914a-d1f75ecab988">
+        <skos:prefLabel xml:lang="en-us">{"id": "a05f1b7e-ba31-4ded-b6af-5c4c9bd2e3ce", "value": "Unknown"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/e9caf5c9-2063-4961-ae81-088abfa3da60"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/5538f20e-1ec1-4a0c-a2b9-610c04cbc1a2">
+        <skos:inScheme rdf:resource="http://localhost:8000/e9caf5c9-2063-4961-ae81-088abfa3da60"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "2e010087-592b-4b18-86dd-74e51208c0ca", "value": "Part-Occupied"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:title xml:lang="en-us">{"id": "10ea53c0-65cf-4fa3-851f-1ecc6741f2d4", "value": "Lincoln Occupancy Values"}</dcterms:title>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/34ad4f84-cfd2-42af-844d-6ba9135b9f4f">
+        <skos:inScheme rdf:resource="http://localhost:8000/e9caf5c9-2063-4961-ae81-088abfa3da60"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "5cd8709d-db6b-4791-be77-d98598cfd620", "value": "Not Applicable"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/870d9b4a-9604-4aa3-aaa5-c67b7f05e2a8">
+        <skos:inScheme rdf:resource="http://localhost:8000/e9caf5c9-2063-4961-ae81-088abfa3da60"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "d3e937f1-f9ed-44c6-886c-ffa35fd2c408", "value": "Occupied"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/58548c2c-a3c1-4b75-a54f-85542f361e2b">
+        <skos:inScheme rdf:resource="http://localhost:8000/e9caf5c9-2063-4961-ae81-088abfa3da60"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "51ef6c5d-c751-4c9c-a417-525eb4087ff5", "value": "Vacant"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

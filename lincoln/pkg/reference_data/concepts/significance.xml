@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/cf4b08eb-e999-46c5-a19f-cd6e45b3a080">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/2bc19c33-a223-4a8a-8d33-626d8e0da115">
+        <skos:inScheme rdf:resource="http://localhost:8000/cf4b08eb-e999-46c5-a19f-cd6e45b3a080"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "1acf7103-2d23-42c5-836c-d75022cfe8a9", "value": "Archaeological"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/507dc9dc-babb-40ab-b7fa-085d99963250">
+        <skos:inScheme rdf:resource="http://localhost:8000/cf4b08eb-e999-46c5-a19f-cd6e45b3a080"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "1118fde2-182b-43f8-9cb5-cc1f620e5c71", "value": "Artistic"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/188e9f2d-5d1a-438c-abca-fab8708c2f56">
+        <skos:inScheme rdf:resource="http://localhost:8000/cf4b08eb-e999-46c5-a19f-cd6e45b3a080"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "eb2bdb31-7e35-4d75-be8d-27306f64c300", "value": "Architectural"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/91d5198a-4c17-44de-b7c1-957fceada767">
+        <skos:prefLabel xml:lang="en-us">{"id": "ef43021a-a3c1-4c66-bfc1-cc453c928333", "value": "Historic"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/cf4b08eb-e999-46c5-a19f-cd6e45b3a080"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:title xml:lang="en-us">{"id": "09c6f035-73f4-433e-b366-613911ab867e", "value": "Significance"}</dcterms:title>
+  </skos:ConceptScheme>
+</rdf:RDF>

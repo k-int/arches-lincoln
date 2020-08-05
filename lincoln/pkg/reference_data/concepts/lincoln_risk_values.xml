@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="http://localhost:8000/beacb8b2-b93e-4287-ba74-69612e894889">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://localhost:8000/e66c771e-d076-4af2-abb7-8a261bdb7aa3">
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/b25ee292-87d7-403f-bee7-0e61b3af58e6"/>
+        <dcterms:title xml:lang="en-us">{"id": "36716e81-61e1-4d00-adef-823355d726e1", "value": "Lincoln RIsk Values"}</dcterms:title>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/bf5491c8-2203-4d71-8504-ffe41b8bab8f"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/beacb8b2-b93e-4287-ba74-69612e894889"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/cc4ebd49-98b1-4c18-a916-74831c062afe"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en-us">{"id": "c8fb7f75-11fd-4564-91d0-ef303ea4b0f7", "value": "High Risk"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/cc4ebd49-98b1-4c18-a916-74831c062afe">
+    <skos:prefLabel xml:lang="en-us">{"id": "f27d6c0a-3fd8-40fe-bbe9-f8db4c728d0d", "value": "Low Risk"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/e66c771e-d076-4af2-abb7-8a261bdb7aa3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/bf5491c8-2203-4d71-8504-ffe41b8bab8f">
+    <skos:prefLabel xml:lang="en-us">{"id": "f23687e8-b154-454b-877b-2f2f485d3471", "value": "Medium Risk"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/e66c771e-d076-4af2-abb7-8a261bdb7aa3"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/b25ee292-87d7-403f-bee7-0e61b3af58e6">
+    <skos:inScheme rdf:resource="http://localhost:8000/e66c771e-d076-4af2-abb7-8a261bdb7aa3"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "73f0dd24-573f-4d1d-8a82-eb363b2365a1", "value": "Not At Risk"}</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>

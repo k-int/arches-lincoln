@@ -1,0 +1,169 @@
+{
+    "resource_model_id": "7f6ecef3-6bfe-11e9-ae3b-066e122e3f0a", 
+    "resource_model_name": "Local List Candidates", 
+    "nodes": [
+        {
+            "arches_nodeid": "3f7680a6-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Condition Type", 
+            "file_field_name": "Condition Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "3f7680a8-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Date of Assessment", 
+            "file_field_name": "Date of Assessment", 
+            "data_type": "date", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "16986ca8-7aee-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Description text", 
+            "file_field_name": "Description text", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "d3a60cd5-7aed-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Description Type", 
+            "file_field_name": "Description Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "16986ca9-7aee-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Description Type", 
+            "file_field_name": "Description Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "0b022c3a-7b12-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Element", 
+            "file_field_name": "Element", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "6003426c-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "File", 
+            "file_field_name": "File", 
+            "data_type": "file-list", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "73a531a4-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Geometry", 
+            "file_field_name": "Geometry", 
+            "data_type": "geojson-feature-collection", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "3f7680a7-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Image File", 
+            "file_field_name": "Image File", 
+            "data_type": "file-list", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "16986caa-7aee-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Language", 
+            "file_field_name": "Language", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "d3a60cd6-7aed-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Language", 
+            "file_field_name": "Language", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "6f2694b3-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Locality", 
+            "file_field_name": "Locality", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "35839caf-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Name", 
+            "file_field_name": "Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "35839cb2-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Name Type", 
+            "file_field_name": "Name Type", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "6f2694b2-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Number in Road or Street", 
+            "file_field_name": "Number in Road or Street", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "6f2694b4-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Postal Code", 
+            "file_field_name": "Postal Code", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "6f2694b0-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Road or Street Name", 
+            "file_field_name": "Road or Street Name", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "4b854844-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Statement of Responsibility", 
+            "file_field_name": "Statement of Responsibility", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "d3a60cd4-7aed-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Statement of Significance", 
+            "file_field_name": "Statement of Significance", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "6f2694b1-6bff-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Town or City", 
+            "file_field_name": "Town or City", 
+            "data_type": "string", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "f7340920-7aee-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Type", 
+            "file_field_name": "Type", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": true
+        }, 
+        {
+            "arches_nodeid": "f736c8ac-78b1-11e9-ae3b-066e122e3f0a", 
+            "arches_node_name": "Type", 
+            "file_field_name": "Type", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": true
+        }
+    ]
+}

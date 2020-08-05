@@ -14,6 +14,9 @@ except ImportError:
 APP_NAME = 'lincoln'
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
+STATIC_ROOT = os.path.join(APP_ROOT, 'static')
+STATIC_URL = '/static/'
+
 
 DATATYPE_LOCATIONS.append('lincoln.datatypes')
 FUNCTION_LOCATIONS.append('lincoln.functions')
@@ -55,7 +58,7 @@ DATABASES = {
         "OPTIONS": {},
         "USER": "postgres",
         "PASSWORD": "postgis",
-        "PORT": "54322", # Keep this inline with docker compose file.
+        "PORT": "5432", # Keep this inline with docker compose file.
         "POSTGIS_TEMPLATE": "template1", # Current docker image uses template1
         "TEST": {
             "CHARSET": None,
@@ -87,11 +90,11 @@ INSTALLED_APPS = (
     'lincoln',
 )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.31.25.33','lincoln-test.arches.k-int.com']
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'lincoln.wsgi.application'
-STATIC_ROOT = '/var/www/media'
+
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
@@ -127,6 +130,8 @@ LOGGING = {
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT =  os.path.join(APP_ROOT)
+MEDIA_URL ='/files/'
+
 
 # Sets default max upload size to 15MB
 DATA_UPLOAD_MAX_MEMORY_SIZE = 15728640
@@ -179,6 +184,8 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_RESULT_BACKEND = 'django-db' # Use 'django-cache' if you want to use your cache as your backend
 CELERY_TASK_SERIALIZER = 'json'
 
+DATE_IMPORT_EXPORT_FORMAT='%d/%m/%Y'
+ANALYSIS_COORDINATE_SYSTEM_SRID = 27700
 
 CELERY_SEARCH_EXPORT_EXPIRES = 24 * 3600  # seconds
 CELERY_SEARCH_EXPORT_CHECK = 3600  # seconds
@@ -188,6 +195,7 @@ CELERY_BEAT_SCHEDULE = {
     "notification": {"task": "arches.app.tasks.message", "schedule": CELERY_SEARCH_EXPORT_CHECK, "args": ("Celery Beat is Running",),},
 }
 
+TILESERVER_URL = "http://localhost/geoserver" 
 try:
     from .package_settings import *
 except ImportError:

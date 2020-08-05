@@ -1,0 +1,120 @@
+{
+	"type": "vector",
+	"name": "Research Agenda Zone: High Midieval",
+	"layers": [
+        	{
+        		"layout": {
+        			"visibility": "visible"
+        		},
+        		"source": "raz_high_midieval",
+        		"filter": [
+        			"all",
+        			[
+        				"==",
+        				"$type",
+        				"Polygon"
+        			]
+        		],
+        		"paint": {
+        			"fill-color": "rgba(222,134,134,0.55)"
+        		},
+        		"source-layer": "raz_high_midieval",
+        		"type": "fill",
+        		"id": "raz_high_midieval"
+        	},
+        	{
+        		"layout": {
+        			"visibility": "visible"
+        		},
+        		"source": "raz_high_midieval",
+        		"filter": [
+        			"all",
+        			[
+        				"==",
+        				"$type",
+        				"Polygon"
+        			],
+        			[
+        				"==",
+        				"_featureid",
+        				""
+        			]
+        		],
+        		"paint": {
+        			"fill-color": "rgba(0,255,0,0.55)"
+        		},
+        		"source-layer": "raz_high_midieval",
+        		"type": "fill",
+        		"id": "raz_high_midieval-hover"
+        	},
+        	{
+        		"layout": {
+        			"visibility": "visible"
+        		},
+        		"source": "raz_high_midieval",
+        		"filter": [
+        			"all",
+        			[
+        				"==",
+        				"$type",
+        				"Polygon"
+        			],
+        			[
+        				"==",
+        				"_featureid",
+        				""
+        			]
+        		],
+        		"paint": {
+        			"fill-color": "rgba(0,0,255,0.55)"
+        		},
+        		"source-layer": "raz_high_midieval",
+        		"type": "fill",
+        		"id": "raz_high_midieval-click"
+        	},
+        	{
+        		"layout": {
+        			"visibility": "visible"
+        		},
+        		"source": "raz_high_midieval",
+        		"filter": [
+        			"all",
+        			[
+        				"==",
+        				"$type",
+        				"Polygon"
+        			]
+        		],
+        		"paint": {
+        			"line-color": "rgba(232,59,59,0.5)",
+        			"line-width": 1
+        		},
+        		"source-layer": "raz_high_midieval",
+        		"type": "line",
+        		"id": "resources-poly-outline-raz_high_midieval"
+        	}
+	]
+    ,
+	"config": {
+		"provider": {
+			"class": "TileStache.Goodies.VecTiles:Provider",
+			"kwargs": {
+				"dbinfo": {
+					"host": "localhost",
+					"user": "postgres",
+					"password": "postgis",
+					"database": "lincoln_release",
+					"port": "5432"
+				},
+				"simplify": 0.2,
+				"clip": false,
+				"queries": [
+					"select gid as __id__, gid as _featureid, name, '<div><strong>High Midieval Research Agenda Zone</strong></div><div>' || name || '</div>' as feature_info_content, st_transform(geom, 900913) as __geometry__ from raz_high_midieval"
+				]
+			}
+		},
+		"allowed origin": "*",
+		"compress": true,
+		"write cache": false
+	}
+}

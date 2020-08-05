@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/9685c26f-9522-476b-ae6b-1f641a432d78">
+    <dcterms:title xml:lang="en-us">{"id": "c37009cc-b049-4ee9-9b90-4f4bb506bb6a", "value": "Lincoln Map Reference Type"}</dcterms:title>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/10b97b45-dc40-4eec-a79e-c7b8eea7ede0">
+        <dcterms:identifier xml:lang="en-us">{"id": "1bebd862-e171-4538-8df1-40397b498e3a", "value": "http://www.archesproject.org/10b97b45-dc40-4eec-a79e-c7b8eea7ede0"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "a9124ea4-3c51-42b7-958a-9af65da1a9d3", "value": "Map Sheet Name"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/9685c26f-9522-476b-ae6b-1f641a432d78"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:identifier xml:lang="en-us">{"id": "25aee313-c39c-4d26-bbc4-a86a7d0c6aa0", "value": "http://www.archesproject.org/9685c26f-9522-476b-ae6b-1f641a432d78"}</dcterms:identifier>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/63c497c0-6bc0-4073-8cf0-f4568e902262">
+        <skos:prefLabel xml:lang="en-us">{"id": "5a4d4bd1-1ae8-4ed7-a091-d11e19342b73", "value": "National Grid Reference"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "bd83cd87-ae4b-410e-9d05-5313ac52714c", "value": "http://www.archesproject.org/63c497c0-6bc0-4073-8cf0-f4568e902262"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/9685c26f-9522-476b-ae6b-1f641a432d78"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

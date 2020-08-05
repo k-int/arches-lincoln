@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/35d221b0-90c0-4d3a-a8a9-cefbdc2d15f5">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/cb08e502-cd1e-4c4b-8c1e-0e4cdfd858e8">
+        <skos:inScheme rdf:resource="http://localhost:8000/35d221b0-90c0-4d3a-a8a9-cefbdc2d15f5"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "0d51f51b-d403-47ce-b9b7-ebb6a1090d6c", "value": "Fair"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/66d0d814-54cf-4f43-a71d-b58b66e33a0f">
+        <skos:prefLabel xml:lang="en-us">{"id": "1466a520-b93e-49fa-b971-212f78f15786", "value": "Poor"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/35d221b0-90c0-4d3a-a8a9-cefbdc2d15f5"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:title xml:lang="en-us">{"id": "d07ddaa2-4990-4e1d-9698-25bca49d61d1", "value": "Lincoln Condition Values"}</dcterms:title>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/23c4afd3-f98b-40f1-96b8-7261b9700722">
+        <skos:prefLabel xml:lang="en-us">{"id": "de580115-7800-4583-9517-02d4dc1e98b8", "value": "Very Bad"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/35d221b0-90c0-4d3a-a8a9-cefbdc2d15f5"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/a45a9e39-c3c0-40f4-99f7-6b44eeb3ab15">
+        <skos:inScheme rdf:resource="http://localhost:8000/35d221b0-90c0-4d3a-a8a9-cefbdc2d15f5"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "c097dec1-09d2-4e05-ac25-f69fde80fef9", "value": "Good"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+</rdf:RDF>

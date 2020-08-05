@@ -8,3 +8,9 @@
 /screenshots
 /lincoln/_pkg*
 /node_modules
+lincoln/lincoln/media/packages
+lincoln/lincoln/static
+lincoln/lincoln/uploadedfiles
+lincoln/lincoln/arches.log
+lincoln/lincoln/lincoln_data
+lincoln/relations

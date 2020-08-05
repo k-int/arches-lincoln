@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="http://localhost:8000/3ac9e093-b4fb-3586-b663-e800b40a6dc1">
+    <dcterms:identifier xml:lang="en-us">{"id": "ad1436c7-efeb-43b1-8845-62062aa14c17", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/142975"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "ddd59cc6-a1b9-4b3f-935a-f02510a586b2", "value": "SURFACE DEPOSIT"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en">{"id": "1827ab09-f5c3-4207-a327-92b8b65ac43b", "value": "A deposit that forms the ground surface (when the evidence is collected), particularly a hard surface such as a floor or road."}</skos:scopeNote>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737">
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/18a0f6b1-ffd2-364e-a65d-7ff410d510ed"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "3555a987-719f-4a82-8c65-bd7f95af6723", "value": "http://purl.org/heritagedata/schemes/eh_evd"}</dcterms:identifier>
+        <dcterms:title xml:lang="en">{"id": "78fc2770-e551-4df6-b304-7d73cfb4d465", "value": "EVIDENCE (EH)"}</dcterms:title>
+        <dcterms:description xml:lang="en">{"id": "ee69dfdd-aff3-44cd-b681-8950539ac46d", "value": "Terminology covering the existing physical remains of a monument, or the means by which a monument has been identified where no physical remains exist"}</dcterms:description>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/06292344-a01d-34d8-8950-060e13adc648">
+    <dcterms:identifier xml:lang="en-us">{"id": "3a002e64-8a58-4ba4-b2f2-a44af241c639", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84569"}</dcterms:identifier>
+    <skos:related>
+      <skos:Concept rdf:about="http://localhost:8000/b7b516d1-6b39-328a-9ee9-ae0834c80f42">
+        <skos:altLabel xml:lang="en">{"id": "d51edfb4-2895-46c2-b3b9-5de6efa73ba8", "value": "Plough Levelled Earthwork"}</skos:altLabel>
+        <skos:scopeNote xml:lang="en">{"id": "78e19179-1e1e-492f-8465-9195899f0d3c", "value": "Monument visible as remains of former earthworks."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:related rdf:resource="http://localhost:8000/06292344-a01d-34d8-8950-060e13adc648"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "a4ac8d82-c300-41d0-af12-46a31b23d035", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/99974"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "482d94e6-0ff6-4986-9692-5ffb354c7280", "value": "LEVELLED EARTHWORK"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:related>
+    <skos:altLabel xml:lang="en">{"id": "cfe79cd5-4f01-4481-abbf-7babddabab90", "value": "Flat - Unaccumulated"}</skos:altLabel>
+    <skos:related>
+      <skos:Concept rdf:about="http://localhost:8000/def19512-73d7-3954-890d-d97d6d5ecec8">
+        <dcterms:identifier xml:lang="en-us">{"id": "3929977d-d1f0-42b5-b5e8-17cfa59c900b", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/151454"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "06a9b24a-91a5-4984-888f-435b7a56b7e2", "value": "BURIAL"}</skos:prefLabel>
+        <skos:related rdf:resource="http://localhost:8000/06292344-a01d-34d8-8950-060e13adc648"/>
+        <skos:scopeNote xml:lang="en">{"id": "9807e3f7-742f-4754-bba9-65698480e81e", "value": "The deliberate deposit of a body in the ground, usually located in a special area set aside for the purpose of burial, such as a graveyard or cemetery."}</skos:scopeNote>
+      </skos:Concept>
+    </skos:related>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:altLabel xml:lang="en">{"id": "68c51e47-a479-49cd-9943-f92b6aa408c6", "value": "Geophysical Evidence"}</skos:altLabel>
+    <skos:related>
+      <skos:Concept rdf:about="http://localhost:8000/3445afb8-720d-3ed5-ba74-76d5095eea3b">
+        <skos:related rdf:resource="http://localhost:8000/06292344-a01d-34d8-8950-060e13adc648"/>
+        <skos:scopeNote xml:lang="en">{"id": "3bc900d5-87cc-4fba-bd55-081e0c91fd71", "value": "A monument previously consisting of a built structure, but which has been demolished, such that only a ground plan and foundations or similar are thought to remain. Where all below ground traces have also been removed use DESTROYED MONUMENT."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:altLabel xml:lang="en">{"id": "2a8e3f07-47c4-4942-813c-089f19bdfd07", "value": "Building Foundation"}</skos:altLabel>
+        <skos:altLabel xml:lang="en">{"id": "28bb546a-a23a-47aa-b674-52e32aa6f7be", "value": "Partially Demolished Building"}</skos:altLabel>
+        <skos:prefLabel xml:lang="en">{"id": "86b4ec4c-9fb2-473a-acea-481c4dacfb77", "value": "DEMOLISHED BUILDING"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "a5c9d36c-ccdf-4dbe-a47a-d635df1eb937", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/100510"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:related>
+    <skos:related>
+      <skos:Concept rdf:about="http://localhost:8000/06be54ff-4ddf-39f6-8a4c-285e3e07e211">
+        <skos:prefLabel xml:lang="en">{"id": "de8b5c6f-1059-477d-8120-4ee8541f8b71", "value": "STRATIFIED FIND"}</skos:prefLabel>
+        <skos:related rdf:resource="http://localhost:8000/06292344-a01d-34d8-8950-060e13adc648"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "14f18252-f5b4-4cb0-ba45-ca0ed237552c", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/100512"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "71afeef3-29ab-4301-a313-38404a9c4f5c", "value": "A Monument whose presence is inferred from artefacts found in stratified below ground deposits, as distinct from surface collection or chance find."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:related>
+    <skos:scopeNote xml:lang="en">{"id": "7800d17e-c823-4c05-af8c-c8225a71fdc1", "value": "Monument either never or no longer visible above ground surface, but whose presence is indicated by proven below ground stratigraphy revealed by deliberate investigation, including geophysical survey, or other surface disturbance."}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "a3e62724-5df4-476a-8a05-638f869f215c", "value": "SUB SURFACE DEPOSIT"}</skos:prefLabel>
+    <skos:altLabel xml:lang="en">{"id": "0f1beb90-3d04-40ac-8a74-3960c44f13a3", "value": "Flat - Accumulated"}</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/34fa5bcf-b827-3ea4-bb72-3ef59e30cc6c">
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "d6c98a4d-e8f8-432e-823c-0ee9a991a5dc", "value": "Monument visible as a mark in standing crops or parchmarks, but where no subsurface deposits have been proven eg by excavation or other ground disturbance, in which case SUB SURFACE DEPOSIT should be used."}</skos:scopeNote>
+    <skos:altLabel xml:lang="en">{"id": "cbc79562-96ae-4f98-b12a-07dd54a07e39", "value": "Crop Mark"}</skos:altLabel>
+    <skos:prefLabel xml:lang="en">{"id": "21491898-eb3b-4dc5-bb92-394e22b885d9", "value": "CROPMARK"}</skos:prefLabel>
+    <skos:altLabel xml:lang="en">{"id": "a9b15ee5-9d0a-4a85-9dd1-66565ff682a0", "value": "Ap Macula"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "64f5de25-474d-4fd5-8480-cc9d8e3e1b56", "value": "Ap Enclosure"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "96460d7c-5737-43ab-a643-76bfc2ccdd37", "value": "Ap Site"}</skos:altLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "5a873d7b-9668-4087-86af-6bccea7469ce", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/78253"}</dcterms:identifier>
+    <skos:altLabel xml:lang="en">{"id": "5c0755c9-a2f2-4a19-b557-feb8e9e5197b", "value": "Ap Linear Feature"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "a604b314-2c4b-4098-bc00-430d0cf00561", "value": "Parchmark"}</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/0de23383-621e-3306-a4b9-5c15d48bbdc3">
+    <skos:scopeNote xml:lang="en">{"id": "8a0410c1-2b60-4d2b-98b7-8b4c1536ec2b", "value": "Maritime monument identified as a ferrous object lying on the sea bed detected using marine surveying equipment that detects localised anomalies in the Earth's magnetic field."}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en-us">{"id": "b6303c2f-b6a9-43f0-8160-244397cc10a3", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/111133"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:prefLabel xml:lang="en">{"id": "99cb2a46-5533-4366-a185-aac1991a743e", "value": "MARINE MAGNETOMETER READING"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/17d757e4-80a2-31c4-8ec4-1907498ac8a5">
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/87a2d7b4-119f-3848-82a6-7852bb61cf1c">
+        <skos:prefLabel xml:lang="en">{"id": "8944978f-1603-4618-9dab-7f402cd9c02a", "value": "FIND"}</skos:prefLabel>
+        <skos:narrower rdf:resource="http://localhost:8000/427c49d3-7ac8-3703-90fc-4654fea8e138"/>
+        <skos:scopeNote xml:lang="en">{"id": "05aed6d6-dbc8-4aaf-ab3f-3dabe556cb0e", "value": "Monument whose existence is indicated by the discovery of isolated artefacts or an artefact scatter. Eg a scatter of roofing tiles indicating the presence of a building. Use narrow terms where circumstances of discovery are known."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-us">{"id": "ca3ffb35-87d7-4b29-a3ed-d0a42547f0df", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82791"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:narrower rdf:resource="http://localhost:8000/06be54ff-4ddf-39f6-8a4c-285e3e07e211"/>
+        <skos:narrower rdf:resource="http://localhost:8000/fe408c70-75e9-3635-8fab-58b617ef1597"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/b3c91827-e9a2-32c3-9e37-876134d184f0">
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:scopeNote xml:lang="en">{"id": "6b63d5a7-7ee4-402f-b701-5894d73361b0", "value": "Monument existing as an upstanding earthwork, ditch or artificial watercourse, or as a low stone built feature not covered by the other categories."}</skos:scopeNote>
+        <skos:narrower rdf:resource="http://localhost:8000/b7b516d1-6b39-328a-9ee9-ae0834c80f42"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "97e05de8-bfff-4cfc-80df-910b1e6bbf27", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/78252"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "d23922c5-7873-4654-a2eb-75992c09521c", "value": "EARTHWORK"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/06aadd38-1751-32ab-8888-b0515256bfa2">
+        <skos:scopeNote xml:lang="en">{"id": "4d095340-96d8-4d37-a95a-032d0486ff56", "value": "Monument visible as a below ground man-made structure. Use for tunnels, mineworking, cellars, shelters."}</skos:scopeNote>
+        <skos:altLabel xml:lang="en">{"id": "7edf4f9e-aad3-4d02-b8c6-36a613738282", "value": "Subterranean"}</skos:altLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "d5acc0a4-10a1-4d34-9450-ab51bb8266d5", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84571"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "907f52ed-d6b5-40ad-a3b1-fe0b33f5a51c", "value": "SUBTERRANEAN FEATURE"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/43ec2b8e-cbca-3538-bca4-f9869096e67f">
+        <skos:prefLabel xml:lang="en">{"id": "ce6c817e-7959-4e4b-8cf8-237ea3f3169c", "value": "MODIFIED SURFACE"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "02d668d7-ec94-4537-b86a-b9b51c66f3dc", "value": "A monument where the evidence that defines the type of the monument derives from the nature of surface markings. Examples include graffitti on quarry walls."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-us">{"id": "d5d47d76-328d-47f4-a36e-96f22133c769", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/100511"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en">{"id": "b080b6f4-7573-4c40-a86c-d3bf4d11aeda", "value": "PHYSICAL EVIDENCE"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/9c5e25b0-4e57-386b-9c9f-d4c5ccba2386">
+        <skos:altLabel xml:lang="en">{"id": "2c6bea25-d13e-4f9a-bae2-445da60b2c3c", "value": "Standing Structure - Unbonded"}</skos:altLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:narrower rdf:resource="http://localhost:8000/9bdc6d8f-128c-37a8-9b8d-02fcff945418"/>
+        <skos:narrower rdf:resource="http://localhost:8000/69cf62c1-e521-3376-9b7d-5364f14bdb72"/>
+        <skos:altLabel xml:lang="en">{"id": "c2838e6b-c93d-4639-9b3c-b23c1da5e678", "value": "Standing Structure - Bonded"}</skos:altLabel>
+        <skos:prefLabel xml:lang="en">{"id": "82496282-0189-4448-bbf9-adf62eba9910", "value": "STRUCTURE"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "3760cd78-cf51-46ab-a14f-71e8bab42e13", "value": "Man-made building, edifice or construction of assembled material parts."}</skos:scopeNote>
+        <skos:altLabel xml:lang="en">{"id": "4a19df10-7994-48a3-84bd-5ffb21f62b79", "value": "Partially Destroyed Monument"}</skos:altLabel>
+        <skos:altLabel xml:lang="en">{"id": "39c28c05-c1b6-4525-9179-a9f49a82a6e1", "value": "Other Structure"}</skos:altLabel>
+        <skos:narrower rdf:resource="http://localhost:8000/162cc79e-562a-3c2b-ab9e-7f09c3fe9e24"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "4579aaa7-008a-4761-bf69-90fb536582d0", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84570"}</dcterms:identifier>
+        <skos:narrower rdf:resource="http://localhost:8000/abc479a5-4cc9-3ce4-8b8a-50a5dafe69b5"/>
+        <skos:altLabel xml:lang="en">{"id": "cc6f7d4d-62ae-4681-b5d0-75866110cb30", "value": "Standing  Monument"}</skos:altLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/3b11a538-657a-37e6-8d3b-a939e8f30da2">
+        <skos:prefLabel xml:lang="en">{"id": "45f0ea51-7300-4f2b-9d60-fa4f30c6214b", "value": "DESIGNED LANDSCAPE"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:scopeNote xml:lang="en">{"id": "a3127f3b-f4df-4e0f-8cf7-d69fa7e4d563", "value": "A landscape which has been specifically designed or modified. Often indicated by proven below ground stratigraphy, revealed by deliberate investigation including geophysical survey, or other surface monuments or structures."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-us">{"id": "22cb5d89-1c20-49b0-bd9e-0337e15f69dc", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/151455"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://localhost:8000/def19512-73d7-3954-890d-d97d6d5ecec8"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/f47f9dfc-1e14-3db5-bece-b3ab9c88b0c4">
+        <skos:narrower rdf:resource="http://localhost:8000/6de5453b-8abd-3cb3-8df6-13b8aa683709"/>
+        <skos:prefLabel xml:lang="en">{"id": "091f4b96-62c4-470f-8989-a19c79746aa9", "value": "BUILDING"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "8df97535-6130-4656-95be-3a79e057cb17", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84564"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "5e6daff6-c63c-4a8d-a082-8fd43ce74871", "value": "Monument with a roof and walls or evidence of these."}</skos:scopeNote>
+        <skos:narrower rdf:resource="http://localhost:8000/3445afb8-720d-3ed5-ba74-76d5095eea3b"/>
+        <skos:narrower rdf:resource="http://localhost:8000/d7238820-2da1-3a2a-9c17-7df9cc3e1b73"/>
+        <skos:narrower rdf:resource="http://localhost:8000/aa500952-9af5-3bab-9ccf-1050ff350cd2"/>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:scopeNote xml:lang="en">{"id": "c4bd8f44-ea0e-4a31-852b-0d7f59b1e7ae", "value": "Not to be used for indexing. Broad term used to assist retreival of all monuments where physical evidence is recorded."}</skos:scopeNote>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/ac6cf6e5-31ef-357a-a6e5-a11b7e4a7d67">
+        <skos:prefLabel xml:lang="en">{"id": "0b832e4e-c61f-4fb5-9c67-1232620832bb", "value": "ARCHITECTURAL COMPONENT"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "aee7ef49-3552-4d88-8c15-c6e770404a54", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/97296"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "a962a612-b9dc-43f6-a11a-80a2c46fdfa9", "value": "Monument whose existence is inferred from the traces of architectural features. Eg include shadow marks on building walls or beams, pillars, floors incorporated into a later structure, suggesting the existence of an earlier building."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://localhost:8000/3ac9e093-b4fb-3586-b663-e800b40a6dc1"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/b85990be-fdd6-3ff8-95f1-76c687b4b737">
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "a6e833fb-b476-48d9-9c30-33c44eba332f", "value": "NATURAL FEATURE"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "960041dc-f5c5-4318-94ed-f087bc79f0df", "value": "Monument thought to be archaeological or historical but proved to be natural."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-us">{"id": "955fcf5f-f582-4e28-83a4-0257c25b962f", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84568"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://localhost:8000/34fa5bcf-b827-3ea4-bb72-3ef59e30cc6c"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/733b821c-f888-3f9a-b6db-f2d9e97b0f1d">
+        <skos:prefLabel xml:lang="en">{"id": "26fc03c4-3b13-414b-af01-68a5a96278b1", "value": "EXCAVATED FEATURE"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "8266d63f-3582-4e53-bb5a-cf178129cddf", "value": "Feature visible following archaeological excavation"}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "dcbb9525-1e96-47a4-a824-8dc099f9a122", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/143015"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/d68712c6-c107-3d4a-b65d-ebc3fae41fc5">
+        <skos:scopeNote xml:lang="en">{"id": "28dff4b2-586e-47f2-acf9-d14dcc91077e", "value": "Monument visible, usually from the air, due to the fill of features being of a different colour than the surrounding subsoil. Soilmarks show up well in ploughed fields or areas where the topsoil has been stripped.  Term derived from AN32 Glossary"}</skos:scopeNote>
+        <skos:altLabel xml:lang="en">{"id": "ea61dfd1-8681-4508-9fda-5ca38fd55412", "value": "Ap Linear Feature"}</skos:altLabel>
+        <skos:altLabel xml:lang="en">{"id": "2ccd84e1-4e27-4ae9-b6e3-d359392da2de", "value": "Ap Macula"}</skos:altLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "3537edad-9e0a-4b20-9b48-f78e013e279b", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/99982"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "c08fe548-fb4e-4f6b-afdf-3d23b83d1ec8", "value": "SOILMARK"}</skos:prefLabel>
+        <skos:altLabel xml:lang="en">{"id": "4ecd9649-411b-481c-9cf5-de64fcb8702e", "value": "Soil Mark"}</skos:altLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:altLabel xml:lang="en">{"id": "0cf37623-89ff-4667-b9f3-059da064d34f", "value": "Ap Enclosure"}</skos:altLabel>
+        <skos:altLabel xml:lang="en">{"id": "624e4438-305c-4ac8-bbe8-77c0cee069fe", "value": "Ap Site"}</skos:altLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/df465dae-de6c-3271-8552-ddb889b50773">
+        <skos:prefLabel xml:lang="en">{"id": "8f8023d8-c3d3-48ba-a110-f027d5b65137", "value": "ENHANCED NATURAL FEATURE"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "55c15429-1777-4fb1-90f1-891fb3b782cb", "value": "Natural feature or area deliberately enhanced to construct a monument, eg rock carving, cave, rock shelter."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-us">{"id": "86178282-cd4d-4fc8-9e69-4804f32f688e", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84567"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://localhost:8000/06292344-a01d-34d8-8950-060e13adc648"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/4d4389b0-447a-31d0-9c25-3129f6aaa7c3">
+        <dcterms:identifier xml:lang="en-us">{"id": "2be1f26f-1098-4df0-b27f-ab50c25f1846", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/139114"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "78321a89-dbeb-4768-8ded-67df103c5688", "value": "WRECKAGE"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "87e0adf0-7709-4b0b-95b2-4366cc1af6fe", "value": "The fragmentary or substantial remains of a vehicle or aircraft. Where recovered from excavation double index with SUB SURFACE DEPOSIT."}</skos:scopeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/776a6f07-ba39-35dd-943c-fd915bdb34cc">
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:scopeNote xml:lang="en">{"id": "7316d5b7-63f6-41bd-9d3a-e01e4677695c", "value": "A monument composed of plants or trees which are still extant. Especially relevant for park and garden features. For example tree avenue, orchard, rose garden and lawn."}</skos:scopeNote>
+        <skos:prefLabel xml:lang="en">{"id": "555ebb63-7363-4a08-a0de-e08f8fd984eb", "value": "BOTANICAL FEATURE"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "d1e3fc6a-f5e1-49fe-9f58-e934bfc70455", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/99691"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/40668680-f9ad-30dd-ba83-fd70802444d5">
+        <skos:altLabel xml:lang="en">{"id": "fe4bac16-ab2b-4476-b40b-fdd61a1c9f58", "value": "Submerged"}</skos:altLabel>
+        <skos:related rdf:resource="http://localhost:8000/67c41e5c-3d79-3500-8b24-ece7816b89ca"/>
+        <skos:prefLabel xml:lang="en">{"id": "8d5d4f52-0d67-4504-99d0-7416198257fe", "value": "SUBMERGED MONUMENT"}</skos:prefLabel>
+        <skos:narrower rdf:resource="http://localhost:8000/d05b0a4d-7406-3407-9f30-b5e5a5c4efe9"/>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "18512360-0662-4890-9fc4-0ac4c8da5fad", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/99975"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "ebb32488-58c1-43c8-99d9-f1aeef39382e", "value": "Monument visible on the sea, lake or river bed, either totally submerged at all times, or exposed at low tide, low water conditions etc."}</skos:scopeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <dcterms:identifier xml:lang="en-us">{"id": "d0d447b0-5301-4589-8af3-3adc93470fc4", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/97294"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/d7238820-2da1-3a2a-9c17-7df9cc3e1b73">
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "525aebb9-a4f0-4f60-89f7-3bc8868eab71", "value": "Monument visible as substantial above ground remains, retaining evidence of architecture and materials, with walls partially or completely intact but with roof and interior walls substantially or completely destroyed."}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "e596a798-cd54-4273-9fae-c4fb51ba31e1", "value": "RUINED BUILDING"}</skos:prefLabel>
+    <skos:altLabel xml:lang="en">{"id": "92589bfd-a60c-424c-90df-36be53d8bd69", "value": "Partially Demolished Building"}</skos:altLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "9430c68a-4c02-485c-b7e6-0b33c1ccf0fd", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/87962"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/d05b0a4d-7406-3407-9f30-b5e5a5c4efe9">
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/852bbb52-f412-3894-931c-11b27e8b882d">
+        <dcterms:identifier xml:lang="en-us">{"id": "367fbfb0-b11b-47a8-a0a5-2d47c71b4654", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82786"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "0eca3b92-48b6-4f61-9eae-c4f0f17e3328", "value": "A maritime monument where the hull structure and fabric of a vessel remain wholly or mainly intact."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "2c8c31af-97fc-43cf-8f57-b28a942ed391", "value": "COHERENT VESSEL STRUCTURE"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/e3afe1b5-b503-3f3b-83d4-e659790d91b6">
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "166b6ebb-5c31-4804-95fe-07d51b0cb8e2", "value": "SCATTERED VESSEL STRUCTURE"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "10905def-304d-49f2-b7dc-cccb06d9304a", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82795"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "8178684e-92bf-43e1-b0cb-2c6cfe52d001", "value": "A maritime monument where the remains of a vessel are scattered over a wide area."}</skos:scopeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/e2b2e60f-028d-361c-80a3-18e2abc8e4b0">
+        <skos:scopeNote xml:lang="en">{"id": "d72f1a40-403b-4fc1-b7bf-1b4562fde46e", "value": "A maritime monument where the vessel remains are buried in the sea bed."}</skos:scopeNote>
+        <skos:prefLabel xml:lang="en">{"id": "c31700f1-d9f2-4022-92eb-714e7d8d4251", "value": "BURIED VESSEL STRUCTURE"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "b3fb0815-6199-481b-9614-912e821f931c", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82785"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/99094229-176b-377a-87be-2693460b6ffe">
+        <skos:scopeNote xml:lang="en">{"id": "ced223ff-27b0-46e8-b6be-27e62454e485", "value": "A maritime monument where the hull of a vessel is mostly in one piece, with large pieces of the superstructure intact."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "6febbce0-4724-4ce4-92c1-c3b466f68cdc", "value": "INTACT VESSEL STRUCTURE"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "88920c35-63af-438c-9f82-a073039db658", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82793"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:scopeNote xml:lang="en">{"id": "e4ab1e4c-906e-470d-938c-ac5a3b9e979a", "value": "A maritime monument where the remains of a vessel are known to exist but where no detailed information is available."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/3b6cab2b-137e-32e3-ae9f-0bf8336917b8">
+        <dcterms:identifier xml:lang="en-us">{"id": "a4fe71c4-cf75-49ad-8db0-7404857e536a", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82787"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "511d3a58-893e-4fce-9ea9-1b8482cee774", "value": "A maritime monument where the fabric of a vessel has collapsed, leaving the hull structure flat on the sea bed but not widely dispersed."}</skos:scopeNote>
+        <skos:prefLabel xml:lang="en">{"id": "4883eba1-46f1-4c08-ae7f-08103ea3942a", "value": "COLLAPSED VESSEL STRUCTURE"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en">{"id": "476b4e5a-9da8-4365-a804-d80049d8f331", "value": "VESSEL STRUCTURE"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "0d3f0b8c-219f-49b0-b962-864b5df09be2", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82799"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/caa619cf-bf93-3a12-9c1a-8c2aa123f842">
+    <dcterms:identifier xml:lang="en-us">{"id": "9fcead73-c7a9-4e85-9950-98198c18b1fc", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82798"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "6b69ebac-a870-4e3e-bec2-5be4819a358c", "value": "UNCERTAIN EVIDENCE"}</skos:prefLabel>
+    <skos:altLabel xml:lang="en">{"id": "107b917b-607d-48d2-b344-f90a07b125ff", "value": "Uncertain"}</skos:altLabel>
+    <skos:scopeNote xml:lang="en">{"id": "79eedee3-7435-4a46-8669-cf068b654de7", "value": "Current recorded information does not give the evidence for a monument, or the information is regarded as unreliable."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/abc479a5-4cc9-3ce4-8b8a-50a5dafe69b5">
+    <dcterms:identifier xml:lang="en-us">{"id": "1615868e-85b5-4eb5-add1-5253b2deb352", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/142985"}</dcterms:identifier>
+    <skos:altLabel xml:lang="en">{"id": "a6ca94cc-9597-4991-b8f1-c2cd7791dc85", "value": "Ruined Structure - Bonded"}</skos:altLabel>
+    <skos:scopeNote xml:lang="en">{"id": "5ed5b08a-740c-4753-b14f-6ff128bf6b3a", "value": "Man-made, roofless edifice or construction visible as substantial above-ground remains retaining evidence of architecture and materials, but which has been substantially destroyed."}</skos:scopeNote>
+    <skos:altLabel xml:lang="en">{"id": "fd95b0c1-c69d-4621-9685-876b64ef9e84", "value": "Ruined Structure - Unbonded"}</skos:altLabel>
+    <skos:prefLabel xml:lang="en">{"id": "7e9a123f-e6d1-4de7-a814-2cc9efd4b1bd", "value": "RUINED STRUCTURE"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:altLabel xml:lang="en">{"id": "2121ff71-d8d9-4e08-806a-85810d93b85a", "value": "Partially Destroyed Monument"}</skos:altLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/18a0f6b1-ffd2-364e-a65d-7ff410d510ed">
+    <skos:scopeNote xml:lang="en">{"id": "453f97ed-2f8d-42bb-9b0c-37d7da5e6d34", "value": "Do not use"}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "a5246d6c-3333-4a49-9273-794c350816fc", "value": "EVIDENCE"}</skos:prefLabel>
+    <skos:narrower rdf:resource="http://localhost:8000/caa619cf-bf93-3a12-9c1a-8c2aa123f842"/>
+    <skos:narrower rdf:resource="http://localhost:8000/17d757e4-80a2-31c4-8ec4-1907498ac8a5"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/62873c60-85c2-301c-8b73-1c1fb19d9568">
+        <skos:scopeNote xml:lang="en">{"id": "ecc1b444-8686-4242-b7a2-19a4959bf912", "value": "All physical evidence for a monument has certainly been completely destroyed (allowing no future reinvestigation) by activity implying substantial ground disturbance. Eg quarrying, road cutting, or natural disaster, erosion, acts of God etc."}</skos:scopeNote>
+        <skos:altLabel xml:lang="en">{"id": "8d702292-01b6-4ff9-8c89-f48983b79ef3", "value": "Partially Destroyed Monument"}</skos:altLabel>
+        <skos:prefLabel xml:lang="en">{"id": "00897d42-beb3-44a3-be33-c0f5f1b80ea0", "value": "DESTROYED MONUMENT"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "c6765a14-cc47-4548-8f12-c95abc5011c9", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84565"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:altLabel xml:lang="en">{"id": "82cf58ae-7959-48fb-a0ad-fcfdc2239cfe", "value": "Destroyed"}</skos:altLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <dcterms:identifier xml:lang="en-us">{"id": "dc4ca1cf-c60a-401f-8d51-c0537d0914d2", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82790"}</dcterms:identifier>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/e63337eb-f3fc-39ec-9a6a-3beafef2dc8d">
+        <skos:narrower rdf:resource="http://localhost:8000/67c41e5c-3d79-3500-8b24-ece7816b89ca"/>
+        <skos:prefLabel xml:lang="en">{"id": "45c3fd08-1e0b-4123-ad1d-cee1a90a328a", "value": "IMPLIED EVIDENCE"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "f005428c-a246-4139-8d01-b737bd83028a", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/97293"}</dcterms:identifier>
+        <skos:narrower rdf:resource="http://localhost:8000/38a260dd-35f7-3dbb-8454-4b9a82fa1ce5"/>
+        <skos:narrower rdf:resource="http://localhost:8000/73c28435-852c-334a-aa4b-829dd16c8488"/>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:narrower rdf:resource="http://localhost:8000/dc665dfc-6065-3eb5-b301-cd2b03f67b20"/>
+        <skos:narrower rdf:resource="http://localhost:8000/8d4070a8-6075-30c6-b812-93fc64607357"/>
+        <skos:scopeNote xml:lang="en">{"id": "01423bf9-47ce-4944-8df8-ce68ded59025", "value": "Not to be used for indexing. Broad term to assist retreival of all monuments where non-physical evidence is recorded."}</skos:scopeNote>
+        <skos:narrower rdf:resource="http://localhost:8000/dedcd7ae-54e3-32a1-a72b-19c574d9dd93"/>
+      </skos:Concept>
+    </skos:narrower>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/67c41e5c-3d79-3500-8b24-ece7816b89ca">
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/29a79453-cad7-3726-ae21-cdbccfe29e50">
+        <skos:scopeNote xml:lang="en">{"id": "f3c466b3-1182-4d16-9dda-c4d47842d771", "value": "An object in the sea bed detected by marine survey equipment that shows the contours of the sea bed beneath a vessel."}</skos:scopeNote>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "fbb03b33-2d72-442a-8099-6891f247c863", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82789"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "6f5a96d6-2102-4856-8265-5ac5ec25bbc3", "value": "ECHOSOUNDER TRACE"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en">{"id": "75bb7b8a-bd73-441c-b2b0-b3dd7518a597", "value": "MARINE GEOPHYSICAL EVIDENCE"}</skos:prefLabel>
+    <skos:narrower rdf:resource="http://localhost:8000/0de23383-621e-3306-a4b9-5c15d48bbdc3"/>
+    <dcterms:identifier xml:lang="en-us">{"id": "e43ddada-8288-4677-8c15-0cebffe7fdfd", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/99976"}</dcterms:identifier>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/9c67a5a9-4ad4-336a-a639-87199493dd0b">
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "cc8a409c-27b9-4046-a42a-985946cfd475", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/143438"}</dcterms:identifier>
+        <skos:scopeNote xml:lang="en">{"id": "f8a3e51e-3e9c-4bbe-964e-67956bbccdb6", "value": "A marine survey in which a multi-element transducer provides many (30-150) individual soundings of the water depth and echo strength for each ping."}</skos:scopeNote>
+        <skos:prefLabel xml:lang="en">{"id": "dda54808-ac18-4e09-ad5a-da2caaa54ce0", "value": "MULTIBEAM SURVEY"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:related rdf:resource="http://localhost:8000/40668680-f9ad-30dd-ba83-fd70802444d5"/>
+    <skos:scopeNote xml:lang="en">{"id": "51050a39-065c-4767-8e12-a3dfbf6f2eca", "value": "A monument visible as a trace on marine survey equipment"}</skos:scopeNote>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/195df729-f44e-3461-8ecb-4bec403cf312">
+        <dcterms:identifier xml:lang="en-us">{"id": "f6dfcdff-24b8-4828-a79d-f7cd0c20b6eb", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82797"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:prefLabel xml:lang="en">{"id": "abb4f280-2407-4f84-897f-9afa3c1539b7", "value": "SONAR CONTACT"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "e0a2f066-77ba-4d2a-a28f-2cdf9b851835", "value": "An object lying on the sea bed detected by marine survey equipment that emits and receives high frequency sound waves."}</skos:scopeNote>
+        <skos:narrower rdf:resource="http://localhost:8000/c6e2ee96-941b-3d65-b115-0c7b35d1361e"/>
+      </skos:Concept>
+    </skos:narrower>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/69cf62c1-e521-3376-9b7d-5364f14bdb72">
+    <dcterms:identifier xml:lang="en-us">{"id": "30ed6649-c1cf-4508-8bd4-ba1841d5dbf7", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/142987"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en">{"id": "f3522472-8ec1-4585-ad6e-8f8b3faa1009", "value": "A monument consisting of a built structure, but which has been demolished so that only a ground plan and foundations, or similar, are thought to remain. Where all below ground traces have also been removed use DESTROYED MONUMENT."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:prefLabel xml:lang="en">{"id": "33967650-d2a9-4e53-8da7-7bddc11afd75", "value": "DEMOLISHED STRUCTURE"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/6de5453b-8abd-3cb3-8df6-13b8aa683709">
+    <skos:altLabel xml:lang="en">{"id": "b7d1584b-4ce1-4d9d-a67a-defd3e8e2e90", "value": "Roofed Ruin"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "602546cb-5be3-4c36-97cc-72fe0a150e5a", "value": "Roofed Building"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "37cbfde5-5043-42d4-a418-51b7411bbfb4", "value": "Building - Bonded"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "9e6f1b28-6721-435a-b270-b68f3a7c61f2", "value": "Partially Demolished Building"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "25a56f19-411c-4cf2-a7db-153ec5111f8f", "value": "Partially Destroyed Monument"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "e2f2f53b-8ac9-4abc-b6b2-8856100cedcc", "value": "Building Complex"}</skos:altLabel>
+    <skos:prefLabel xml:lang="en">{"id": "f839086e-56df-4bf8-86a6-1cc0e8944a30", "value": "EXTANT BUILDING"}</skos:prefLabel>
+    <skos:altLabel xml:lang="en">{"id": "10cc2fd7-c181-4f8c-86c6-b594a59aaaae", "value": "Uninhabited Building"}</skos:altLabel>
+    <skos:altLabel xml:lang="en">{"id": "53d37c7c-c91a-4fb2-a5c3-45e12852534c", "value": "Building - Other"}</skos:altLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "7d9ca270-acbe-43df-a3f1-3049b9736565", "value": "Monument with roof or walls intact or substantially intact, significant survival of original features, even if building no longer in use for original function."}</skos:scopeNote>
+    <skos:altLabel xml:lang="en">{"id": "52b0413e-b330-4f21-a0a6-e24dae5768b6", "value": "Inhabited Building"}</skos:altLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "a03d10c7-71e7-43c7-83f3-f3315cd2f214", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/97291"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/162cc79e-562a-3c2b-ab9e-7f09c3fe9e24">
+    <dcterms:identifier xml:lang="en-us">{"id": "b7040902-be3d-4591-91ec-2b7a1ac5707a", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/141909"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "508bbba4-8b4b-4ff1-8062-c72f6fbe4a7a", "value": "A man-made construction or object (such as a gravestone) which has been moved from its original site either through active human intervention or natural processes such as erosion. For buildings which have been moved use MOVED BUILDING."}</skos:scopeNote>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/aa500952-9af5-3bab-9ccf-1050ff350cd2">
+        <skos:prefLabel xml:lang="en">{"id": "0e2c681f-7c58-44f4-9437-4d2a8a550efa", "value": "MOVED BUILDING"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+        <skos:scopeNote xml:lang="en">{"id": "5bea2df1-2c46-4835-9c84-a84c360d6852", "value": "A building which has been moved from its original site either through active human intervention or natural processes such as erosion. For structures or objects such as gravestones use MOVED STRUCTURE."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-us">{"id": "6e43df8e-7573-4637-b6b7-92d18a6fd1f2", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/141908"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en">{"id": "1b760511-889d-41d1-8e23-7af1ccd9e93e", "value": "MOVED STRUCTURE"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/38a260dd-35f7-3dbb-8454-4b9a82fa1ce5">
+    <skos:prefLabel xml:lang="en">{"id": "085d92f7-b326-4100-8281-1fe0d60ba29a", "value": "MARINE TRAWLING PLOT"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "48bebdd4-3612-47ad-9fdc-2c427f780d5d", "value": "An object in the sea bed recorded on the Hydrographic Office plot of objects snagged by nets during trawling."}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en-us">{"id": "0208c6e3-8ca0-4113-ae59-2476ddc6d0ec", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/146360"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/dedcd7ae-54e3-32a1-a72b-19c574d9dd93">
+    <dcterms:identifier xml:lang="en-us">{"id": "36f50aea-a5cb-4ab7-b291-1218dd23512f", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84573"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "65add2f0-0769-42f3-90b2-18bd52df56da", "value": "CONJECTURAL EVIDENCE"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "a53260cd-8499-4405-b8e2-444823b7ee78", "value": "Monument type/interpretation is inferred, based on informed speculation eg by comparison with similar monuments, proximity to other monuments, topography, site character etc."}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/8d4070a8-6075-30c6-b812-93fc64607357">
+    <skos:scopeNote xml:lang="en">{"id": "351c1114-b9e4-4a84-b13b-d0fe950267c9", "value": "A monument whose presence is inferred from verbally delivered information drawn from the speaker's personal knowledge."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:prefLabel xml:lang="en">{"id": "12eff6bb-053b-4bd0-af85-d97f541e3331", "value": "ORAL EVIDENCE"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "7b3c2b35-17ca-43b6-b89d-99aa6a4c337a", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/140391"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/427c49d3-7ac8-3703-90fc-4654fea8e138">
+    <dcterms:identifier xml:lang="en-us">{"id": "1a9d4cf1-0203-4db5-a968-455a82f16452", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/111153"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "aa0ab85f-7731-475e-a6ef-4623afe7afc6", "value": "UNSTRATIFIED FIND"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en">{"id": "0de4dd6b-1285-4cf1-98ef-e227a72c03f8", "value": "Monument whose presence is inferred by discovery of unstratified artefacts, for instance in plough soil."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/dc665dfc-6065-3eb5-b301-cd2b03f67b20">
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:prefLabel xml:lang="en">{"id": "db093373-cb3f-4f2f-a561-d4720124a7d1", "value": "DOCUMENTARY EVIDENCE"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "5923d475-9fa9-4666-8736-a57b0db59cd4", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82788"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en">{"id": "227267fb-962e-49a9-b6f8-ecb694c6ea20", "value": "Monument known only from primary documentary sources eg books, maps, legal records, where no physical evidence exists. Use also where a monument has been planned but never constructed."}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/9bdc6d8f-128c-37a8-9b8d-02fcff945418">
+    <skos:scopeNote xml:lang="en">{"id": "f16417a8-db54-461a-958b-a09114214223", "value": "Man-made roofless edifice or construction which is intact or substantially intant, with significant survival of original features, even if no longer serving original intended funtion."}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en-us">{"id": "e31fea40-1cff-4522-805c-7bed72085893", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/142986"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "68ad5fab-e8ab-4f9e-944d-535736350afb", "value": "EXTANT STRUCTURE"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/73c28435-852c-334a-aa4b-829dd16c8488">
+    <skos:scopeNote xml:lang="en">{"id": "a37a2f51-e1ed-4ee9-8d8e-bbf96e9e7639", "value": "Use where the presence or nature of a monument is inferred from placenames or placename elements."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:prefLabel xml:lang="en">{"id": "0584ad62-1ecd-4fb7-b4ab-dddaca30f5fb", "value": "PLACENAME EVIDENCE"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "1772d575-4ca7-49c5-b376-b7e09b712562", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/84574"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/fe408c70-75e9-3635-8fab-58b617ef1597">
+    <skos:prefLabel xml:lang="en">{"id": "2c945cf6-b647-452a-9cab-b2abd3902fcc", "value": "ARTEFACT SCATTER"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en">{"id": "34cc4f50-037e-423b-9ccb-5689aacbac95", "value": "A distribution of artefacts indicating the presence of former presence of a monument."}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en-us">{"id": "105aed90-5eda-42ef-96c6-0abee0141bcb", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/135585"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/c6e2ee96-941b-3d65-b115-0c7b35d1361e">
+    <dcterms:identifier xml:lang="en-us">{"id": "b96285e7-f040-4b29-8d71-72870e1479ba", "value": "http://purl.org/heritagedata/schemes/eh_evd/concepts/82796"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/6ef975a0-3c04-31fc-be8c-9027aaf14737"/>
+    <skos:scopeNote xml:lang="en">{"id": "b402f4b8-cb74-49e2-9484-549e8f85c077", "value": "An object projecting out of the sea bed detected by marine survey equipment that emits and receives high frequency sound waves projected sideways from a boat or towed array."}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "96aa5e4a-f53f-4f45-9006-016125dca62e", "value": "SIDE SCAN SONAR CONTACT"}</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>

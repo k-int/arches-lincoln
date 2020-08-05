@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/c6b0c456-4bad-468f-9a46-aa162057187c">
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/3e37946b-5cc1-4620-87b9-311b22cd6ddc">
+        <skos:prefLabel xml:lang="en-us">{"id": "f6e3c32f-e942-4f09-86f2-4d7a7512eacf", "value": "Accurate to 1000 meters"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "28247788-308c-41db-b021-c6869ba72c78", "value": "http://www.archesproject.org/3e37946b-5cc1-4620-87b9-311b22cd6ddc"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/c6b0c456-4bad-468f-9a46-aa162057187c"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/2745f7af-99ed-4851-9282-f4e6fbad7352">
+        <skos:prefLabel xml:lang="en-us">{"id": "c9a30836-eda6-4d50-b121-29af6ac79253", "value": "Accurate to 1 meter"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "dfd5ea69-0aec-48d2-8218-3fabeb3ef08d", "value": "http://www.archesproject.org/2745f7af-99ed-4851-9282-f4e6fbad7352"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/c6b0c456-4bad-468f-9a46-aa162057187c"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:title xml:lang="en-us">{"id": "3ef279c8-6222-44a8-9288-ff8fb98c66e3", "value": "Lincoln Spatial Precision Qualifier"}</dcterms:title>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/b67a3746-e07a-4c20-bf99-ec68fbbda189">
+        <skos:prefLabel xml:lang="en-us">{"id": "ddf38dd4-b207-43e7-849c-b81ace25d786", "value": "Unknown"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "79f808ed-ecb1-447f-a79b-7ace68fcd3be", "value": "http://www.archesproject.org/b67a3746-e07a-4c20-bf99-ec68fbbda189"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/c6b0c456-4bad-468f-9a46-aa162057187c"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/6c1a3bf3-db23-4936-ab29-369f9c39b0ad">
+        <skos:inScheme rdf:resource="http://localhost:8000/c6b0c456-4bad-468f-9a46-aa162057187c"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "c9859a3e-e907-48cf-b565-fb73e6c1dcde", "value": "Accurate to 10 meters"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "13f53aef-37f3-4800-a4c6-07eb4dd5c414", "value": "http://www.archesproject.org/6c1a3bf3-db23-4936-ab29-369f9c39b0ad"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://localhost:8000/9bbf8fe0-deff-45e6-84c7-c30de37fcde6">
+        <dcterms:identifier xml:lang="en-us">{"id": "2eab4450-0b8d-47cc-bb84-12f34ae71f9e", "value": "http://www.archesproject.org/9bbf8fe0-deff-45e6-84c7-c30de37fcde6"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "9a460c1b-5529-4880-9cc0-00f6a1590852", "value": "Accurate to 100 meters"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/c6b0c456-4bad-468f-9a46-aa162057187c"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+    <dcterms:identifier xml:lang="en-us">{"id": "6baa8c80-7917-4d70-9a48-099251c92f85", "value": "http://www.archesproject.org/c6b0c456-4bad-468f-9a46-aa162057187c"}</dcterms:identifier>
+  </skos:ConceptScheme>
+</rdf:RDF>

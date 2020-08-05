@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="http://localhost:8000/b7d33b47-310f-4a9e-9beb-6ba336a4c8ae">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1">
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/2dab01c8-2b3c-4020-8070-9ab453311099"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/0d22f7f9-fc6a-43ee-9872-3b6673b45edb"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/6b7efe08-367d-48f3-bb13-6c7d719a7004"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/bc965823-a63e-49e7-a187-db10b6520671"/>
+        <dcterms:title xml:lang="en">{"id": "5af4e81e-87e8-4028-9fdf-9395b40a36b8", "value": "Lincoln Area Type"}</dcterms:title>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/f6ae73c1-059d-4926-b7d6-c514e6823607"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "ac19ae49-f652-46af-8f4c-a1ad395f3631", "value": "http://www.archesproject.org/038f0d8c-736f-4f18-86ca-7ed31815ada1"}</dcterms:identifier>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/b7d33b47-310f-4a9e-9beb-6ba336a4c8ae"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/0a80e8c6-717e-4989-bd05-e82cd40255de"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/37ed5f21-97ea-47cd-9e62-2f8163c8349e"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/38cef73b-01e7-4feb-ad23-2e9c2198947b"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/5fcbf759-68d0-400b-848f-c80a522da5d5"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/2f1e86b8-7eae-4182-a49f-33938f6e8ec9"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/e3a4871a-cf5f-47bd-8983-cca3e979900d"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/370fe59a-181a-4510-9db4-2a9b1815174f"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en-us">{"id": "40ec2887-8299-40a9-a38b-8cbb9a59e408", "value": "High Medieval Research Agenda Zone"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "76179de0-f8b4-4ddf-8b54-5165a71fe9cd", "value": "http://www.archesproject.org/b7d33b47-310f-4a9e-9beb-6ba336a4c8ae"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/0d22f7f9-fc6a-43ee-9872-3b6673b45edb">
+    <dcterms:identifier xml:lang="en-us">{"id": "117425aa-5f63-4624-937c-5597fb1869b6", "value": "http://www.archesproject.org/0d22f7f9-fc6a-43ee-9872-3b6673b45edb"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en">{"id": "5c9a7f14-d8c9-4f00-9a8b-5e3083f7528e", "value": "Urban Area"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/0a80e8c6-717e-4989-bd05-e82cd40255de">
+    <skos:prefLabel xml:lang="en-us">{"id": "d7207a22-f5fd-4158-ae30-d4682303c02b", "value": "Early Medieval Research Agenda Zone"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <dcterms:identifier xml:lang="en-us">{"id": "ee384a9b-1a76-4dc6-8865-9744c28fdefb", "value": "http://www.archesproject.org/0a80e8c6-717e-4989-bd05-e82cd40255de"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/370fe59a-181a-4510-9db4-2a9b1815174f">
+    <skos:prefLabel xml:lang="en-us">{"id": "f090353d-0137-4050-80d7-850669b54fe6", "value": "Industrial Research Agenda Zone"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <dcterms:identifier xml:lang="en-us">{"id": "b3bfa561-9eb6-4eaf-a1ca-d0dbfd631e2f", "value": "http://www.archesproject.org/370fe59a-181a-4510-9db4-2a9b1815174f"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/f6ae73c1-059d-4926-b7d6-c514e6823607">
+    <dcterms:identifier xml:lang="en-us">{"id": "83606991-268d-4fcc-9955-22194a6350b4", "value": "http://www.archesproject.org/f6ae73c1-059d-4926-b7d6-c514e6823607"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "86b65ede-464e-4d87-9910-beac04ba2fda", "value": "Early Modern Research Agenda Zone"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/e3a4871a-cf5f-47bd-8983-cca3e979900d">
+    <dcterms:identifier xml:lang="en-us">{"id": "c3434770-11d0-401a-9c0a-236268db0938", "value": "http://www.archesproject.org/e3a4871a-cf5f-47bd-8983-cca3e979900d"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "e36350b6-7d65-4b43-860d-a79a140447eb", "value": "Prehistoric Research Agenda Zone"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/6b7efe08-367d-48f3-bb13-6c7d719a7004">
+    <dcterms:identifier xml:lang="en-us">{"id": "d29069fc-bb6d-4779-b0cd-f0faee368227", "value": "http://www.archesproject.org/6b7efe08-367d-48f3-bb13-6c7d719a7004"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en">{"id": "3e1dace0-b51f-4109-a450-aa0a7ccc9382", "value": "Park or Garden"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/38cef73b-01e7-4feb-ad23-2e9c2198947b">
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="el">{"id": "df9e3378-d726-407b-92c0-965d1ec3d942", "value": "Character Area"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "ad8bfb7e-2f2e-4d28-b1f6-05db2aa673b1", "value": "http://www.archesproject.org/38cef73b-01e7-4feb-ad23-2e9c2198947b"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/37ed5f21-97ea-47cd-9e62-2f8163c8349e">
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en">{"id": "4f7c2cd9-a143-4daf-b9f3-d4b3f31630cf", "value": "Conservation Area"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "2425c69c-ce90-4585-8f27-dfafe43c5ff2", "value": "http://www.archesproject.org/37ed5f21-97ea-47cd-9e62-2f8163c8349e"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/2f1e86b8-7eae-4182-a49f-33938f6e8ec9">
+    <dcterms:identifier xml:lang="en-us">{"id": "dfba27cb-ea2c-412a-97e3-d4cf8a6b4e0d", "value": "http://www.archesproject.org/2f1e86b8-7eae-4182-a49f-33938f6e8ec9"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en">{"id": "022b0c40-5e06-4a98-9dfb-4ef25bdfdc12", "value": "Archaeological Site"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/2dab01c8-2b3c-4020-8070-9ab453311099">
+    <skos:prefLabel xml:lang="el">{"id": "95e78561-55d3-484e-95d9-e648f9a2aca1", "value": "Research Agenda Zone"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <dcterms:identifier xml:lang="en-us">{"id": "9852022c-e7db-4727-b9e2-224166c36330", "value": "http://www.archesproject.org/2dab01c8-2b3c-4020-8070-9ab453311099"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/bc965823-a63e-49e7-a187-db10b6520671">
+    <dcterms:identifier xml:lang="en-us">{"id": "e1db7616-c774-4757-90a7-451414bd3ca3", "value": "http://www.archesproject.org/bc965823-a63e-49e7-a187-db10b6520671"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "ae373b56-a2ae-4f66-bb59-abdc043690b2", "value": "Roman Colonia Research Agenda Zone"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/5fcbf759-68d0-400b-848f-c80a522da5d5">
+    <skos:inScheme rdf:resource="http://localhost:8000/038f0d8c-736f-4f18-86ca-7ed31815ada1"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "132eaa2b-d81e-45fe-a7f4-fa543f0c52db", "value": "Roman Military Research Agenda Zone"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "88960d38-84eb-47ac-8dd3-86f67b2633ab", "value": "http://www.archesproject.org/5fcbf759-68d0-400b-848f-c80a522da5d5"}</dcterms:identifier>
+  </skos:Concept>
+</rdf:RDF>

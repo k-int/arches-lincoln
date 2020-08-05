@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="http://localhost:8000/4053c431-8e69-49e5-82bd-e6821e58cc7a">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://localhost:8000/477be6c6-5bd3-4885-bd0b-468da0452ad0">
+        <dcterms:title xml:lang="en-us">{"id": "76b3036a-72fe-40a0-b9f9-8a093a9ee6f2", "value": "MIDAS Measurement Type"}</dcterms:title>
+        <dcterms:identifier xml:lang="en-us">{"id": "21a17204-23d3-4a95-bea3-6faac45f7b24", "value": "http://www.archesproject.org/477be6c6-5bd3-4885-bd0b-468da0452ad0"}</dcterms:identifier>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/30c992ea-170d-4a06-a997-b43e6fd0d128"/>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/4053c431-8e69-49e5-82bd-e6821e58cc7a"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en-us">{"id": "8ed4ec08-860e-4b99-a771-94b574a2ace2", "value": "Measuring"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-us">{"id": "1869211c-8599-4cce-82a5-dda988afeb9a", "value": "http://www.archesproject.org/4053c431-8e69-49e5-82bd-e6821e58cc7a"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://localhost:8000/30c992ea-170d-4a06-a997-b43e6fd0d128">
+    <dcterms:identifier xml:lang="en-us">{"id": "5a2de96e-8a50-4bbc-8638-940bd2e679a1", "value": "http://www.archesproject.org/30c992ea-170d-4a06-a997-b43e6fd0d128"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://localhost:8000/477be6c6-5bd3-4885-bd0b-468da0452ad0"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "fa875081-f686-4e67-aa48-1c65e3d2a454", "value": "Weighing"}</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>
