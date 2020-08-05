@@ -102,3 +102,14 @@ header#navbar {
     margin-top: $offset-of-bar + 13px;
   }
 }
+
+#content-container {
+  .scroll-y {
+    max-height: calc(100vh - 130px);
+    overflow-x: hidden;
+  }
+}
+
+#footer {
+  display: none
+}

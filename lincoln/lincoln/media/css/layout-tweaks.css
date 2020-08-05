@@ -70,3 +70,10 @@ header#navbar {
 
 .settings-panel > div:nth-child(2) {
   margin-top: 63px; }
+
+#content-container .scroll-y {
+  max-height: calc(100vh - 130px);
+  overflow-x: hidden; }
+
+#footer {
+  display: none; }
