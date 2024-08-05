@@ -132,7 +132,7 @@ define([
         this.overlays = params.overlaysObservable || ko.observableArray();
 
         var mapLayers = params.mapLayers || arches.mapLayers;
-        mapLayers = mapLayers.sort((a, b) => parseInt(a.layersortorder) - parseInt(b.layersortorder))
+        mapLayers = mapLayers.sort((a, b) => a.layersortorder - b.layersortorder)
         mapLayers.forEach(function(layer) {
             if (!layer.isoverlay) {
                 if (!params.basemaps) self.basemaps.push(layer);
@@ -471,7 +471,7 @@ define([
             }
 
             $.ajax({
-                type: "POST",
+                type: "PUT",
                 data: JSON.stringify({
                     map_order: new_order
                 }),
