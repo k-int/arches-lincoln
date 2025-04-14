@@ -131,10 +131,11 @@ INSTALLED_APPS = (
     "django_celery_results",
     "compressor",
     # "silk",
+    "arches_her",
     "lincoln_her",
 )
 
-ARCHES_APPLICATIONS = ()
+ARCHES_APPLICATIONS = ("arches_her",)
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
@@ -393,6 +394,12 @@ LANGUAGES = [
 
 # override this to permenantly display/hide the language switcher
 SHOW_LANGUAGE_SWITCH = len(LANGUAGES) > 1
+
+DATATYPE_LOCATIONS.append('arches_her.datatypes')
+FUNCTION_LOCATIONS.append('arches_her.functions')
+SEARCH_COMPONENT_LOCATIONS.append('arches_her.search.components')
+
+HER_ROOT = os.path.join(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()) + '../../')), 'arches_her', 'arches_her')
 
 try:
     from .package_settings import *
