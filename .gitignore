@@ -1,0 +1,15 @@
+*.pyc
+*.log
+lincoln_her/logs
+lincoln_her/export_deliverables
+lincoln_her/cantaloupe/*
+lincoln_her/staticfiles
+lincoln_her/media/packages
+lincoln_her/media/node_modules
+lincoln_her/media/build/*
+lincoln_her/uploadedfiles/*
+lincoln_her/settings_local.py
+lincoln_her/webpack/webpack-stats.json
+lincoln_her/webpack/webpack-user-config.js
+.vscode/
+CACHE
