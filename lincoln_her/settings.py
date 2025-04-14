@@ -41,6 +41,9 @@ FILE_TYPES = ["bmp", "gif", "jpg", "jpeg", "pdf", "png", "psd", "rtf", "tif", "t
 FILENAME_GENERATOR = "arches.app.utils.storage_filename_generator.generate_filename"
 UPLOADED_FILES_DIR = "uploadedfiles"
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'c-4)-24-4m8y*!ctfdhfzs@u*7!tm$y7%(x%7898ta4k+nm@2^'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
