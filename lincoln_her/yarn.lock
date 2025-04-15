@@ -2949,6 +2949,10 @@ arches@archesproject/arches#stable/7.5.5:
     vue "^3.3.4"
     webpack-bundle-tracker "^1.4.0"
 
+arches_her@archesproject/arches_her#dev/1.0.x:
+  version "0.0.0"
+  resolved "https://codeload.github.com/archesproject/arches_her/tar.gz/2ae4430ce8f4c74b823248eedd6aaf56d57c154f"
+
 are-we-there-yet@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/are-we-there-yet/-/are-we-there-yet-2.0.0.tgz#372e0e7bd279d8e94c653aaa1f67200884bf3e1c"
