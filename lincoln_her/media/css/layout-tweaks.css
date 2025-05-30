@@ -61,6 +61,7 @@ header#navbar {
   overflow-y: auto; */
   min-height: 0; }
 
+
 .widget-wrapper .mapboxgl-map {
   margin-bottom: -20px; }
 
@@ -77,3 +78,23 @@ header#navbar {
 
 #footer {
   display: none; }
+
+/* V7 tweaks */
+.sidenav-sm .sidenav-menu .active-sub>a {
+  background-color: #ce9b0a;
+  color: #2c3647;
+}
+
+.sidenav-sm .sidenav-menu li:hover .menu-title {
+  color: #fff;
+  /* keeps navbar item text white */
+}
+
+.sidenav-menu>ul>li>a:hover {
+  box-shadow: inset 4px 0 0 0 #ce9b0a;
+
+}
+
+.sidenav {
+  color: #2c3647;
+}
