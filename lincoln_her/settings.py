@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     "django_celery_results",
     "compressor",
     # "silk",
+    "storages",
     "arches_her",
     "lincoln_her",
 )
