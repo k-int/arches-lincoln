@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+<!-- Extends the existing Arches for HERs Letters ConceptScheme and Collection with Lincoln Letters -->
+
+<!-- DCE Letter A - No progression Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/89b27954-32b0-412b-a930-80ed69414fce">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;c7956dfe-bf56-4439-acd4-20cce659ef36&quot;, &quot;value&quot;: &quot;DCE Letter A - No progression Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/89b27954-32b0-412b-a930-80ed69414fce"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter B1 - Pre-app Predetermination Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/eba7c048-2ef9-4b75-ba6f-e31aff022f52">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;5a20d5f3-1bb0-49e2-8e47-aab8dc202bfb&quot;, &quot;value&quot;: &quot;DCE Letter B1 - Pre-app Predetermination Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/eba7c048-2ef9-4b75-ba6f-e31aff022f52"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter B2 - Predetermination Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/1bd27371-ac15-4a8d-b7f2-997efedcf2cb">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;4b26ce40-88ab-4334-9088-d8b72ec0a8fa&quot;, &quot;value&quot;: &quot;DCE Letter B2 - Predetermination Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/1bd27371-ac15-4a8d-b7f2-997efedcf2cb"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter C - Evaluation Condition Two-Stage Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/d612aa9c-1c7a-4a35-9909-6f0bbca1fdea">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;304e5439-0f7b-4c0d-99cd-90fba46d5daf&quot;, &quot;value&quot;: &quot;DCE Letter C - Evaluation Condition Two-Stage Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/1bd27371-ac15-4a8d-b7f2-997efedcf2cb"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter D2 - Condition Investigation Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/0fbfd0c6-57d6-4d1e-a124-d9470cd0a76d">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;c20af6ba-3124-4874-9eba-5421c8ece292&quot;, &quot;value&quot;: &quot;DCE Letter D2 - Condition Investigation Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/0fbfd0c6-57d6-4d1e-a124-d9470cd0a76d"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter D3 - Condition Historic Building Recording Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/16e014b5-d0ba-46c9-bd18-dcbe38d1dbc7">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;e5b904ae-d54c-4efc-b185-dfdc26a5d76e&quot;, &quot;value&quot;: &quot;DCE Letter D3 - Condition Historic Building Recording Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/16e014b5-d0ba-46c9-bd18-dcbe38d1dbc7"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter F1 - WSI Approval Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/3170447a-fa93-47cc-b140-e10ebb528661">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;eb1a55ec-c737-4b2e-af2b-5eae777dc7c8&quot;, &quot;value&quot;: &quot;DCE Letter F1 - WSI Approval Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/3170447a-fa93-47cc-b140-e10ebb528661"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter H - Condition Satisfied Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/05803698-7e55-4b94-b7f7-7c4946c64f83">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;215f6a55-7ea0-4807-9deb-0ef9786c2090&quot;, &quot;value&quot;: &quot;DCE Letter H - Condition Satisfied Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/05803698-7e55-4b94-b7f7-7c4946c64f83"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- DCE Letter I - Bespoke Letter -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/6ca637b2-0fa9-44c6-b558-0fbe4a23e6ea">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;f2c109d8-7611-445c-bae3-35eb21b30b67&quot;, &quot;value&quot;: &quot;DCE Letter I - Bespoke Letter&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/15c95776-1eda-43de-bdb7-54c32e984379"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/e49a01b7-c018-4c35-af8b-5641fe1d25b4">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/6ca637b2-0fa9-44c6-b558-0fbe4a23e6ea"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Lincoln specific External Cross Reference sources -->
+
+<!-- Lincolnshire Museum and Archive Service -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/9ca0456d-246e-4b67-9591-0c554eb1df26">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/e2253eab-4814-46fa-86b4-cf91d8e1e4a7">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;428a6130-ef27-4a58-a597-838ca5ceb891&quot;, &quot;value&quot;: &quot;Lincolnshire Museum and Archive Service&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/9ca0456d-246e-4b67-9591-0c554eb1df26"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/06bbe5d2-93e8-43df-a4f4-5667648fd2ef">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/e2253eab-4814-46fa-86b4-cf91d8e1e4a7"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- City of Lincoln Planning System -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/9ca0456d-246e-4b67-9591-0c554eb1df26">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/e1e2395c-3e93-43be-aebf-c3e870e4fde8">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;00ad8277-013a-45d9-b4b5-939a0659dcc0&quot;, &quot;value&quot;: &quot;City of Lincoln Planning System&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/9ca0456d-246e-4b67-9591-0c554eb1df26"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/06bbe5d2-93e8-43df-a4f4-5667648fd2ef">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/e1e2395c-3e93-43be-aebf-c3e870e4fde8"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Lincoln Townscape Assessment  -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/9ca0456d-246e-4b67-9591-0c554eb1df26">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/c0cd314d-96a5-4148-bab1-f5cde7c48306">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;4f394e05-32bd-4de3-8e88-43f44cd84bbb&quot;, &quot;value&quot;: &quot;Lincoln Townscape Assessment&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/9ca0456d-246e-4b67-9591-0c554eb1df26"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/06bbe5d2-93e8-43df-a4f4-5667648fd2ef">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/c0cd314d-96a5-4148-bab1-f5cde7c48306"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Designation and Protection Type extensions -->
+
+<!-- Character Area -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/38cef73b-01e7-4feb-ad23-2e9c2198947b">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;df9e3378-d726-407b-92c0-965d1ec3d942&quot;, &quot;value&quot;: &quot;Character Area&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/38cef73b-01e7-4feb-ad23-2e9c2198947b"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Early Modern Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/f6ae73c1-059d-4926-b7d6-c514e6823607">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;86b65ede-464e-4d87-9910-beac04ba2fda&quot;, &quot;value&quot;: &quot;Early Modern Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/f6ae73c1-059d-4926-b7d6-c514e6823607"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Roman Military Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/5fcbf759-68d0-400b-848f-c80a522da5d5">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;132eaa2b-d81e-45fe-a7f4-fa543f0c52db&quot;, &quot;value&quot;: &quot;Roman Military Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/5fcbf759-68d0-400b-848f-c80a522da5d5"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Industrial Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/370fe59a-181a-4510-9db4-2a9b1815174f">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;f090353d-0137-4050-80d7-850669b54fe6&quot;, &quot;value&quot;: &quot;Industrial Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/370fe59a-181a-4510-9db4-2a9b1815174f"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Prehistoric Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/e3a4871a-cf5f-47bd-8983-cca3e979900d">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;e36350b6-7d65-4b43-860d-a79a140447eb&quot;, &quot;value&quot;: &quot;Prehistoric Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/e3a4871a-cf5f-47bd-8983-cca3e979900d"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- High Medieval Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/b7d33b47-310f-4a9e-9beb-6ba336a4c8ae">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;40ec2887-8299-40a9-a38b-8cbb9a59e408&quot;, &quot;value&quot;: &quot;High Medieval Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/b7d33b47-310f-4a9e-9beb-6ba336a4c8ae"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Early Medieval Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/0a80e8c6-717e-4989-bd05-e82cd40255de">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;d7207a22-f5fd-4158-ae30-d4682303c02b&quot;, &quot;value&quot;: &quot;Early Medieval Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/0a80e8c6-717e-4989-bd05-e82cd40255de"/>
+	</skos:member>
+</skos:Collection>
+
+<!-- Roman Colonia Research Agenda Zone -->
+<skos:ConceptScheme rdf:about="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe">
+	<skos:hasTopConcept>
+		<skos:Concept rdf:about="http://localhost:8000/bc965823-a63e-49e7-a187-db10b6520671">
+			<skos:prefLabel xml:lang="en">{&quot;id&quot;: &quot;ae373b56-a2ae-4f66-bb59-abdc043690b2&quot;, &quot;value&quot;: &quot;Roman Colonia Research Agenda Zone&quot;}</skos:prefLabel>
+			<skos:inScheme rdf:resource="http://localhost:8000/c0254d4d-3948-4614-af80-4ee065deadbe"/>
+		</skos:Concept>
+	</skos:hasTopConcept>
+</skos:ConceptScheme>
+<skos:Collection rdf:about="http://localhost:8000/08224567-338c-406b-91ae-6ce4b4ee3608">
+	<skos:member>
+		<skos:Concept rdf:about="http://localhost:8000/bc965823-a63e-49e7-a187-db10b6520671"/>
+	</skos:member>
+</skos:Collection>
+
+</rdf:RDF>
