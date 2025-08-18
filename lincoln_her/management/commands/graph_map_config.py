@@ -6,6 +6,7 @@ from arches.app.models.tile import Resource
 from arches.app.models.graph import Graph
 from arches.app.models.models import Node
 from arches.app.models.card import Card
+from arches.app.models.models import CardXNodeXWidget
 from arches.settings import SYSTEM_SETTINGS_RESOURCE_ID
 
 import uuid
@@ -42,12 +43,20 @@ class Command(BaseCommand):
     def set_map_cards_xy(self, centroid, nodes):
         # Alter all graph map card X & Y configs to centroid of sys settings map extent
         nodegroups = [x.nodegroup_id for x in nodes]
+        node_ids = [x.nodeid for x in nodes]
+        # Set for card config
         cards = Card.objects.filter(nodegroup_id__in=nodegroups)
         for c in cards:
             c.config["centerX"] = centroid.x
             c.config["centerY"] = centroid.y
             c.save()
 
+        # Set for card_x_node_x_widget config
+        cardsxnodesxwidgets = CardXNodeXWidget.objects.filter(node_id__in=node_ids)
+        for c in cardsxnodesxwidgets:
+            c.config["centerX"] = centroid.x
+            c.config["centerY"] = centroid.y
+            c.save()
 
     def set_gfc_node_syling(self, nodes):
         map_styling = {
@@ -173,18 +182,18 @@ class Command(BaseCommand):
         }
 
         for n in nodes:
-            if n.graph_id in map_styling.keys():
-                n.config["addToMap"]=[map_styling[n.graph_id]["addToMap"]]
-                n.config["pointColor"]=[map_styling[n.graph_id]["pointColor"]]
-                n.config["pointHaloColor"]=[map_styling[n.graph_id]["pointHaloColor"]]
-                n.config["radius"]=[map_styling[n.graph_id]["radius"]]
-                n.config["haloRadius"]=[map_styling[n.graph_id]["haloRadius"]]
-                n.config["lineColor"]=[map_styling[n.graph_id]["lineColor"]]
-                n.config["lineHaloColor"]=[map_styling[n.graph_id]["lineHaloColor"]]
-                n.config["weight"]=[map_styling[n.graph_id]["weight"]]
-                n.config["haloWeight"]=[map_styling[n.graph_id]["haloWeight"]]
-                n.config["fillColor"]=[map_styling[n.graph_id]["fillColor"]]
-                n.config["outlineColor"]=[map_styling[n.graph_id]["outlineColor"]]
-                n.config["outlineWeight"]=[map_styling[n.graph_id]["outlineWeight"]]
-
+            if str(n.graph_id) in map_styling.keys():
+                n.config["addToMap"]=map_styling[str(n.graph_id)]["addToMap"]
+                n.config["pointColor"]=map_styling[str(n.graph_id)]["pointColor"]
+                n.config["pointHaloColor"]=map_styling[str(n.graph_id)]["pointHaloColor"]
+                n.config["radius"]=map_styling[str(n.graph_id)]["radius"]
+                n.config["haloRadius"]=map_styling[str(n.graph_id)]["haloRadius"]
+                n.config["lineColor"]=map_styling[str(n.graph_id)]["lineColor"]
+                n.config["lineHaloColor"]=map_styling[str(n.graph_id)]["lineHaloColor"]
+                n.config["weight"]=map_styling[str(n.graph_id)]["weight"]
+                n.config["haloWeight"]=map_styling[str(n.graph_id)]["haloWeight"]
+                n.config["fillColor"]=map_styling[str(n.graph_id)]["fillColor"]
+                n.config["outlineColor"]=map_styling[str(n.graph_id)]["outlineColor"]
+                n.config["outlineWeight"]=map_styling[str(n.graph_id)]["outlineWeight"]
+                n.config["clusterMaxZoom"]=0 # improve performance
                 n.save()
