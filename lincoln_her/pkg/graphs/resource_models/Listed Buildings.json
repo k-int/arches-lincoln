@@ -21675,7 +21675,13 @@
             "slug": null,
             "subtitle": "Used to record built works, human-made structures and human-modified features. These can range from a single post box to a palace complex. The use of Heritage Asset or Heritage Area will be a question of granularity. ",
             "template_id": "523a5a7f-006b-4caf-a801-a1621967a88b",
-            "version": ""
+            "version": "",
+            "publication": {
+                "graph_id": "360a22d8-7097-11ed-b2a8-09a7eb3130f4",
+                "notes": null,
+                "publicationid": "98b55e0d-d310-4d67-95c8-c828b2df78c2",
+                "published_time": "2025-08-18T14:58:00.000"
+            }
         }
     ],
     "metadata": {
