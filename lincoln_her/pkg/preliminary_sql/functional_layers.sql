@@ -2,7 +2,7 @@
 
 -- Early Modern Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_early_modern_agenda_zone(
+FUNCTION lincoln_early_modern_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -39,13 +39,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_early_modern_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Early Modern Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_early_modern_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Early Modern Research Agenda Zone".';
 
 -- Roman Military Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_roman_military_agenda_zone(
+FUNCTION lincoln_roman_military_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -82,13 +83,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_roman_military_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Roman Military Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_roman_military_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Roman Military Research Agenda Zone".';
 
 -- Roman Colonia Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_roman_colonia_agenda_zone(
+FUNCTION lincoln_roman_colonia_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -125,13 +127,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_roman_colonia_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Roman Colonia Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_roman_colonia_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Roman Colonia Research Agenda Zone".';
 
 -- Industrial Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_industrial_agenda_zone(
+FUNCTION lincoln_industrial_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -168,13 +171,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_industrial_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Industrial Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_industrial_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Industrial Research Agenda Zone".';
 
 -- Prehistoric Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_prehistoric_agenda_zone(
+FUNCTION lincoln_prehistoric_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -211,13 +215,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_prehistoric_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Prehistoric Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_prehistoric_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Prehistoric Research Agenda Zone".';
 
 -- High Medieval Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_high_medieval_agenda_zone(
+FUNCTION lincoln_high_medieval_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -254,13 +259,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_high_medieval_agenda_zone IS 'Layer for all Arches Area resources with the protection type "High Medieval Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_high_medieval_agenda_zone IS 'Layer for all Arches Area resources with the protection type "High Medieval Research Agenda Zone".';
 
 -- Early Medieval Research Agenda Zone
 CREATE OR REPLACE
-FUNCTION public.lincoln_early_medieval_agenda_zone(
+FUNCTION lincoln_early_medieval_agenda_zone(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -297,13 +303,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_early_medieval_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Early Medieval Research Agenda Zone".';
+COMMENT ON FUNCTION lincoln_early_medieval_agenda_zone IS 'Layer for all Arches Area resources with the protection type "Early Medieval Research Agenda Zone".';
 
 -- Lincoln Townscape Assessment
 CREATE OR REPLACE
-FUNCTION public.lincoln_townscape_assessment(
+FUNCTION lincoln_townscape_assessment(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -340,13 +347,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.lincoln_townscape_assessment IS 'Layer for all Arches Area resources with the external cross reference source "Lincoln Townscape Assessment".';
+COMMENT ON FUNCTION lincoln_townscape_assessment IS 'Layer for all Arches Area resources with the external cross reference source "Lincoln Townscape Assessment".';
 
 -- Conservation Areas
 CREATE OR REPLACE
-FUNCTION public.afher_conservation_areas(
+FUNCTION afher_conservation_areas(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -383,13 +391,14 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.afher_conservation_areas IS 'Layer for all Arches Area resources with the protection type "Conservation Area".';
+COMMENT ON FUNCTION afher_conservation_areas IS 'Layer for all Arches Area resources with the protection type "Conservation Area".';
 
 -- Scheduled Monument
 CREATE OR REPLACE
-FUNCTION public.afher_scheduled_monument(
+FUNCTION afher_scheduled_monument(
             z integer, x integer, y integer)
 RETURNS bytea
 AS $$
@@ -426,6 +435,7 @@ AS $$
 $$
 LANGUAGE 'sql'
 STABLE
-PARALLEL SAFE;
+PARALLEL SAFE
+SECURITY DEFINER;
 
-COMMENT ON FUNCTION public.afher_scheduled_monument IS 'Layer for all Arches Monument resources with the protection type "Conservation Area".';
+COMMENT ON FUNCTION afher_scheduled_monument IS 'Layer for all Arches Monument resources with the protection type "Conservation Area".';
