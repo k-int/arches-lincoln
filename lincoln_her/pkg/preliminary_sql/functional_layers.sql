@@ -32,10 +32,10 @@ AS $$
 			WHERE values.value = 'Early Modern Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_early_modern_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -76,10 +76,10 @@ AS $$
 			WHERE values.value = 'Roman Military Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_roman_military_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -120,10 +120,10 @@ AS $$
 			WHERE values.value = 'Roman Colonia Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_roman_colonia_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -164,10 +164,10 @@ AS $$
 			WHERE values.value = 'Industrial Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_industrial_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -208,10 +208,10 @@ AS $$
 			WHERE values.value = 'Prehistoric Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_prehistoric_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -252,10 +252,10 @@ AS $$
 			WHERE values.value = 'High Medieval Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_high_medieval_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -296,10 +296,10 @@ AS $$
 			WHERE values.value = 'Early Medieval Research Agenda Zone'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_early_medieval_agenda_zone') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -340,10 +340,10 @@ AS $$
 			WHERE values.value = 'Lincoln Townscape Assessment'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'lincoln_townscape_assessment') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -384,10 +384,10 @@ AS $$
 			WHERE values.value = 'Conservation Area'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'afher_conservation_areas') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -428,14 +428,14 @@ AS $$
 			WHERE values.value = 'Scheduled Monument'
 	),	
     mvtgeom AS (
-      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
+      SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom, resourceinstanceid
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'afher_scheduled_monument') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
 PARALLEL SAFE
 SECURITY DEFINER;
 
-COMMENT ON FUNCTION afher_scheduled_monument IS 'Layer for all Arches Monument resources with the protection type "Conservation Area".';
+COMMENT ON FUNCTION afher_scheduled_monument IS 'Layer for all Arches Monument resources with the protection type "Scheduled Monument".';
