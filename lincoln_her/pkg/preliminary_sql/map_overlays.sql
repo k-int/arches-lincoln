@@ -9,7 +9,7 @@ VALUES ('early_modern_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv/p
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('140224c1-c84c-4453-8651-b66d510f0808', 
            'Early Modern Agenda Zone', 
-           '[{"id": "early_modern_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "early_modern_agenda_zone", "source-layer": "public.lincoln_early_modern_agenda_zone"}]', 
+           '[{"id": "early_modern_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "early_modern_agenda_zone", "source-layer": "lincoln_early_modern_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -26,7 +26,7 @@ VALUES ('roman_military_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('4e5ead2f-61fc-4a4f-afaa-6ad8b3399906', 
            'Roman Military Agenda Zone', 
-           '[{"id": "roman_military_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "roman_military_agenda_zone", "source-layer": "public.lincoln_roman_military_agenda_zone"}]', 
+           '[{"id": "roman_military_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "roman_military_agenda_zone", "source-layer": "lincoln_roman_military_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -43,7 +43,7 @@ VALUES ('roman_colonia_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv/
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('6772c1be-162c-401a-97f3-38968ed9a575', 
            'Roman Colonia Agenda Zone', 
-           '[{"id": "roman_colonia_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "roman_colonia_agenda_zone", "source-layer": "public.lincoln_roman_colonia_agenda_zone"}]', 
+           '[{"id": "roman_colonia_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "roman_colonia_agenda_zone", "source-layer": "lincoln_roman_colonia_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -60,7 +60,7 @@ VALUES ('industrial_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv/pub
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('4db660e0-44df-4f73-8cfa-60936c6b01b8', 
            'Industrial Agenda Zone', 
-           '[{"id": "industrial_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "industrial_agenda_zone", "source-layer": "public.lincoln_industrial_agenda_zone"}]', 
+           '[{"id": "industrial_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "industrial_agenda_zone", "source-layer": "lincoln_industrial_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -77,7 +77,7 @@ VALUES ('prehistoric_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv/pu
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('38936e09-cd6b-4255-a787-e2d14262bce7', 
            'Prehistoric Agenda Zone', 
-           '[{"id": "prehistoric_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "prehistoric_agenda_zone", "source-layer": "public.lincoln_prehistoric_agenda_zone"}]', 
+           '[{"id": "prehistoric_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "prehistoric_agenda_zone", "source-layer": "lincoln_prehistoric_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -94,7 +94,7 @@ VALUES ('high_medieval_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv/
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('f4a65290-99d5-417b-9869-d31cb6648b99', 
            'High Medieval Agenda Zone', 
-           '[{"id": "high_medieval_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "high_medieval_agenda_zone", "source-layer": "public.lincoln_high_medieval_agenda_zone"}]', 
+           '[{"id": "high_medieval_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "high_medieval_agenda_zone", "source-layer": "lincoln_high_medieval_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -111,7 +111,7 @@ VALUES ('early_medieval_agenda_zone', '{"type": "vector", "tiles": ["/pgtileserv
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('b0a9e0e4-3682-478a-992f-7a20141f9b86', 
            'Early Medieval Agenda Zone', 
-           '[{"id": "early_medieval_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "early_medieval_agenda_zone", "source-layer": "public.lincoln_early_medieval_agenda_zone"}]', 
+           '[{"id": "early_medieval_agenda_zone", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "early_medieval_agenda_zone", "source-layer": "lincoln_early_medieval_agenda_zone"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -128,7 +128,7 @@ VALUES ('townscape_assessment', '{"type": "vector", "tiles": ["/pgtileserv/publi
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('84fab551-8b38-432c-9e51-9ffd5581e2f8', 
            'Lincoln Townscape Assessment', 
-           '[{"id": "lincoln_townscape_assessment", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "lincoln_townscape_assessment", "source-layer": "public.lincoln_townscape_assessment"}]', 
+           '[{"id": "lincoln_townscape_assessment", "type": "fill", "paint": {"fill-color": "red", "fill-opacity": 0.25, "fill-outline-color": "black"}, "source": "lincoln_townscape_assessment", "source-layer": "lincoln_townscape_assessment"}]', 
            TRUE,
            'fa fa-location-arrow',
            TRUE,
@@ -145,7 +145,7 @@ VALUES ('conservation_areas', '{"type": "vector", "tiles": ["/pgtileserv/public.
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('a7dfee7a-8596-46c5-bae2-53c0dd1441a5', 
            'Conservation Areas', 
-           '[{"id": "conservation_areas", "type": "fill", "paint": {"fill-color": "rgba(59,76,232,0.5)", "fill-opacity": 0.5, "fill-outline-color": "rgba(59,76,232,0.5)"}, "source": "conservation_areas", "source-layer": "public.afher_conservation_areas"}]', 
+           '[{"id": "conservation_areas", "type": "fill", "paint": {"fill-color": "rgba(59,76,232,0.5)", "fill-opacity": 0.5, "fill-outline-color": "rgba(59,76,232,0.5)"}, "source": "conservation_areas", "source-layer": "afher_conservation_areas"}]', 
            TRUE,
            'fa fa-map-marker',
            TRUE,
@@ -162,7 +162,7 @@ VALUES ('scheduled_monument', '{"type": "vector", "tiles": ["/pgtileserv/public.
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('4fdc7fb2-f871-4508-aec9-c05b3edb0c4c', 
            'Scheduled Monument', 
-           '[{"id": "scheduled_monument", "type": "fill", "paint": {"fill-color": "rgba(232,59,59,0.5)", "fill-opacity": 0.5, "fill-outline-color": "rgba(232,59,59,0.5)"}, "source": "scheduled_monument", "source-layer": "public.afher_scheduled_monument"}]', 
+           '[{"id": "scheduled_monument", "type": "fill", "paint": {"fill-color": "rgba(232,59,59,0.5)", "fill-opacity": 0.5, "fill-outline-color": "rgba(232,59,59,0.5)"}, "source": "scheduled_monument", "source-layer": "afher_scheduled_monument"}]', 
            TRUE,
            'fa fa-map-marker',
            TRUE,
