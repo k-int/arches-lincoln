@@ -35,7 +35,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_early_modern_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -79,7 +79,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_roman_military_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -123,7 +123,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_roman_colonia_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -167,7 +167,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_industrial_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -211,7 +211,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_prehistoric_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -255,7 +255,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_high_medieval_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -299,7 +299,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_early_medieval_agenda_zone') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -343,7 +343,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'lincoln_townscape_assessment') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -387,7 +387,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'afher_conservation_areas') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
@@ -431,7 +431,7 @@ AS $$
       SELECT ST_AsMVTGeom(ST_Transform(geometries.geom, 3857), bounds.geom) AS geom      
       FROM concept_value geometries, bounds
     )
-    SELECT ST_AsMVT(mvtgeom, 'default') FROM mvtgeom;
+    SELECT ST_AsMVT(mvtgeom, 'afher_scheduled_monument') FROM mvtgeom;
 $$
 LANGUAGE 'sql'
 STABLE
