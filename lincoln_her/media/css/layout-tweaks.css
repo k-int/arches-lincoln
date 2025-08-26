@@ -126,3 +126,24 @@ header#navbar .navbar-header::before {
 .sidenav {
   color: #2c3647;
 }
+
+
+/* Fix for header creating extra scrollbar: */
+
+.sidenav {
+    height: calc(100vh - 80px);
+}
+
+.content-panel {
+    height: calc(100vh - 120px);
+}
+
+/* possibly needed in 7.6 */
+/* #container {
+    height: calc(100vh - 120px);
+    min-height: calc(100vh - 120px);
+} */
+
+article.main-search-container .search-map-container .tab-content .tab-content-component {
+    height: calc(100vh - 180px);
+}
