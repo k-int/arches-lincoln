@@ -145,7 +145,7 @@ VALUES ('conservation_areas', '{"type": "vector", "tiles": ["/pgtileserv/public.
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('a7dfee7a-8596-46c5-bae2-53c0dd1441a5', 
            'Conservation Areas', 
-           '[{"id": "conservation_areas", "type": "fill", "paint": {"fill-color": "rgba(59,76,232,0.5)", "fill-opacity": 0.5, "fill-outline-color": "rgba(59,76,232,0.5)"}, "source": "conservation_areas", "source-layer": "default"}]', 
+           '[{"id": "conservation_areas", "type": "fill", "paint": {"fill-color": "rgba(59,76,232,0.5)", "fill-outline-color": "rgba(59,76,232,0.5)"}, "source": "conservation_areas", "source-layer": "default"}]',
            TRUE,
            'fa fa-map-marker',
            TRUE,
@@ -162,7 +162,7 @@ VALUES ('scheduled_monument', '{"type": "vector", "tiles": ["/pgtileserv/public.
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('4fdc7fb2-f871-4508-aec9-c05b3edb0c4c', 
            'Scheduled Monument', 
-           '[{"id": "scheduled_monument", "type": "fill", "paint": {"fill-color": "rgba(232,59,59,0.5)", "fill-opacity": 0.5, "fill-outline-color": "rgba(232,59,59,0.5)"}, "source": "scheduled_monument", "source-layer": "default"}]', 
+           '[{"id": "scheduled_monument", "type": "fill", "paint": {"fill-color": "rgba(232,59,59,0.5)", "fill-outline-color": "rgba(232,59,59,0.5)"}, "source": "scheduled_monument", "source-layer": "default"}]',
            TRUE,
            'fa fa-map-marker',
            TRUE,
