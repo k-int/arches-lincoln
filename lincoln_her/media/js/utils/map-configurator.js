@@ -1,3 +1,4 @@
+// hook for core Arches map config extension: https://github.com/archesproject/arches/blob/dev/7.6.x/arches/app/media/js/utils/map-configurator.js
 define(['mapbox-gl'], function(mapboxgl){
 
     let mapConfigurator = {
