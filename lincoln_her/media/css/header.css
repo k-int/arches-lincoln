@@ -38,6 +38,7 @@ body>header .navbar-brand {
   width: 100px;
   height: 75px;
   position: relative;
+  color: #fff;
 }
 
 body>header .navbar-brand img {
