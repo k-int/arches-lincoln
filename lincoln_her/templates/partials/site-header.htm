@@ -22,7 +22,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 <!-- header -->
 <header>
   <nav role="nav" >
-    <a href="{% url 'home' %}" class="navbar-brand" ><img src="{% static 'img/landing/arcade_logo.png' %}" /></a>
+    <a href="{% url 'home' %}" class="navbar-brand" ><img src="{% static 'img/landing/arcade_logo.png' %}" alt="Arcade logo"/></a>
     <ul class="nav navbar-nav navbar-right">
       {% if extra_links %}
         {% include extra_links %}
