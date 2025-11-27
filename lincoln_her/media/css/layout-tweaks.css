@@ -1,23 +1,3 @@
-/* prevents y scrollbar due to header */
-html {
-  overflow: hidden;
-}
-
-body {
-  overflow-x: auto;
-  overflow-y: auto;
-  height: 100%;
-  margin-top: 80px;
-}
-
-header nav ul.nav {
-  width: auto;
-}
-
-header#navbar {
-  top: 80px;
-}
-
 header#navbar .navbar-header::before {
   background-color: #2c3647;
 }
@@ -25,11 +5,6 @@ header#navbar .navbar-header::before {
 #mainnav-container,
 #mainnav {
   background-color: #2c3647;
-}
-
-#mainnav-container {
-  top: 0;
-  padding-top: 100px;
 }
 
 #mainnav-container #mainnav #mainnav-menu a:hover {
@@ -45,67 +20,6 @@ header#navbar .navbar-header::before {
   color: #2c3647;
 }
 
-#mainnav-menu-wrap {
-  padding: 0;
-}
-
-.content-panel {
-  height: calc(100vh - 130px);
-}
-
-.search-control-container {
-  padding-bottom: 10px;
-}
-
-.card-form-preview-container {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.map-search-container {
-  height: calc(100vh - 190px);
-}
-
-.map-search-container.expanded-edit-map {
-  top: 130px;
-  height: calc(100vh - 130px);
-}
-
-.map-search-container .map-search-container div .map-widget-panel {
-  height: calc(100vh - 190px);
-}
-
-.card-form-preview-container .tab-content .tab-pane>div,
-.saved-search-grid,
-.facets-search-container,
-.search-facets {
-  /*  height: calc(100vh - 191px) !important;
-  overflow-y: auto; */
-  min-height: 0;
-}
-
-
-.widget-wrapper .mapboxgl-map {
-  margin-bottom: -20px;
-}
-
-/* V5 upgrade tweaks */
-.settings-panel .settings-panel-heading {
-  top: auto;
-}
-
-.settings-panel>div:nth-child(2) {
-  margin-top: 63px;
-}
-
-#content-container .scroll-y {
-  max-height: calc(100vh - 130px);
-  overflow-x: hidden;
-}
-
-#footer {
-  display: none;
-}
 
 /* V7 tweaks */
 .sidenav-sm .sidenav-menu .active-sub>a {
@@ -125,25 +39,4 @@ header#navbar .navbar-header::before {
 
 .sidenav {
   color: #2c3647;
-}
-
-
-/* Fix for header creating extra scrollbar: */
-
-.sidenav {
-    height: calc(100vh - 80px);
-}
-
-.content-panel {
-    height: calc(100vh - 120px);
-}
-
-/* possibly needed in 7.6 */
-/* #container {
-    height: calc(100vh - 120px);
-    min-height: calc(100vh - 120px);
-} */
-
-article.main-search-container .search-map-container .tab-content .tab-content-component {
-    height: calc(100vh - 180px);
 }
