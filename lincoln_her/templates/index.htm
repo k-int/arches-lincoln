@@ -60,11 +60,11 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <!-- Intro Section -->
   <section class="intro" >
     <div class="image" >
-      <img src="{% static 'img/landing/Lincoln_Land.jpg' %}" >
+      <img src="{% static 'img/landing/Lincoln_Land.jpg' %}" alt="Landscape view of Lincoln Cathedral from the east.">
       <div id="intro" class="caption text-center">
         <div class="container">
           <div>
-            <p>{% trans "The online heritage information and management system for the City of Lincoln"  %}</p>
+            <h1>{% trans "The online heritage information and management system for the City of Lincoln"  %}</h1>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <div class="row">
       <div class="col-sm-4 col-xs-12">
         <a href="{% url 'search_home' %}?termFilter=%5B%7B%22context%22%3A%22adf6690a-fbf0-41f9-a177-dfacbd3eb058%22%2C%22context_label%22%3A%22ROMAN%22%2C%22id%22%3A0%2C%22text%22%3A%22ROMAN%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%22adf6690a-fbf0-41f9-a177-dfacbd3eb058%22%2C%22inverted%22%3Afalse%7D%5D&typeFilter=%5B%7B%22graphid%22%3A%22e4b3562b-343a-11e8-b509-dca90488358a%22%2C%22name%22%3A%22Heritage%20Assets%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1" class="entry">
-          <img src="{% static 'img/landing/roman-lincoln.jpg' %}" alt="">
+          <img src="{% static 'img/landing/roman-lincoln.jpg' %}" alt="West gate of Roman Lincoln lower city.">
           <div class="ol">
             <div class="text" >
               <h4>Roman Lincoln</h4>
@@ -110,7 +110,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
       </div>
       <div class="col-sm-4 col-xs-12">
         <a href="{% url 'search_home' %}?termFilter=%5B%7B%22context%22%3A%225f654c6b-d96a-455e-a9d2-85c113deedaa%22%2C%22context_label%22%3A%22POST%20MEDIEVAL%22%2C%22id%22%3A0%2C%22text%22%3A%22POST%20MEDIEVAL%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%225f654c6b-d96a-455e-a9d2-85c113deedaa%22%2C%22inverted%22%3Afalse%7D%2C%7B%22context%22%3A%224f9e2073-a596-4583-b4fa-f07a9d2096a0%22%2C%22context_label%22%3A%22INDUSTRIAL%22%2C%22id%22%3A0%2C%22text%22%3A%22INDUSTRIAL%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%224f9e2073-a596-4583-b4fa-f07a9d2096a0%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1"  class="entry">
-          <img src="{% static 'img/landing/industrial-lincoln.jpg' %}" alt="">
+          <img src="{% static 'img/landing/industrial-lincoln.jpg' %}" alt="Ellis Mill at sunset.">
           <div class="ol">
             <div class="text" >
               <h4>Industrial Lincoln</h4>
@@ -123,7 +123,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
       </div>
       <div class="col-sm-4 col-xs-12">
         <a href="{% url 'search_home' %}?termFilter=%5B%7B%22context%22%3A%22fde52573-63e6-457a-90ea-42d8e61d4a7b%22%2C%22context_label%22%3A%22MEDIEVAL%22%2C%22id%22%3A0%2C%22text%22%3A%22MEDIEVAL%22%2C%22type%22%3A%22concept%22%2C%22value%22%3A%22fde52573-63e6-457a-90ea-42d8e61d4a7b%22%2C%22inverted%22%3Afalse%7D%5D&typeFilter=%5B%7B%22graphid%22%3A%22e4b3562b-343a-11e8-b509-dca90488358a%22%2C%22name%22%3A%22Heritage%20Assets%22%2C%22inverted%22%3Afalse%7D%5D&no_filters=false&page=1"  class="entry">
-          <img src="{% static 'img/landing/designated-heritage.jpg' %}" alt="">
+          <img src="{% static 'img/landing/designated-heritage.jpg' %}" alt="Jews' Court and Steep Hill Lincoln">
           <div class="ol">
             <div class="text" >
               <h4>Medieval Lincoln</h4>
@@ -194,7 +194,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div>
         <div class="col-md-5 col-md-offset-1 callouts">
           <div>
-            <img src="{% static 'img/landing/COLC_Black_Logo.png' %}" />
+            <img src="{% static 'img/landing/COLC_Black_Logo.png' %}" alt="City of Lincoln Council black logo"/>
           </div>
         </div>
       </div>
@@ -203,7 +203,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
   <!-- ./about -->
   
   <!-- .contact -->
-  <section class="background-secondary">
+  <section class="col-layout">
     <div class="container">
       <h3>{% trans "Get in Touch" %}</h3>
       <p>City of Lincoln Council<br />
@@ -222,9 +222,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <div class="container">
       <div class="row">
         <ul class="list-inline">
-          <li><a href="https://www.lincoln.gov.uk/" ><img src="{% static 'img/landing/colc_white.png' %}" /></a></li>
-          <li><a href="http://www.getty.edu/conservation/" ><img src="{% static 'img/landing/getty_white.png' %}" /></a></li>
-          <li><a href="https://www.archesproject.org/" ><img src="{% static 'img/landing/arches_white.png' %}" /></a></li>
+          <li><a href="https://www.lincoln.gov.uk/" ><img src="{% static 'img/landing/colc_white.png' %}" alt="City of Lincoln Council white logo, links to City of Lincoln Council website."/></a></li>
+          <li><a href="http://www.getty.edu/conservation/" ><img src="{% static 'img/landing/getty_white.png' %}" alt="Getty Conservation Institute white logo, links to the Getty Conservation Institute website."/></a></li>
+          <li><a href="https://www.archesproject.org/" ><img src="{% static 'img/landing/arches_white.png' %}" alt="Arches white logo, links to the Arches project website."/></a></li>
         </ul>
         <p>&copy; 2018 City of Lincoln Council. ARCADE is powered by Arches ({{ app_settings.VERSION }}), an open-source,
           web-based, geospatial information system for cultural heritage inventory and management.</p>
