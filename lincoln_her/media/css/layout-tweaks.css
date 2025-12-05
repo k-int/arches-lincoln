@@ -40,3 +40,9 @@ header#navbar .navbar-header::before {
 .sidenav {
   color: #2c3647;
 }
+
+/* "Find a resource" and "Find an address" placeholder text black */
+.mapboxgl-ctrl-geocoder input::placeholder,
+.select2-search__field::placeholder {
+    color: #000 !important;
+}
