@@ -1,0 +1,32 @@
+.arcade-statement {
+    overflow: auto;
+    padding-left: 20px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.arcade-statement a {
+    color: #337ab7;
+}
+
+.arcade-statement-title {
+    color: #2c3647;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.arcade-statement-title h2 {
+    font-size: 2.0rem;
+}
+
+.arcade-statement-title h1 {
+    font-size: 2.5rem;
+}
+
+.arcade-statement-description {
+    /* font-size: 1.3rem; */
+    font-size: 14px;
+    color: #2c3647;
+    font-weight: 500;    
+}
