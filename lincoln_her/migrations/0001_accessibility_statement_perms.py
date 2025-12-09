@@ -4,6 +4,8 @@ from django.utils.translation import gettext as _
 
 class Migration(migrations.Migration):
 
+    initial = True
+
     dependencies = [("arches_her", "0001_initial")]
 
     add_accessibility_statement_perms = """
