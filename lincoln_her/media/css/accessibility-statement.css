@@ -1,5 +1,4 @@
 .arcade-statement {
-    overflow: auto;
     padding-left: 20px;
     background-color: #fff;
     width: 100%;
@@ -29,4 +28,9 @@
     font-size: 14px;
     color: #2c3647;
     font-weight: 500;    
+}
+
+.plugin-main {
+    overflow: auto;
+    background-color: #fff;
 }
