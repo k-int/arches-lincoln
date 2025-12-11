@@ -1,5 +1,5 @@
 -- Remove sources and layers to begin, so we can update without conflicts
-DELETE FROM map_sources WHERE name IN ('early_modern_agenda_zone', 'roman_military_agenda_zone', 'roman_colonia_agenda_zone', 'industrial_agenda_zone', 'prehistoric_agenda_zone', 'high_medieval_agenda_zone', 'early_medieval_agenda_zone', 'townscape_assessment', 'conservation_areas', 'scheduled_monument');
+DELETE FROM map_sources WHERE name IN ('early_modern_agenda_zone', 'roman_military_agenda_zone', 'roman_colonia_agenda_zone', 'industrial_agenda_zone', 'prehistoric_agenda_zone', 'high_medieval_agenda_zone', 'early_medieval_agenda_zone', 'lincoln_townscape_assessment', 'conservation_areas', 'scheduled_monument');
 DELETE FROM map_layers WHERE maplayerid in ('140224c1-c84c-4453-8651-b66d510f0808', '4e5ead2f-61fc-4a4f-afaa-6ad8b3399906', '6772c1be-162c-401a-97f3-38968ed9a575', '4db660e0-44df-4f73-8cfa-60936c6b01b8', '38936e09-cd6b-4255-a787-e2d14262bce7', 'f4a65290-99d5-417b-9869-d31cb6648b99', 'b0a9e0e4-3682-478a-992f-7a20141f9b86', '84fab551-8b38-432c-9e51-9ffd5581e2f8', 'a7dfee7a-8596-46c5-bae2-53c0dd1441a5', '4fdc7fb2-f871-4508-aec9-c05b3edb0c4c');
 
 -- Early Modern Research Agenda Zone
@@ -123,7 +123,7 @@ INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, acti
 
 -- Lincoln Townscape Assessment
 INSERT INTO map_sources(name, source)
-VALUES ('townscape_assessment', '{"type": "vector", "tiles": ["/pgtileserv/public.lincoln_townscape_assessment/{z}/{x}/{y}.pbf"], "maxzoom": 22, "minzoom": 0}');
+VALUES ('lincoln_townscape_assessment', '{"type": "vector", "tiles": ["/pgtileserv/public.lincoln_townscape_assessment/{z}/{x}/{y}.pbf"], "maxzoom": 22, "minzoom": 0}');
 
 INSERT INTO map_layers(maplayerid, name, layerdefinitions, isoverlay, icon, activated, addtomap, searchonly, sortorder, ispublic)
    VALUES ('84fab551-8b38-432c-9e51-9ffd5581e2f8', 
