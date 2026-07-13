@@ -19,6 +19,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 {% load static %}
 {% load template_tags %}
 {% load i18n %}
+{% load render_bundle from webpack_loader %}
+{% load webpack_static from webpack_loader %}
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -35,7 +38,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
+  <link rel="shortcut icon" href="{% webpack_static 'favicon/favicon.png' %}" />
   <link rel="stylesheet" href="{% static 'css/arches.css' %}" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
   
