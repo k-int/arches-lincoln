@@ -25,6 +25,9 @@ classifiers = [
 requires-python = ">=3.10"
 dependencies = [
     "arches>=7.6.24,<7.7.0",
+    "arches_her>=1.1.0,<1.2.0",
+    "django-storages",
+    "redis",    
 ]
 version = "0.0.1"
 
