@@ -23,22 +23,25 @@ class Command(BaseCommand):
         sys_settings = Resource.objects.get(pk=SYSTEM_SETTINGS_RESOURCE_ID)
         sys_settings.load_tiles()
         for tiles in sys_settings.tiles:
-            if tiles.nodegroup_id==uuid.UUID("0e8fdef0-4148-11e7-8330-c4b301baab9f"):
+            if tiles.nodegroup_id == uuid.UUID("0e8fdef0-4148-11e7-8330-c4b301baab9f"):
                 map_extent = tiles.data["0e8ffbcf-4148-11e7-a95a-c4b301baab9f"]
                 break
 
         geojson_features = map_extent["features"]
         geojson_geometry = GEOSGeometry(json.dumps(geojson_features[0]["geometry"]))
-        centroid=geojson_geometry.centroid
+        centroid = geojson_geometry.centroid
 
-        graphs = (Graph.objects.filter(isresource=True).exclude(graphid="ff623370-fa12-11e6-b98b-6c4008b05c4c"))
+        graphs = Graph.objects.filter(isresource=True).exclude(
+            graphid="ff623370-fa12-11e6-b98b-6c4008b05c4c"
+        )
         graphs = [x.graphid for x in graphs]
 
-        nodes = Node.objects.filter(datatype='geojson-feature-collection', graph_id__in=graphs)
+        nodes = Node.objects.filter(
+            datatype="geojson-feature-collection", graph_id__in=graphs
+        )
 
         self.set_map_cards_xy(centroid, nodes)
         self.set_gfc_node_syling(nodes)
-
 
     def set_map_cards_xy(self, centroid, nodes):
         # Alter all graph map card X & Y configs to centroid of sys settings map extent
@@ -183,17 +186,23 @@ class Command(BaseCommand):
 
         for n in nodes:
             if str(n.graph_id) in map_styling.keys():
-                n.config["addToMap"]=map_styling[str(n.graph_id)]["addToMap"]
-                n.config["pointColor"]=map_styling[str(n.graph_id)]["pointColor"]
-                n.config["pointHaloColor"]=map_styling[str(n.graph_id)]["pointHaloColor"]
-                n.config["radius"]=map_styling[str(n.graph_id)]["radius"]
-                n.config["haloRadius"]=map_styling[str(n.graph_id)]["haloRadius"]
-                n.config["lineColor"]=map_styling[str(n.graph_id)]["lineColor"]
-                n.config["lineHaloColor"]=map_styling[str(n.graph_id)]["lineHaloColor"]
-                n.config["weight"]=map_styling[str(n.graph_id)]["weight"]
-                n.config["haloWeight"]=map_styling[str(n.graph_id)]["haloWeight"]
-                n.config["fillColor"]=map_styling[str(n.graph_id)]["fillColor"]
-                n.config["outlineColor"]=map_styling[str(n.graph_id)]["outlineColor"]
-                n.config["outlineWeight"]=map_styling[str(n.graph_id)]["outlineWeight"]
-                n.config["clusterMaxZoom"]=0 # improve performance
+                n.config["addToMap"] = map_styling[str(n.graph_id)]["addToMap"]
+                n.config["pointColor"] = map_styling[str(n.graph_id)]["pointColor"]
+                n.config["pointHaloColor"] = map_styling[str(n.graph_id)][
+                    "pointHaloColor"
+                ]
+                n.config["radius"] = map_styling[str(n.graph_id)]["radius"]
+                n.config["haloRadius"] = map_styling[str(n.graph_id)]["haloRadius"]
+                n.config["lineColor"] = map_styling[str(n.graph_id)]["lineColor"]
+                n.config["lineHaloColor"] = map_styling[str(n.graph_id)][
+                    "lineHaloColor"
+                ]
+                n.config["weight"] = map_styling[str(n.graph_id)]["weight"]
+                n.config["haloWeight"] = map_styling[str(n.graph_id)]["haloWeight"]
+                n.config["fillColor"] = map_styling[str(n.graph_id)]["fillColor"]
+                n.config["outlineColor"] = map_styling[str(n.graph_id)]["outlineColor"]
+                n.config["outlineWeight"] = map_styling[str(n.graph_id)][
+                    "outlineWeight"
+                ]
+                n.config["clusterMaxZoom"] = 0  # improve performance
                 n.save()

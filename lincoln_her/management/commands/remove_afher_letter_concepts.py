@@ -10,12 +10,12 @@ import json
 
 class Command(BaseCommand):
     """
-    Remove all default AfHER letter template concepts from the RDM. 
+    Remove all default AfHER letter template concepts from the RDM.
     HER specific letter template concepts will be loaded via the project package.
     """
 
     def handle(self, *arg, **options):
-        
+
         afher_letter_template_concepts = {
             "ca43d87a-b24d-4b1b-ab76-f4be8897064b": "Letter A",
             "bd7c5340-959a-4304-b17a-045d2eded709": "Letter A2",
@@ -31,7 +31,7 @@ class Command(BaseCommand):
             "7d65ef3a-ca85-4c78-9872-be58bae817f8": "Letter H",
             "e34c66c2-5da2-49a4-9be9-d538148da5e6": "Letter I - Bespoke Letter",
             "eb9693f4-c947-492d-84fe-0f88de3fbec7": "Additional Condition Text",
-            "6a1db0e0-febe-4cb6-b0ee-5b6236d088af": "Archaeological Recommendation Text",          
+            "6a1db0e0-febe-4cb6-b0ee-5b6236d088af": "Archaeological Recommendation Text",
         }
 
         for letter_template_uuid in afher_letter_template_concepts.keys():
