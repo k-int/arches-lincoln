@@ -421,6 +421,8 @@ SEARCH_COMPONENT_LOCATIONS.append('arches_her.search.components')
 
 HER_ROOT = os.path.join(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()) + '../../')), 'arches_her', 'arches_her')
 
+OS_MASTER_MAP_KEY = ""
+
 try:
     from .package_settings import *
 except ImportError:
