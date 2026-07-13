@@ -6,12 +6,16 @@ from django.urls import include, path, re_path
 from lincoln_her.views.mapping import OSMasterMap
 
 urlpatterns = [
-    re_path(r"^lincoln-os-master/(?P<zoom>[0-9]+|\{z\})/(?P<x>[0-9]+|\{x\})/(?P<y>[0-9]+|\{y\}).pbf$", OSMasterMap.as_view(), name="lincoln-os-master"),
+    re_path(
+        r"^lincoln-os-master/(?P<zoom>[0-9]+|\{z\})/(?P<x>[0-9]+|\{x\})/(?P<y>[0-9]+|\{y\}).pbf$",
+        OSMasterMap.as_view(),
+        name="lincoln-os-master",
+    ),
     path("", include("arches_her.urls")),
 ]
 
 # Ensure Arches core urls are superseded by project-level urls
-urlpatterns.append(path('', include('arches.urls')))
+urlpatterns.append(path("", include("arches.urls")))
 
 # Adds URL pattern to serve media files during development
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
