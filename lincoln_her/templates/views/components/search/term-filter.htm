@@ -10,8 +10,8 @@
             "
         ></select>
         
-        {% if show_language_swtich %}
-        <select data-bind="
+        <!-- Commented out to remove i18n dropdown -->
+        <!-- <select data-bind="
             options: languages, 
             optionsValue: 'code',
             optionsText: function(item){return item.name + ' (' + item.code + ')'}, 
@@ -21,8 +21,7 @@
                     allowClear: false
             }},
             attr: {'data-label': $root.translations.language}"
-        ></select>
-        {% endif %}
+        ></select> -->
 
     </form>
 </div>
